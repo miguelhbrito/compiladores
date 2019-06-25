@@ -1,0 +1,2852 @@
+State 0:
+programa' -> . programa [ # ]
+-- On WHILE shift to state 1
+-- On RETURN shift to state 51
+-- On PRINT shift to state 55
+-- On LITSTRING shift to state 2
+-- On LITINT shift to state 3
+-- On LITFLOAT shift to state 4
+-- On LITCHAR shift to state 5
+-- On LITBOOL shift to state 6
+-- On IF shift to state 60
+-- On ID shift to state 7
+-- On FOR shift to state 65
+-- On DEF shift to state 163
+-- On APAR shift to state 9
+-- On variavel shift to state 78
+-- On programa shift to state 180
+-- On parametro shift to state 98
+-- On list(instrucao) shift to state 181
+-- On instrucao shift to state 183
+-- On funcao shift to state 185
+-- On expressao shift to state 112
+-- On comando_while shift to state 116
+-- On comando_se shift to state 117
+-- On comando_retorno shift to state 118
+-- On comando_print shift to state 119
+-- On comando_instancia shift to state 120
+-- On comando_input_dec_atr shift to state 121
+-- On comando_input_atr shift to state 122
+-- On comando_for_dec shift to state 123
+-- On comando_for shift to state 124
+-- On comando_declara shift to state 125
+-- On comando_chamada shift to state 126
+-- On comando_atribuicao shift to state 127
+-- On comando shift to state 186
+-- On chamada shift to state 18
+-- On EOF reduce production list(instrucao) -> 
+
+State 1:
+comando_while -> WHILE . expressao DPONTOS NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+-- On LITSTRING shift to state 2
+-- On LITINT shift to state 3
+-- On LITFLOAT shift to state 4
+-- On LITCHAR shift to state 5
+-- On LITBOOL shift to state 6
+-- On ID shift to state 7
+-- On APAR shift to state 9
+-- On variavel shift to state 10
+-- On expressao shift to state 47
+-- On chamada shift to state 18
+
+State 2:
+expressao -> LITSTRING . [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+-- On VIRG reduce production expressao -> LITSTRING 
+-- On SUB reduce production expressao -> LITSTRING 
+-- On SOMA reduce production expressao -> LITSTRING 
+-- On OULOG reduce production expressao -> LITSTRING 
+-- On NOVALINHA reduce production expressao -> LITSTRING 
+-- On NOT reduce production expressao -> LITSTRING 
+-- On NAOEQUIVALENTE reduce production expressao -> LITSTRING 
+-- On MULT reduce production expressao -> LITSTRING 
+-- On MOD reduce production expressao -> LITSTRING 
+-- On MENORIGUAL reduce production expressao -> LITSTRING 
+-- On MENOR reduce production expressao -> LITSTRING 
+-- On MAIORIGUAL reduce production expressao -> LITSTRING 
+-- On MAIOR reduce production expressao -> LITSTRING 
+-- On FPAR reduce production expressao -> LITSTRING 
+-- On EQUIVALENTE reduce production expressao -> LITSTRING 
+-- On ELOG reduce production expressao -> LITSTRING 
+-- On DPONTOS reduce production expressao -> LITSTRING 
+-- On DIV reduce production expressao -> LITSTRING 
+
+State 3:
+expressao -> LITINT . [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+-- On VIRG reduce production expressao -> LITINT 
+-- On SUB reduce production expressao -> LITINT 
+-- On SOMA reduce production expressao -> LITINT 
+-- On OULOG reduce production expressao -> LITINT 
+-- On NOVALINHA reduce production expressao -> LITINT 
+-- On NOT reduce production expressao -> LITINT 
+-- On NAOEQUIVALENTE reduce production expressao -> LITINT 
+-- On MULT reduce production expressao -> LITINT 
+-- On MOD reduce production expressao -> LITINT 
+-- On MENORIGUAL reduce production expressao -> LITINT 
+-- On MENOR reduce production expressao -> LITINT 
+-- On MAIORIGUAL reduce production expressao -> LITINT 
+-- On MAIOR reduce production expressao -> LITINT 
+-- On FPAR reduce production expressao -> LITINT 
+-- On EQUIVALENTE reduce production expressao -> LITINT 
+-- On ELOG reduce production expressao -> LITINT 
+-- On DPONTOS reduce production expressao -> LITINT 
+-- On DIV reduce production expressao -> LITINT 
+
+State 4:
+expressao -> LITFLOAT . [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+-- On VIRG reduce production expressao -> LITFLOAT 
+-- On SUB reduce production expressao -> LITFLOAT 
+-- On SOMA reduce production expressao -> LITFLOAT 
+-- On OULOG reduce production expressao -> LITFLOAT 
+-- On NOVALINHA reduce production expressao -> LITFLOAT 
+-- On NOT reduce production expressao -> LITFLOAT 
+-- On NAOEQUIVALENTE reduce production expressao -> LITFLOAT 
+-- On MULT reduce production expressao -> LITFLOAT 
+-- On MOD reduce production expressao -> LITFLOAT 
+-- On MENORIGUAL reduce production expressao -> LITFLOAT 
+-- On MENOR reduce production expressao -> LITFLOAT 
+-- On MAIORIGUAL reduce production expressao -> LITFLOAT 
+-- On MAIOR reduce production expressao -> LITFLOAT 
+-- On FPAR reduce production expressao -> LITFLOAT 
+-- On EQUIVALENTE reduce production expressao -> LITFLOAT 
+-- On ELOG reduce production expressao -> LITFLOAT 
+-- On DPONTOS reduce production expressao -> LITFLOAT 
+-- On DIV reduce production expressao -> LITFLOAT 
+
+State 5:
+expressao -> LITCHAR . [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+-- On VIRG reduce production expressao -> LITCHAR 
+-- On SUB reduce production expressao -> LITCHAR 
+-- On SOMA reduce production expressao -> LITCHAR 
+-- On OULOG reduce production expressao -> LITCHAR 
+-- On NOVALINHA reduce production expressao -> LITCHAR 
+-- On NOT reduce production expressao -> LITCHAR 
+-- On NAOEQUIVALENTE reduce production expressao -> LITCHAR 
+-- On MULT reduce production expressao -> LITCHAR 
+-- On MOD reduce production expressao -> LITCHAR 
+-- On MENORIGUAL reduce production expressao -> LITCHAR 
+-- On MENOR reduce production expressao -> LITCHAR 
+-- On MAIORIGUAL reduce production expressao -> LITCHAR 
+-- On MAIOR reduce production expressao -> LITCHAR 
+-- On FPAR reduce production expressao -> LITCHAR 
+-- On EQUIVALENTE reduce production expressao -> LITCHAR 
+-- On ELOG reduce production expressao -> LITCHAR 
+-- On DPONTOS reduce production expressao -> LITCHAR 
+-- On DIV reduce production expressao -> LITCHAR 
+
+State 6:
+expressao -> LITBOOL . [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+-- On VIRG reduce production expressao -> LITBOOL 
+-- On SUB reduce production expressao -> LITBOOL 
+-- On SOMA reduce production expressao -> LITBOOL 
+-- On OULOG reduce production expressao -> LITBOOL 
+-- On NOVALINHA reduce production expressao -> LITBOOL 
+-- On NOT reduce production expressao -> LITBOOL 
+-- On NAOEQUIVALENTE reduce production expressao -> LITBOOL 
+-- On MULT reduce production expressao -> LITBOOL 
+-- On MOD reduce production expressao -> LITBOOL 
+-- On MENORIGUAL reduce production expressao -> LITBOOL 
+-- On MENOR reduce production expressao -> LITBOOL 
+-- On MAIORIGUAL reduce production expressao -> LITBOOL 
+-- On MAIOR reduce production expressao -> LITBOOL 
+-- On FPAR reduce production expressao -> LITBOOL 
+-- On EQUIVALENTE reduce production expressao -> LITBOOL 
+-- On ELOG reduce production expressao -> LITBOOL 
+-- On DPONTOS reduce production expressao -> LITBOOL 
+-- On DIV reduce production expressao -> LITBOOL 
+
+State 7:
+chamada -> ID . APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+variavel -> ID . [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ATRIB ]
+-- On APAR shift to state 8
+-- On VIRG reduce production variavel -> ID 
+-- On SUB reduce production variavel -> ID 
+-- On SOMA reduce production variavel -> ID 
+-- On OULOG reduce production variavel -> ID 
+-- On NOVALINHA reduce production variavel -> ID 
+-- On NOT reduce production variavel -> ID 
+-- On NAOEQUIVALENTE reduce production variavel -> ID 
+-- On MULT reduce production variavel -> ID 
+-- On MOD reduce production variavel -> ID 
+-- On MENORIGUAL reduce production variavel -> ID 
+-- On MENOR reduce production variavel -> ID 
+-- On MAIORIGUAL reduce production variavel -> ID 
+-- On MAIOR reduce production variavel -> ID 
+-- On FPAR reduce production variavel -> ID 
+-- On EQUIVALENTE reduce production variavel -> ID 
+-- On ELOG reduce production variavel -> ID 
+-- On DPONTOS reduce production variavel -> ID 
+-- On DIV reduce production variavel -> ID 
+-- On ATRIB reduce production variavel -> ID 
+
+State 8:
+chamada -> ID APAR . loption(separated_nonempty_list(VIRG,expressao)) FPAR [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+-- On LITSTRING shift to state 2
+-- On LITINT shift to state 3
+-- On LITFLOAT shift to state 4
+-- On LITCHAR shift to state 5
+-- On LITBOOL shift to state 6
+-- On ID shift to state 7
+-- On APAR shift to state 9
+-- On variavel shift to state 10
+-- On separated_nonempty_list(VIRG,expressao) shift to state 41
+-- On loption(separated_nonempty_list(VIRG,expressao)) shift to state 42
+-- On expressao shift to state 44
+-- On chamada shift to state 18
+-- On FPAR reduce production loption(separated_nonempty_list(VIRG,expressao)) -> 
+
+State 9:
+expressao -> APAR . expressao FPAR [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+-- On LITSTRING shift to state 2
+-- On LITINT shift to state 3
+-- On LITFLOAT shift to state 4
+-- On LITCHAR shift to state 5
+-- On LITBOOL shift to state 6
+-- On ID shift to state 7
+-- On APAR shift to state 9
+-- On variavel shift to state 10
+-- On expressao shift to state 11
+-- On chamada shift to state 18
+
+State 10:
+expressao -> variavel . [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+-- On VIRG reduce production expressao -> variavel 
+-- On SUB reduce production expressao -> variavel 
+-- On SOMA reduce production expressao -> variavel 
+-- On OULOG reduce production expressao -> variavel 
+-- On NOVALINHA reduce production expressao -> variavel 
+-- On NOT reduce production expressao -> variavel 
+-- On NAOEQUIVALENTE reduce production expressao -> variavel 
+-- On MULT reduce production expressao -> variavel 
+-- On MOD reduce production expressao -> variavel 
+-- On MENORIGUAL reduce production expressao -> variavel 
+-- On MENOR reduce production expressao -> variavel 
+-- On MAIORIGUAL reduce production expressao -> variavel 
+-- On MAIOR reduce production expressao -> variavel 
+-- On FPAR reduce production expressao -> variavel 
+-- On EQUIVALENTE reduce production expressao -> variavel 
+-- On ELOG reduce production expressao -> variavel 
+-- On DPONTOS reduce production expressao -> variavel 
+-- On DIV reduce production expressao -> variavel 
+
+State 11:
+expressao -> expressao . ELOG expressao [ SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . OULOG expressao [ SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . SOMA expressao [ SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . SUB expressao [ SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . MULT expressao [ SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . DIV expressao [ SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . MOD expressao [ SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . EQUIVALENTE expressao [ SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . NAOEQUIVALENTE expressao [ SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . MENOR expressao [ SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . MAIOR expressao [ SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . MENORIGUAL expressao [ SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . MAIORIGUAL expressao [ SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . NOT [ SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DIV ]
+expressao -> APAR expressao . FPAR [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+-- On SUB shift to state 12
+-- On SOMA shift to state 21
+-- On OULOG shift to state 23
+-- On NOT shift to state 37
+-- On NAOEQUIVALENTE shift to state 25
+-- On MULT shift to state 14
+-- On MOD shift to state 16
+-- On MENORIGUAL shift to state 27
+-- On MENOR shift to state 31
+-- On MAIORIGUAL shift to state 29
+-- On MAIOR shift to state 33
+-- On FPAR shift to state 38
+-- On EQUIVALENTE shift to state 35
+-- On ELOG shift to state 39
+-- On DIV shift to state 19
+
+State 12:
+expressao -> expressao SUB . expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+-- On LITSTRING shift to state 2
+-- On LITINT shift to state 3
+-- On LITFLOAT shift to state 4
+-- On LITCHAR shift to state 5
+-- On LITBOOL shift to state 6
+-- On ID shift to state 7
+-- On APAR shift to state 9
+-- On variavel shift to state 10
+-- On expressao shift to state 13
+-- On chamada shift to state 18
+
+State 13:
+expressao -> expressao . ELOG expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . OULOG expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . SOMA expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . SUB expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao SUB expressao . [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MULT expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . DIV expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MOD expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . EQUIVALENTE expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . NAOEQUIVALENTE expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MENOR expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MAIOR expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MENORIGUAL expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MAIORIGUAL expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . NOT [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+-- On MULT shift to state 14
+-- On MOD shift to state 16
+-- On DIV shift to state 19
+-- On VIRG reduce production expressao -> expressao SUB expressao 
+-- On SUB reduce production expressao -> expressao SUB expressao 
+-- On SOMA reduce production expressao -> expressao SUB expressao 
+-- On OULOG reduce production expressao -> expressao SUB expressao 
+-- On NOVALINHA reduce production expressao -> expressao SUB expressao 
+-- On NOT reduce production expressao -> expressao SUB expressao 
+-- On NAOEQUIVALENTE reduce production expressao -> expressao SUB expressao 
+-- On MENORIGUAL reduce production expressao -> expressao SUB expressao 
+-- On MENOR reduce production expressao -> expressao SUB expressao 
+-- On MAIORIGUAL reduce production expressao -> expressao SUB expressao 
+-- On MAIOR reduce production expressao -> expressao SUB expressao 
+-- On FPAR reduce production expressao -> expressao SUB expressao 
+-- On EQUIVALENTE reduce production expressao -> expressao SUB expressao 
+-- On ELOG reduce production expressao -> expressao SUB expressao 
+-- On DPONTOS reduce production expressao -> expressao SUB expressao 
+
+State 14:
+expressao -> expressao MULT . expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+-- On LITSTRING shift to state 2
+-- On LITINT shift to state 3
+-- On LITFLOAT shift to state 4
+-- On LITCHAR shift to state 5
+-- On LITBOOL shift to state 6
+-- On ID shift to state 7
+-- On APAR shift to state 9
+-- On variavel shift to state 10
+-- On expressao shift to state 15
+-- On chamada shift to state 18
+
+State 15:
+expressao -> expressao . ELOG expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . OULOG expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . SOMA expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . SUB expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MULT expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao MULT expressao . [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . DIV expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MOD expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . EQUIVALENTE expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . NAOEQUIVALENTE expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MENOR expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MAIOR expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MENORIGUAL expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MAIORIGUAL expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . NOT [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+-- On MOD shift to state 16
+-- On DIV shift to state 19
+-- On VIRG reduce production expressao -> expressao MULT expressao 
+-- On SUB reduce production expressao -> expressao MULT expressao 
+-- On SOMA reduce production expressao -> expressao MULT expressao 
+-- On OULOG reduce production expressao -> expressao MULT expressao 
+-- On NOVALINHA reduce production expressao -> expressao MULT expressao 
+-- On NOT reduce production expressao -> expressao MULT expressao 
+-- On NAOEQUIVALENTE reduce production expressao -> expressao MULT expressao 
+-- On MULT reduce production expressao -> expressao MULT expressao 
+-- On MENORIGUAL reduce production expressao -> expressao MULT expressao 
+-- On MENOR reduce production expressao -> expressao MULT expressao 
+-- On MAIORIGUAL reduce production expressao -> expressao MULT expressao 
+-- On MAIOR reduce production expressao -> expressao MULT expressao 
+-- On FPAR reduce production expressao -> expressao MULT expressao 
+-- On EQUIVALENTE reduce production expressao -> expressao MULT expressao 
+-- On ELOG reduce production expressao -> expressao MULT expressao 
+-- On DPONTOS reduce production expressao -> expressao MULT expressao 
+
+State 16:
+expressao -> expressao MOD . expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+-- On LITSTRING shift to state 2
+-- On LITINT shift to state 3
+-- On LITFLOAT shift to state 4
+-- On LITCHAR shift to state 5
+-- On LITBOOL shift to state 6
+-- On ID shift to state 7
+-- On APAR shift to state 9
+-- On variavel shift to state 10
+-- On expressao shift to state 17
+-- On chamada shift to state 18
+
+State 17:
+expressao -> expressao . ELOG expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . OULOG expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . SOMA expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . SUB expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MULT expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . DIV expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MOD expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao MOD expressao . [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . EQUIVALENTE expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . NAOEQUIVALENTE expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MENOR expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MAIOR expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MENORIGUAL expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MAIORIGUAL expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . NOT [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+-- On VIRG reduce production expressao -> expressao MOD expressao 
+-- On SUB reduce production expressao -> expressao MOD expressao 
+-- On SOMA reduce production expressao -> expressao MOD expressao 
+-- On OULOG reduce production expressao -> expressao MOD expressao 
+-- On NOVALINHA reduce production expressao -> expressao MOD expressao 
+-- On NOT reduce production expressao -> expressao MOD expressao 
+-- On NAOEQUIVALENTE reduce production expressao -> expressao MOD expressao 
+-- On MULT reduce production expressao -> expressao MOD expressao 
+-- On MOD reduce production expressao -> expressao MOD expressao 
+-- On MENORIGUAL reduce production expressao -> expressao MOD expressao 
+-- On MENOR reduce production expressao -> expressao MOD expressao 
+-- On MAIORIGUAL reduce production expressao -> expressao MOD expressao 
+-- On MAIOR reduce production expressao -> expressao MOD expressao 
+-- On FPAR reduce production expressao -> expressao MOD expressao 
+-- On EQUIVALENTE reduce production expressao -> expressao MOD expressao 
+-- On ELOG reduce production expressao -> expressao MOD expressao 
+-- On DPONTOS reduce production expressao -> expressao MOD expressao 
+-- On DIV reduce production expressao -> expressao MOD expressao 
+
+State 18:
+expressao -> chamada . [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+-- On VIRG reduce production expressao -> chamada 
+-- On SUB reduce production expressao -> chamada 
+-- On SOMA reduce production expressao -> chamada 
+-- On OULOG reduce production expressao -> chamada 
+-- On NOVALINHA reduce production expressao -> chamada 
+-- On NOT reduce production expressao -> chamada 
+-- On NAOEQUIVALENTE reduce production expressao -> chamada 
+-- On MULT reduce production expressao -> chamada 
+-- On MOD reduce production expressao -> chamada 
+-- On MENORIGUAL reduce production expressao -> chamada 
+-- On MENOR reduce production expressao -> chamada 
+-- On MAIORIGUAL reduce production expressao -> chamada 
+-- On MAIOR reduce production expressao -> chamada 
+-- On FPAR reduce production expressao -> chamada 
+-- On EQUIVALENTE reduce production expressao -> chamada 
+-- On ELOG reduce production expressao -> chamada 
+-- On DPONTOS reduce production expressao -> chamada 
+-- On DIV reduce production expressao -> chamada 
+
+State 19:
+expressao -> expressao DIV . expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+-- On LITSTRING shift to state 2
+-- On LITINT shift to state 3
+-- On LITFLOAT shift to state 4
+-- On LITCHAR shift to state 5
+-- On LITBOOL shift to state 6
+-- On ID shift to state 7
+-- On APAR shift to state 9
+-- On variavel shift to state 10
+-- On expressao shift to state 20
+-- On chamada shift to state 18
+
+State 20:
+expressao -> expressao . ELOG expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . OULOG expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . SOMA expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . SUB expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MULT expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . DIV expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao DIV expressao . [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MOD expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . EQUIVALENTE expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . NAOEQUIVALENTE expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MENOR expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MAIOR expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MENORIGUAL expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MAIORIGUAL expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . NOT [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+-- On MOD shift to state 16
+-- On VIRG reduce production expressao -> expressao DIV expressao 
+-- On SUB reduce production expressao -> expressao DIV expressao 
+-- On SOMA reduce production expressao -> expressao DIV expressao 
+-- On OULOG reduce production expressao -> expressao DIV expressao 
+-- On NOVALINHA reduce production expressao -> expressao DIV expressao 
+-- On NOT reduce production expressao -> expressao DIV expressao 
+-- On NAOEQUIVALENTE reduce production expressao -> expressao DIV expressao 
+-- On MULT reduce production expressao -> expressao DIV expressao 
+-- On MENORIGUAL reduce production expressao -> expressao DIV expressao 
+-- On MENOR reduce production expressao -> expressao DIV expressao 
+-- On MAIORIGUAL reduce production expressao -> expressao DIV expressao 
+-- On MAIOR reduce production expressao -> expressao DIV expressao 
+-- On FPAR reduce production expressao -> expressao DIV expressao 
+-- On EQUIVALENTE reduce production expressao -> expressao DIV expressao 
+-- On ELOG reduce production expressao -> expressao DIV expressao 
+-- On DPONTOS reduce production expressao -> expressao DIV expressao 
+-- On DIV reduce production expressao -> expressao DIV expressao 
+
+State 21:
+expressao -> expressao SOMA . expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+-- On LITSTRING shift to state 2
+-- On LITINT shift to state 3
+-- On LITFLOAT shift to state 4
+-- On LITCHAR shift to state 5
+-- On LITBOOL shift to state 6
+-- On ID shift to state 7
+-- On APAR shift to state 9
+-- On variavel shift to state 10
+-- On expressao shift to state 22
+-- On chamada shift to state 18
+
+State 22:
+expressao -> expressao . ELOG expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . OULOG expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . SOMA expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao SOMA expressao . [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . SUB expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MULT expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . DIV expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MOD expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . EQUIVALENTE expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . NAOEQUIVALENTE expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MENOR expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MAIOR expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MENORIGUAL expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MAIORIGUAL expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . NOT [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+-- On SUB shift to state 12
+-- On MULT shift to state 14
+-- On MOD shift to state 16
+-- On DIV shift to state 19
+-- On VIRG reduce production expressao -> expressao SOMA expressao 
+-- On SOMA reduce production expressao -> expressao SOMA expressao 
+-- On OULOG reduce production expressao -> expressao SOMA expressao 
+-- On NOVALINHA reduce production expressao -> expressao SOMA expressao 
+-- On NOT reduce production expressao -> expressao SOMA expressao 
+-- On NAOEQUIVALENTE reduce production expressao -> expressao SOMA expressao 
+-- On MENORIGUAL reduce production expressao -> expressao SOMA expressao 
+-- On MENOR reduce production expressao -> expressao SOMA expressao 
+-- On MAIORIGUAL reduce production expressao -> expressao SOMA expressao 
+-- On MAIOR reduce production expressao -> expressao SOMA expressao 
+-- On FPAR reduce production expressao -> expressao SOMA expressao 
+-- On EQUIVALENTE reduce production expressao -> expressao SOMA expressao 
+-- On ELOG reduce production expressao -> expressao SOMA expressao 
+-- On DPONTOS reduce production expressao -> expressao SOMA expressao 
+
+State 23:
+expressao -> expressao OULOG . expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+-- On LITSTRING shift to state 2
+-- On LITINT shift to state 3
+-- On LITFLOAT shift to state 4
+-- On LITCHAR shift to state 5
+-- On LITBOOL shift to state 6
+-- On ID shift to state 7
+-- On APAR shift to state 9
+-- On variavel shift to state 10
+-- On expressao shift to state 24
+-- On chamada shift to state 18
+
+State 24:
+expressao -> expressao . ELOG expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . OULOG expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao OULOG expressao . [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . SOMA expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . SUB expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MULT expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . DIV expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MOD expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . EQUIVALENTE expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . NAOEQUIVALENTE expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MENOR expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MAIOR expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MENORIGUAL expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MAIORIGUAL expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . NOT [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+-- On SUB shift to state 12
+-- On SOMA shift to state 21
+-- On NAOEQUIVALENTE shift to state 25
+-- On MULT shift to state 14
+-- On MOD shift to state 16
+-- On MENORIGUAL shift to state 27
+-- On MENOR shift to state 31
+-- On MAIORIGUAL shift to state 29
+-- On MAIOR shift to state 33
+-- On EQUIVALENTE shift to state 35
+-- On DIV shift to state 19
+-- On VIRG reduce production expressao -> expressao OULOG expressao 
+-- On OULOG reduce production expressao -> expressao OULOG expressao 
+-- On NOVALINHA reduce production expressao -> expressao OULOG expressao 
+-- On NOT reduce production expressao -> expressao OULOG expressao 
+-- On FPAR reduce production expressao -> expressao OULOG expressao 
+-- On ELOG reduce production expressao -> expressao OULOG expressao 
+-- On DPONTOS reduce production expressao -> expressao OULOG expressao 
+
+State 25:
+expressao -> expressao NAOEQUIVALENTE . expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+-- On LITSTRING shift to state 2
+-- On LITINT shift to state 3
+-- On LITFLOAT shift to state 4
+-- On LITCHAR shift to state 5
+-- On LITBOOL shift to state 6
+-- On ID shift to state 7
+-- On APAR shift to state 9
+-- On variavel shift to state 10
+-- On expressao shift to state 26
+-- On chamada shift to state 18
+
+State 26:
+expressao -> expressao . ELOG expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . OULOG expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . SOMA expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . SUB expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MULT expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . DIV expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MOD expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . EQUIVALENTE expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . NAOEQUIVALENTE expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao NAOEQUIVALENTE expressao . [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MENOR expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MAIOR expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MENORIGUAL expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MAIORIGUAL expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . NOT [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+-- On SUB shift to state 12
+-- On SOMA shift to state 21
+-- On MULT shift to state 14
+-- On MOD shift to state 16
+-- On MENORIGUAL shift to state 27
+-- On MENOR shift to state 31
+-- On MAIORIGUAL shift to state 29
+-- On MAIOR shift to state 33
+-- On DIV shift to state 19
+-- On VIRG reduce production expressao -> expressao NAOEQUIVALENTE expressao 
+-- On OULOG reduce production expressao -> expressao NAOEQUIVALENTE expressao 
+-- On NOVALINHA reduce production expressao -> expressao NAOEQUIVALENTE expressao 
+-- On NOT reduce production expressao -> expressao NAOEQUIVALENTE expressao 
+-- On NAOEQUIVALENTE reduce production expressao -> expressao NAOEQUIVALENTE expressao 
+-- On FPAR reduce production expressao -> expressao NAOEQUIVALENTE expressao 
+-- On EQUIVALENTE reduce production expressao -> expressao NAOEQUIVALENTE expressao 
+-- On ELOG reduce production expressao -> expressao NAOEQUIVALENTE expressao 
+-- On DPONTOS reduce production expressao -> expressao NAOEQUIVALENTE expressao 
+
+State 27:
+expressao -> expressao MENORIGUAL . expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+-- On LITSTRING shift to state 2
+-- On LITINT shift to state 3
+-- On LITFLOAT shift to state 4
+-- On LITCHAR shift to state 5
+-- On LITBOOL shift to state 6
+-- On ID shift to state 7
+-- On APAR shift to state 9
+-- On variavel shift to state 10
+-- On expressao shift to state 28
+-- On chamada shift to state 18
+
+State 28:
+expressao -> expressao . ELOG expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . OULOG expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . SOMA expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . SUB expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MULT expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . DIV expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MOD expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . EQUIVALENTE expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . NAOEQUIVALENTE expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MENOR expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MAIOR expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MENORIGUAL expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao MENORIGUAL expressao . [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MAIORIGUAL expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . NOT [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+-- On SUB shift to state 12
+-- On SOMA shift to state 21
+-- On MULT shift to state 14
+-- On MOD shift to state 16
+-- On MAIORIGUAL shift to state 29
+-- On DIV shift to state 19
+-- On VIRG reduce production expressao -> expressao MENORIGUAL expressao 
+-- On OULOG reduce production expressao -> expressao MENORIGUAL expressao 
+-- On NOVALINHA reduce production expressao -> expressao MENORIGUAL expressao 
+-- On NOT reduce production expressao -> expressao MENORIGUAL expressao 
+-- On NAOEQUIVALENTE reduce production expressao -> expressao MENORIGUAL expressao 
+-- On MENORIGUAL reduce production expressao -> expressao MENORIGUAL expressao 
+-- On MENOR reduce production expressao -> expressao MENORIGUAL expressao 
+-- On MAIOR reduce production expressao -> expressao MENORIGUAL expressao 
+-- On FPAR reduce production expressao -> expressao MENORIGUAL expressao 
+-- On EQUIVALENTE reduce production expressao -> expressao MENORIGUAL expressao 
+-- On ELOG reduce production expressao -> expressao MENORIGUAL expressao 
+-- On DPONTOS reduce production expressao -> expressao MENORIGUAL expressao 
+
+State 29:
+expressao -> expressao MAIORIGUAL . expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+-- On LITSTRING shift to state 2
+-- On LITINT shift to state 3
+-- On LITFLOAT shift to state 4
+-- On LITCHAR shift to state 5
+-- On LITBOOL shift to state 6
+-- On ID shift to state 7
+-- On APAR shift to state 9
+-- On variavel shift to state 10
+-- On expressao shift to state 30
+-- On chamada shift to state 18
+
+State 30:
+expressao -> expressao . ELOG expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . OULOG expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . SOMA expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . SUB expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MULT expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . DIV expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MOD expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . EQUIVALENTE expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . NAOEQUIVALENTE expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MENOR expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MAIOR expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MENORIGUAL expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MAIORIGUAL expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao MAIORIGUAL expressao . [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . NOT [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+-- On SUB shift to state 12
+-- On SOMA shift to state 21
+-- On MULT shift to state 14
+-- On MOD shift to state 16
+-- On DIV shift to state 19
+-- On VIRG reduce production expressao -> expressao MAIORIGUAL expressao 
+-- On OULOG reduce production expressao -> expressao MAIORIGUAL expressao 
+-- On NOVALINHA reduce production expressao -> expressao MAIORIGUAL expressao 
+-- On NOT reduce production expressao -> expressao MAIORIGUAL expressao 
+-- On NAOEQUIVALENTE reduce production expressao -> expressao MAIORIGUAL expressao 
+-- On MENORIGUAL reduce production expressao -> expressao MAIORIGUAL expressao 
+-- On MENOR reduce production expressao -> expressao MAIORIGUAL expressao 
+-- On MAIORIGUAL reduce production expressao -> expressao MAIORIGUAL expressao 
+-- On MAIOR reduce production expressao -> expressao MAIORIGUAL expressao 
+-- On FPAR reduce production expressao -> expressao MAIORIGUAL expressao 
+-- On EQUIVALENTE reduce production expressao -> expressao MAIORIGUAL expressao 
+-- On ELOG reduce production expressao -> expressao MAIORIGUAL expressao 
+-- On DPONTOS reduce production expressao -> expressao MAIORIGUAL expressao 
+
+State 31:
+expressao -> expressao MENOR . expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+-- On LITSTRING shift to state 2
+-- On LITINT shift to state 3
+-- On LITFLOAT shift to state 4
+-- On LITCHAR shift to state 5
+-- On LITBOOL shift to state 6
+-- On ID shift to state 7
+-- On APAR shift to state 9
+-- On variavel shift to state 10
+-- On expressao shift to state 32
+-- On chamada shift to state 18
+
+State 32:
+expressao -> expressao . ELOG expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . OULOG expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . SOMA expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . SUB expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MULT expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . DIV expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MOD expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . EQUIVALENTE expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . NAOEQUIVALENTE expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MENOR expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao MENOR expressao . [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MAIOR expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MENORIGUAL expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MAIORIGUAL expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . NOT [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+-- On SUB shift to state 12
+-- On SOMA shift to state 21
+-- On MULT shift to state 14
+-- On MOD shift to state 16
+-- On MENORIGUAL shift to state 27
+-- On MAIORIGUAL shift to state 29
+-- On MAIOR shift to state 33
+-- On DIV shift to state 19
+-- On VIRG reduce production expressao -> expressao MENOR expressao 
+-- On OULOG reduce production expressao -> expressao MENOR expressao 
+-- On NOVALINHA reduce production expressao -> expressao MENOR expressao 
+-- On NOT reduce production expressao -> expressao MENOR expressao 
+-- On NAOEQUIVALENTE reduce production expressao -> expressao MENOR expressao 
+-- On MENOR reduce production expressao -> expressao MENOR expressao 
+-- On FPAR reduce production expressao -> expressao MENOR expressao 
+-- On EQUIVALENTE reduce production expressao -> expressao MENOR expressao 
+-- On ELOG reduce production expressao -> expressao MENOR expressao 
+-- On DPONTOS reduce production expressao -> expressao MENOR expressao 
+
+State 33:
+expressao -> expressao MAIOR . expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+-- On LITSTRING shift to state 2
+-- On LITINT shift to state 3
+-- On LITFLOAT shift to state 4
+-- On LITCHAR shift to state 5
+-- On LITBOOL shift to state 6
+-- On ID shift to state 7
+-- On APAR shift to state 9
+-- On variavel shift to state 10
+-- On expressao shift to state 34
+-- On chamada shift to state 18
+
+State 34:
+expressao -> expressao . ELOG expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . OULOG expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . SOMA expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . SUB expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MULT expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . DIV expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MOD expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . EQUIVALENTE expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . NAOEQUIVALENTE expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MENOR expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MAIOR expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao MAIOR expressao . [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MENORIGUAL expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MAIORIGUAL expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . NOT [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+-- On SUB shift to state 12
+-- On SOMA shift to state 21
+-- On MULT shift to state 14
+-- On MOD shift to state 16
+-- On MENORIGUAL shift to state 27
+-- On MAIORIGUAL shift to state 29
+-- On DIV shift to state 19
+-- On VIRG reduce production expressao -> expressao MAIOR expressao 
+-- On OULOG reduce production expressao -> expressao MAIOR expressao 
+-- On NOVALINHA reduce production expressao -> expressao MAIOR expressao 
+-- On NOT reduce production expressao -> expressao MAIOR expressao 
+-- On NAOEQUIVALENTE reduce production expressao -> expressao MAIOR expressao 
+-- On MENOR reduce production expressao -> expressao MAIOR expressao 
+-- On MAIOR reduce production expressao -> expressao MAIOR expressao 
+-- On FPAR reduce production expressao -> expressao MAIOR expressao 
+-- On EQUIVALENTE reduce production expressao -> expressao MAIOR expressao 
+-- On ELOG reduce production expressao -> expressao MAIOR expressao 
+-- On DPONTOS reduce production expressao -> expressao MAIOR expressao 
+
+State 35:
+expressao -> expressao EQUIVALENTE . expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+-- On LITSTRING shift to state 2
+-- On LITINT shift to state 3
+-- On LITFLOAT shift to state 4
+-- On LITCHAR shift to state 5
+-- On LITBOOL shift to state 6
+-- On ID shift to state 7
+-- On APAR shift to state 9
+-- On variavel shift to state 10
+-- On expressao shift to state 36
+-- On chamada shift to state 18
+
+State 36:
+expressao -> expressao . ELOG expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . OULOG expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . SOMA expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . SUB expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MULT expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . DIV expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MOD expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . EQUIVALENTE expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao EQUIVALENTE expressao . [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . NAOEQUIVALENTE expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MENOR expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MAIOR expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MENORIGUAL expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MAIORIGUAL expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . NOT [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+-- On SUB shift to state 12
+-- On SOMA shift to state 21
+-- On NAOEQUIVALENTE shift to state 25
+-- On MULT shift to state 14
+-- On MOD shift to state 16
+-- On MENORIGUAL shift to state 27
+-- On MENOR shift to state 31
+-- On MAIORIGUAL shift to state 29
+-- On MAIOR shift to state 33
+-- On DIV shift to state 19
+-- On VIRG reduce production expressao -> expressao EQUIVALENTE expressao 
+-- On OULOG reduce production expressao -> expressao EQUIVALENTE expressao 
+-- On NOVALINHA reduce production expressao -> expressao EQUIVALENTE expressao 
+-- On NOT reduce production expressao -> expressao EQUIVALENTE expressao 
+-- On FPAR reduce production expressao -> expressao EQUIVALENTE expressao 
+-- On EQUIVALENTE reduce production expressao -> expressao EQUIVALENTE expressao 
+-- On ELOG reduce production expressao -> expressao EQUIVALENTE expressao 
+-- On DPONTOS reduce production expressao -> expressao EQUIVALENTE expressao 
+
+State 37:
+expressao -> expressao NOT . [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+-- On VIRG reduce production expressao -> expressao NOT 
+-- On SUB reduce production expressao -> expressao NOT 
+-- On SOMA reduce production expressao -> expressao NOT 
+-- On OULOG reduce production expressao -> expressao NOT 
+-- On NOVALINHA reduce production expressao -> expressao NOT 
+-- On NOT reduce production expressao -> expressao NOT 
+-- On NAOEQUIVALENTE reduce production expressao -> expressao NOT 
+-- On MULT reduce production expressao -> expressao NOT 
+-- On MOD reduce production expressao -> expressao NOT 
+-- On MENORIGUAL reduce production expressao -> expressao NOT 
+-- On MENOR reduce production expressao -> expressao NOT 
+-- On MAIORIGUAL reduce production expressao -> expressao NOT 
+-- On MAIOR reduce production expressao -> expressao NOT 
+-- On FPAR reduce production expressao -> expressao NOT 
+-- On EQUIVALENTE reduce production expressao -> expressao NOT 
+-- On ELOG reduce production expressao -> expressao NOT 
+-- On DPONTOS reduce production expressao -> expressao NOT 
+-- On DIV reduce production expressao -> expressao NOT 
+
+State 38:
+expressao -> APAR expressao FPAR . [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+-- On VIRG reduce production expressao -> APAR expressao FPAR 
+-- On SUB reduce production expressao -> APAR expressao FPAR 
+-- On SOMA reduce production expressao -> APAR expressao FPAR 
+-- On OULOG reduce production expressao -> APAR expressao FPAR 
+-- On NOVALINHA reduce production expressao -> APAR expressao FPAR 
+-- On NOT reduce production expressao -> APAR expressao FPAR 
+-- On NAOEQUIVALENTE reduce production expressao -> APAR expressao FPAR 
+-- On MULT reduce production expressao -> APAR expressao FPAR 
+-- On MOD reduce production expressao -> APAR expressao FPAR 
+-- On MENORIGUAL reduce production expressao -> APAR expressao FPAR 
+-- On MENOR reduce production expressao -> APAR expressao FPAR 
+-- On MAIORIGUAL reduce production expressao -> APAR expressao FPAR 
+-- On MAIOR reduce production expressao -> APAR expressao FPAR 
+-- On FPAR reduce production expressao -> APAR expressao FPAR 
+-- On EQUIVALENTE reduce production expressao -> APAR expressao FPAR 
+-- On ELOG reduce production expressao -> APAR expressao FPAR 
+-- On DPONTOS reduce production expressao -> APAR expressao FPAR 
+-- On DIV reduce production expressao -> APAR expressao FPAR 
+
+State 39:
+expressao -> expressao ELOG . expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+-- On LITSTRING shift to state 2
+-- On LITINT shift to state 3
+-- On LITFLOAT shift to state 4
+-- On LITCHAR shift to state 5
+-- On LITBOOL shift to state 6
+-- On ID shift to state 7
+-- On APAR shift to state 9
+-- On variavel shift to state 10
+-- On expressao shift to state 40
+-- On chamada shift to state 18
+
+State 40:
+expressao -> expressao . ELOG expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao ELOG expressao . [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . OULOG expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . SOMA expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . SUB expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MULT expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . DIV expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MOD expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . EQUIVALENTE expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . NAOEQUIVALENTE expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MENOR expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MAIOR expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MENORIGUAL expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MAIORIGUAL expressao [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . NOT [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+-- On SUB shift to state 12
+-- On SOMA shift to state 21
+-- On OULOG shift to state 23
+-- On NAOEQUIVALENTE shift to state 25
+-- On MULT shift to state 14
+-- On MOD shift to state 16
+-- On MENORIGUAL shift to state 27
+-- On MENOR shift to state 31
+-- On MAIORIGUAL shift to state 29
+-- On MAIOR shift to state 33
+-- On EQUIVALENTE shift to state 35
+-- On DIV shift to state 19
+-- On VIRG reduce production expressao -> expressao ELOG expressao 
+-- On NOVALINHA reduce production expressao -> expressao ELOG expressao 
+-- On NOT reduce production expressao -> expressao ELOG expressao 
+-- On FPAR reduce production expressao -> expressao ELOG expressao 
+-- On ELOG reduce production expressao -> expressao ELOG expressao 
+-- On DPONTOS reduce production expressao -> expressao ELOG expressao 
+
+State 41:
+loption(separated_nonempty_list(VIRG,expressao)) -> separated_nonempty_list(VIRG,expressao) . [ FPAR ]
+-- On FPAR reduce production loption(separated_nonempty_list(VIRG,expressao)) -> separated_nonempty_list(VIRG,expressao) 
+
+State 42:
+chamada -> ID APAR loption(separated_nonempty_list(VIRG,expressao)) . FPAR [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+-- On FPAR shift to state 43
+
+State 43:
+chamada -> ID APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR . [ VIRG SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DPONTOS DIV ]
+-- On VIRG reduce production chamada -> ID APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR 
+-- On SUB reduce production chamada -> ID APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR 
+-- On SOMA reduce production chamada -> ID APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR 
+-- On OULOG reduce production chamada -> ID APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR 
+-- On NOVALINHA reduce production chamada -> ID APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR 
+-- On NOT reduce production chamada -> ID APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR 
+-- On NAOEQUIVALENTE reduce production chamada -> ID APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR 
+-- On MULT reduce production chamada -> ID APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR 
+-- On MOD reduce production chamada -> ID APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR 
+-- On MENORIGUAL reduce production chamada -> ID APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR 
+-- On MENOR reduce production chamada -> ID APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR 
+-- On MAIORIGUAL reduce production chamada -> ID APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR 
+-- On MAIOR reduce production chamada -> ID APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR 
+-- On FPAR reduce production chamada -> ID APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR 
+-- On EQUIVALENTE reduce production chamada -> ID APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR 
+-- On ELOG reduce production chamada -> ID APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR 
+-- On DPONTOS reduce production chamada -> ID APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR 
+-- On DIV reduce production chamada -> ID APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR 
+
+State 44:
+expressao -> expressao . ELOG expressao [ VIRG SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . OULOG expressao [ VIRG SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . SOMA expressao [ VIRG SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . SUB expressao [ VIRG SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . MULT expressao [ VIRG SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . DIV expressao [ VIRG SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . MOD expressao [ VIRG SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . EQUIVALENTE expressao [ VIRG SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . NAOEQUIVALENTE expressao [ VIRG SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . MENOR expressao [ VIRG SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . MAIOR expressao [ VIRG SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . MENORIGUAL expressao [ VIRG SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . MAIORIGUAL expressao [ VIRG SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . NOT [ VIRG SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DIV ]
+separated_nonempty_list(VIRG,expressao) -> expressao . [ FPAR ]
+separated_nonempty_list(VIRG,expressao) -> expressao . VIRG separated_nonempty_list(VIRG,expressao) [ FPAR ]
+-- On VIRG shift to state 45
+-- On SUB shift to state 12
+-- On SOMA shift to state 21
+-- On OULOG shift to state 23
+-- On NOT shift to state 37
+-- On NAOEQUIVALENTE shift to state 25
+-- On MULT shift to state 14
+-- On MOD shift to state 16
+-- On MENORIGUAL shift to state 27
+-- On MENOR shift to state 31
+-- On MAIORIGUAL shift to state 29
+-- On MAIOR shift to state 33
+-- On EQUIVALENTE shift to state 35
+-- On ELOG shift to state 39
+-- On DIV shift to state 19
+-- On FPAR reduce production separated_nonempty_list(VIRG,expressao) -> expressao 
+
+State 45:
+separated_nonempty_list(VIRG,expressao) -> expressao VIRG . separated_nonempty_list(VIRG,expressao) [ FPAR ]
+-- On LITSTRING shift to state 2
+-- On LITINT shift to state 3
+-- On LITFLOAT shift to state 4
+-- On LITCHAR shift to state 5
+-- On LITBOOL shift to state 6
+-- On ID shift to state 7
+-- On APAR shift to state 9
+-- On variavel shift to state 10
+-- On separated_nonempty_list(VIRG,expressao) shift to state 46
+-- On expressao shift to state 44
+-- On chamada shift to state 18
+
+State 46:
+separated_nonempty_list(VIRG,expressao) -> expressao VIRG separated_nonempty_list(VIRG,expressao) . [ FPAR ]
+-- On FPAR reduce production separated_nonempty_list(VIRG,expressao) -> expressao VIRG separated_nonempty_list(VIRG,expressao) 
+
+State 47:
+comando_while -> WHILE expressao . DPONTOS NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+expressao -> expressao . ELOG expressao [ SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . OULOG expressao [ SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . SOMA expressao [ SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . SUB expressao [ SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MULT expressao [ SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . DIV expressao [ SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MOD expressao [ SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . EQUIVALENTE expressao [ SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . NAOEQUIVALENTE expressao [ SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MENOR expressao [ SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MAIOR expressao [ SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MENORIGUAL expressao [ SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MAIORIGUAL expressao [ SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . NOT [ SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DPONTOS DIV ]
+-- On SUB shift to state 12
+-- On SOMA shift to state 21
+-- On OULOG shift to state 23
+-- On NOT shift to state 37
+-- On NAOEQUIVALENTE shift to state 25
+-- On MULT shift to state 14
+-- On MOD shift to state 16
+-- On MENORIGUAL shift to state 27
+-- On MENOR shift to state 31
+-- On MAIORIGUAL shift to state 29
+-- On MAIOR shift to state 33
+-- On EQUIVALENTE shift to state 35
+-- On ELOG shift to state 39
+-- On DPONTOS shift to state 48
+-- On DIV shift to state 19
+
+State 48:
+comando_while -> WHILE expressao DPONTOS . NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+-- On NOVALINHA shift to state 49
+
+State 49:
+comando_while -> WHILE expressao DPONTOS NOVALINHA . INDENTA comandos DEDENTA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+-- On INDENTA shift to state 50
+
+State 50:
+comando_while -> WHILE expressao DPONTOS NOVALINHA INDENTA . comandos DEDENTA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+-- On WHILE shift to state 1
+-- On RETURN shift to state 51
+-- On PRINT shift to state 55
+-- On LITSTRING shift to state 2
+-- On LITINT shift to state 3
+-- On LITFLOAT shift to state 4
+-- On LITCHAR shift to state 5
+-- On LITBOOL shift to state 6
+-- On IF shift to state 60
+-- On ID shift to state 7
+-- On FOR shift to state 65
+-- On APAR shift to state 9
+-- On variavel shift to state 78
+-- On parametro shift to state 98
+-- On nonempty_list(comando) shift to state 111
+-- On expressao shift to state 112
+-- On comandos shift to state 161
+-- On comando_while shift to state 116
+-- On comando_se shift to state 117
+-- On comando_retorno shift to state 118
+-- On comando_print shift to state 119
+-- On comando_instancia shift to state 120
+-- On comando_input_dec_atr shift to state 121
+-- On comando_input_atr shift to state 122
+-- On comando_for_dec shift to state 123
+-- On comando_for shift to state 124
+-- On comando_declara shift to state 125
+-- On comando_chamada shift to state 126
+-- On comando_atribuicao shift to state 127
+-- On comando shift to state 128
+-- On chamada shift to state 18
+
+State 51:
+comando_retorno -> RETURN . option(expressao) NOVALINHA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+-- On LITSTRING shift to state 2
+-- On LITINT shift to state 3
+-- On LITFLOAT shift to state 4
+-- On LITCHAR shift to state 5
+-- On LITBOOL shift to state 6
+-- On ID shift to state 7
+-- On APAR shift to state 9
+-- On variavel shift to state 10
+-- On option(expressao) shift to state 52
+-- On expressao shift to state 54
+-- On chamada shift to state 18
+-- On NOVALINHA reduce production option(expressao) -> 
+
+State 52:
+comando_retorno -> RETURN option(expressao) . NOVALINHA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+-- On NOVALINHA shift to state 53
+
+State 53:
+comando_retorno -> RETURN option(expressao) NOVALINHA . [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+-- On WHILE reduce production comando_retorno -> RETURN option(expressao) NOVALINHA 
+-- On RETURN reduce production comando_retorno -> RETURN option(expressao) NOVALINHA 
+-- On PRINT reduce production comando_retorno -> RETURN option(expressao) NOVALINHA 
+-- On LITSTRING reduce production comando_retorno -> RETURN option(expressao) NOVALINHA 
+-- On LITINT reduce production comando_retorno -> RETURN option(expressao) NOVALINHA 
+-- On LITFLOAT reduce production comando_retorno -> RETURN option(expressao) NOVALINHA 
+-- On LITCHAR reduce production comando_retorno -> RETURN option(expressao) NOVALINHA 
+-- On LITBOOL reduce production comando_retorno -> RETURN option(expressao) NOVALINHA 
+-- On IF reduce production comando_retorno -> RETURN option(expressao) NOVALINHA 
+-- On ID reduce production comando_retorno -> RETURN option(expressao) NOVALINHA 
+-- On FOR reduce production comando_retorno -> RETURN option(expressao) NOVALINHA 
+-- On EOF reduce production comando_retorno -> RETURN option(expressao) NOVALINHA 
+-- On DEF reduce production comando_retorno -> RETURN option(expressao) NOVALINHA 
+-- On DEDENTA reduce production comando_retorno -> RETURN option(expressao) NOVALINHA 
+-- On APAR reduce production comando_retorno -> RETURN option(expressao) NOVALINHA 
+
+State 54:
+expressao -> expressao . ELOG expressao [ SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . OULOG expressao [ SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . SOMA expressao [ SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . SUB expressao [ SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . MULT expressao [ SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . DIV expressao [ SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . MOD expressao [ SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . EQUIVALENTE expressao [ SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . NAOEQUIVALENTE expressao [ SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . MENOR expressao [ SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . MAIOR expressao [ SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . MENORIGUAL expressao [ SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . MAIORIGUAL expressao [ SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . NOT [ SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DIV ]
+option(expressao) -> expressao . [ NOVALINHA ]
+-- On SUB shift to state 12
+-- On SOMA shift to state 21
+-- On OULOG shift to state 23
+-- On NOT shift to state 37
+-- On NAOEQUIVALENTE shift to state 25
+-- On MULT shift to state 14
+-- On MOD shift to state 16
+-- On MENORIGUAL shift to state 27
+-- On MENOR shift to state 31
+-- On MAIORIGUAL shift to state 29
+-- On MAIOR shift to state 33
+-- On EQUIVALENTE shift to state 35
+-- On ELOG shift to state 39
+-- On DIV shift to state 19
+-- On NOVALINHA reduce production option(expressao) -> expressao 
+
+State 55:
+comando_print -> PRINT . APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR NOVALINHA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+-- On APAR shift to state 56
+
+State 56:
+comando_print -> PRINT APAR . loption(separated_nonempty_list(VIRG,expressao)) FPAR NOVALINHA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+-- On LITSTRING shift to state 2
+-- On LITINT shift to state 3
+-- On LITFLOAT shift to state 4
+-- On LITCHAR shift to state 5
+-- On LITBOOL shift to state 6
+-- On ID shift to state 7
+-- On APAR shift to state 9
+-- On variavel shift to state 10
+-- On separated_nonempty_list(VIRG,expressao) shift to state 41
+-- On loption(separated_nonempty_list(VIRG,expressao)) shift to state 57
+-- On expressao shift to state 44
+-- On chamada shift to state 18
+-- On FPAR reduce production loption(separated_nonempty_list(VIRG,expressao)) -> 
+
+State 57:
+comando_print -> PRINT APAR loption(separated_nonempty_list(VIRG,expressao)) . FPAR NOVALINHA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+-- On FPAR shift to state 58
+
+State 58:
+comando_print -> PRINT APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR . NOVALINHA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+-- On NOVALINHA shift to state 59
+
+State 59:
+comando_print -> PRINT APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR NOVALINHA . [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+-- On WHILE reduce production comando_print -> PRINT APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR NOVALINHA 
+-- On RETURN reduce production comando_print -> PRINT APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR NOVALINHA 
+-- On PRINT reduce production comando_print -> PRINT APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR NOVALINHA 
+-- On LITSTRING reduce production comando_print -> PRINT APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR NOVALINHA 
+-- On LITINT reduce production comando_print -> PRINT APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR NOVALINHA 
+-- On LITFLOAT reduce production comando_print -> PRINT APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR NOVALINHA 
+-- On LITCHAR reduce production comando_print -> PRINT APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR NOVALINHA 
+-- On LITBOOL reduce production comando_print -> PRINT APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR NOVALINHA 
+-- On IF reduce production comando_print -> PRINT APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR NOVALINHA 
+-- On ID reduce production comando_print -> PRINT APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR NOVALINHA 
+-- On FOR reduce production comando_print -> PRINT APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR NOVALINHA 
+-- On EOF reduce production comando_print -> PRINT APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR NOVALINHA 
+-- On DEF reduce production comando_print -> PRINT APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR NOVALINHA 
+-- On DEDENTA reduce production comando_print -> PRINT APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR NOVALINHA 
+-- On APAR reduce production comando_print -> PRINT APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR NOVALINHA 
+
+State 60:
+comando_se -> IF . expressao DPONTOS NOVALINHA INDENTA comandos DEDENTA option(comando_se2) [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+-- On LITSTRING shift to state 2
+-- On LITINT shift to state 3
+-- On LITFLOAT shift to state 4
+-- On LITCHAR shift to state 5
+-- On LITBOOL shift to state 6
+-- On ID shift to state 7
+-- On APAR shift to state 9
+-- On variavel shift to state 10
+-- On expressao shift to state 61
+-- On chamada shift to state 18
+
+State 61:
+comando_se -> IF expressao . DPONTOS NOVALINHA INDENTA comandos DEDENTA option(comando_se2) [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+expressao -> expressao . ELOG expressao [ SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . OULOG expressao [ SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . SOMA expressao [ SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . SUB expressao [ SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MULT expressao [ SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . DIV expressao [ SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MOD expressao [ SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . EQUIVALENTE expressao [ SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . NAOEQUIVALENTE expressao [ SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MENOR expressao [ SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MAIOR expressao [ SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MENORIGUAL expressao [ SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MAIORIGUAL expressao [ SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . NOT [ SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DPONTOS DIV ]
+-- On SUB shift to state 12
+-- On SOMA shift to state 21
+-- On OULOG shift to state 23
+-- On NOT shift to state 37
+-- On NAOEQUIVALENTE shift to state 25
+-- On MULT shift to state 14
+-- On MOD shift to state 16
+-- On MENORIGUAL shift to state 27
+-- On MENOR shift to state 31
+-- On MAIORIGUAL shift to state 29
+-- On MAIOR shift to state 33
+-- On EQUIVALENTE shift to state 35
+-- On ELOG shift to state 39
+-- On DPONTOS shift to state 62
+-- On DIV shift to state 19
+
+State 62:
+comando_se -> IF expressao DPONTOS . NOVALINHA INDENTA comandos DEDENTA option(comando_se2) [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+-- On NOVALINHA shift to state 63
+
+State 63:
+comando_se -> IF expressao DPONTOS NOVALINHA . INDENTA comandos DEDENTA option(comando_se2) [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+-- On INDENTA shift to state 64
+
+State 64:
+comando_se -> IF expressao DPONTOS NOVALINHA INDENTA . comandos DEDENTA option(comando_se2) [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+-- On WHILE shift to state 1
+-- On RETURN shift to state 51
+-- On PRINT shift to state 55
+-- On LITSTRING shift to state 2
+-- On LITINT shift to state 3
+-- On LITFLOAT shift to state 4
+-- On LITCHAR shift to state 5
+-- On LITBOOL shift to state 6
+-- On IF shift to state 60
+-- On ID shift to state 7
+-- On FOR shift to state 65
+-- On APAR shift to state 9
+-- On variavel shift to state 78
+-- On parametro shift to state 98
+-- On nonempty_list(comando) shift to state 111
+-- On expressao shift to state 112
+-- On comandos shift to state 143
+-- On comando_while shift to state 116
+-- On comando_se shift to state 117
+-- On comando_retorno shift to state 118
+-- On comando_print shift to state 119
+-- On comando_instancia shift to state 120
+-- On comando_input_dec_atr shift to state 121
+-- On comando_input_atr shift to state 122
+-- On comando_for_dec shift to state 123
+-- On comando_for shift to state 124
+-- On comando_declara shift to state 125
+-- On comando_chamada shift to state 126
+-- On comando_atribuicao shift to state 127
+-- On comando shift to state 128
+-- On chamada shift to state 18
+
+State 65:
+comando_for -> FOR . variavel IN RANGE APAR expressao VIRG expressao FPAR DPONTOS NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+comando_for_dec -> FOR . parametro IN RANGE APAR expressao VIRG expressao FPAR DPONTOS NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+-- On ID shift to state 66
+-- On variavel shift to state 67
+-- On parametro shift to state 130
+
+State 66:
+variavel -> ID . [ IN DPONTOS APAR ]
+-- On IN reduce production variavel -> ID 
+-- On DPONTOS reduce production variavel -> ID 
+-- On APAR reduce production variavel -> ID 
+
+State 67:
+comando_for -> FOR variavel . IN RANGE APAR expressao VIRG expressao FPAR DPONTOS NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+parametro -> variavel . DPONTOS tipo [ IN ]
+-- On IN shift to state 68
+-- On DPONTOS shift to state 79
+
+State 68:
+comando_for -> FOR variavel IN . RANGE APAR expressao VIRG expressao FPAR DPONTOS NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+-- On RANGE shift to state 69
+
+State 69:
+comando_for -> FOR variavel IN RANGE . APAR expressao VIRG expressao FPAR DPONTOS NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+-- On APAR shift to state 70
+
+State 70:
+comando_for -> FOR variavel IN RANGE APAR . expressao VIRG expressao FPAR DPONTOS NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+-- On LITSTRING shift to state 2
+-- On LITINT shift to state 3
+-- On LITFLOAT shift to state 4
+-- On LITCHAR shift to state 5
+-- On LITBOOL shift to state 6
+-- On ID shift to state 7
+-- On APAR shift to state 9
+-- On variavel shift to state 10
+-- On expressao shift to state 71
+-- On chamada shift to state 18
+
+State 71:
+comando_for -> FOR variavel IN RANGE APAR expressao . VIRG expressao FPAR DPONTOS NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+expressao -> expressao . ELOG expressao [ VIRG SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . OULOG expressao [ VIRG SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . SOMA expressao [ VIRG SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . SUB expressao [ VIRG SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . MULT expressao [ VIRG SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . DIV expressao [ VIRG SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . MOD expressao [ VIRG SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . EQUIVALENTE expressao [ VIRG SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . NAOEQUIVALENTE expressao [ VIRG SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . MENOR expressao [ VIRG SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . MAIOR expressao [ VIRG SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . MENORIGUAL expressao [ VIRG SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . MAIORIGUAL expressao [ VIRG SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . NOT [ VIRG SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DIV ]
+-- On VIRG shift to state 72
+-- On SUB shift to state 12
+-- On SOMA shift to state 21
+-- On OULOG shift to state 23
+-- On NOT shift to state 37
+-- On NAOEQUIVALENTE shift to state 25
+-- On MULT shift to state 14
+-- On MOD shift to state 16
+-- On MENORIGUAL shift to state 27
+-- On MENOR shift to state 31
+-- On MAIORIGUAL shift to state 29
+-- On MAIOR shift to state 33
+-- On EQUIVALENTE shift to state 35
+-- On ELOG shift to state 39
+-- On DIV shift to state 19
+
+State 72:
+comando_for -> FOR variavel IN RANGE APAR expressao VIRG . expressao FPAR DPONTOS NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+-- On LITSTRING shift to state 2
+-- On LITINT shift to state 3
+-- On LITFLOAT shift to state 4
+-- On LITCHAR shift to state 5
+-- On LITBOOL shift to state 6
+-- On ID shift to state 7
+-- On APAR shift to state 9
+-- On variavel shift to state 10
+-- On expressao shift to state 73
+-- On chamada shift to state 18
+
+State 73:
+comando_for -> FOR variavel IN RANGE APAR expressao VIRG expressao . FPAR DPONTOS NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+expressao -> expressao . ELOG expressao [ SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . OULOG expressao [ SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . SOMA expressao [ SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . SUB expressao [ SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . MULT expressao [ SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . DIV expressao [ SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . MOD expressao [ SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . EQUIVALENTE expressao [ SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . NAOEQUIVALENTE expressao [ SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . MENOR expressao [ SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . MAIOR expressao [ SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . MENORIGUAL expressao [ SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . MAIORIGUAL expressao [ SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . NOT [ SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DIV ]
+-- On SUB shift to state 12
+-- On SOMA shift to state 21
+-- On OULOG shift to state 23
+-- On NOT shift to state 37
+-- On NAOEQUIVALENTE shift to state 25
+-- On MULT shift to state 14
+-- On MOD shift to state 16
+-- On MENORIGUAL shift to state 27
+-- On MENOR shift to state 31
+-- On MAIORIGUAL shift to state 29
+-- On MAIOR shift to state 33
+-- On FPAR shift to state 74
+-- On EQUIVALENTE shift to state 35
+-- On ELOG shift to state 39
+-- On DIV shift to state 19
+
+State 74:
+comando_for -> FOR variavel IN RANGE APAR expressao VIRG expressao FPAR . DPONTOS NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+-- On DPONTOS shift to state 75
+
+State 75:
+comando_for -> FOR variavel IN RANGE APAR expressao VIRG expressao FPAR DPONTOS . NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+-- On NOVALINHA shift to state 76
+
+State 76:
+comando_for -> FOR variavel IN RANGE APAR expressao VIRG expressao FPAR DPONTOS NOVALINHA . INDENTA comandos DEDENTA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+-- On INDENTA shift to state 77
+
+State 77:
+comando_for -> FOR variavel IN RANGE APAR expressao VIRG expressao FPAR DPONTOS NOVALINHA INDENTA . comandos DEDENTA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+-- On WHILE shift to state 1
+-- On RETURN shift to state 51
+-- On PRINT shift to state 55
+-- On LITSTRING shift to state 2
+-- On LITINT shift to state 3
+-- On LITFLOAT shift to state 4
+-- On LITCHAR shift to state 5
+-- On LITBOOL shift to state 6
+-- On IF shift to state 60
+-- On ID shift to state 7
+-- On FOR shift to state 65
+-- On APAR shift to state 9
+-- On variavel shift to state 78
+-- On parametro shift to state 98
+-- On nonempty_list(comando) shift to state 111
+-- On expressao shift to state 112
+-- On comandos shift to state 114
+-- On comando_while shift to state 116
+-- On comando_se shift to state 117
+-- On comando_retorno shift to state 118
+-- On comando_print shift to state 119
+-- On comando_instancia shift to state 120
+-- On comando_input_dec_atr shift to state 121
+-- On comando_input_atr shift to state 122
+-- On comando_for_dec shift to state 123
+-- On comando_for shift to state 124
+-- On comando_declara shift to state 125
+-- On comando_chamada shift to state 126
+-- On comando_atribuicao shift to state 127
+-- On comando shift to state 128
+-- On chamada shift to state 18
+
+State 78:
+comando_atribuicao -> variavel . ATRIB expressao NOVALINHA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+comando_input_atr -> variavel . ATRIB tipo APAR INPUT APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR FPAR NOVALINHA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+expressao -> variavel . [ SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DIV ]
+parametro -> variavel . DPONTOS tipo [ NOVALINHA ATRIB ]
+-- On DPONTOS shift to state 79
+-- On ATRIB shift to state 87
+-- On SUB reduce production expressao -> variavel 
+-- On SOMA reduce production expressao -> variavel 
+-- On OULOG reduce production expressao -> variavel 
+-- On NOVALINHA reduce production expressao -> variavel 
+-- On NOT reduce production expressao -> variavel 
+-- On NAOEQUIVALENTE reduce production expressao -> variavel 
+-- On MULT reduce production expressao -> variavel 
+-- On MOD reduce production expressao -> variavel 
+-- On MENORIGUAL reduce production expressao -> variavel 
+-- On MENOR reduce production expressao -> variavel 
+-- On MAIORIGUAL reduce production expressao -> variavel 
+-- On MAIOR reduce production expressao -> variavel 
+-- On EQUIVALENTE reduce production expressao -> variavel 
+-- On ELOG reduce production expressao -> variavel 
+-- On DIV reduce production expressao -> variavel 
+
+State 79:
+parametro -> variavel DPONTOS . tipo [ VIRG NOVALINHA IN FPAR ATRIB ]
+-- On STRING shift to state 80
+-- On NONE shift to state 81
+-- On INTEIRO shift to state 82
+-- On FLOAT shift to state 83
+-- On CHAR shift to state 84
+-- On BOOL shift to state 85
+-- On tipo shift to state 86
+
+State 80:
+tipo -> STRING . [ VIRG NOVALINHA IN FPAR DPONTOS ATRIB APAR ]
+-- On VIRG reduce production tipo -> STRING 
+-- On NOVALINHA reduce production tipo -> STRING 
+-- On IN reduce production tipo -> STRING 
+-- On FPAR reduce production tipo -> STRING 
+-- On DPONTOS reduce production tipo -> STRING 
+-- On ATRIB reduce production tipo -> STRING 
+-- On APAR reduce production tipo -> STRING 
+
+State 81:
+tipo -> NONE . [ VIRG NOVALINHA IN FPAR DPONTOS ATRIB APAR ]
+-- On VIRG reduce production tipo -> NONE 
+-- On NOVALINHA reduce production tipo -> NONE 
+-- On IN reduce production tipo -> NONE 
+-- On FPAR reduce production tipo -> NONE 
+-- On DPONTOS reduce production tipo -> NONE 
+-- On ATRIB reduce production tipo -> NONE 
+-- On APAR reduce production tipo -> NONE 
+
+State 82:
+tipo -> INTEIRO . [ VIRG NOVALINHA IN FPAR DPONTOS ATRIB APAR ]
+-- On VIRG reduce production tipo -> INTEIRO 
+-- On NOVALINHA reduce production tipo -> INTEIRO 
+-- On IN reduce production tipo -> INTEIRO 
+-- On FPAR reduce production tipo -> INTEIRO 
+-- On DPONTOS reduce production tipo -> INTEIRO 
+-- On ATRIB reduce production tipo -> INTEIRO 
+-- On APAR reduce production tipo -> INTEIRO 
+
+State 83:
+tipo -> FLOAT . [ VIRG NOVALINHA IN FPAR DPONTOS ATRIB APAR ]
+-- On VIRG reduce production tipo -> FLOAT 
+-- On NOVALINHA reduce production tipo -> FLOAT 
+-- On IN reduce production tipo -> FLOAT 
+-- On FPAR reduce production tipo -> FLOAT 
+-- On DPONTOS reduce production tipo -> FLOAT 
+-- On ATRIB reduce production tipo -> FLOAT 
+-- On APAR reduce production tipo -> FLOAT 
+
+State 84:
+tipo -> CHAR . [ VIRG NOVALINHA IN FPAR DPONTOS ATRIB APAR ]
+-- On VIRG reduce production tipo -> CHAR 
+-- On NOVALINHA reduce production tipo -> CHAR 
+-- On IN reduce production tipo -> CHAR 
+-- On FPAR reduce production tipo -> CHAR 
+-- On DPONTOS reduce production tipo -> CHAR 
+-- On ATRIB reduce production tipo -> CHAR 
+-- On APAR reduce production tipo -> CHAR 
+
+State 85:
+tipo -> BOOL . [ VIRG NOVALINHA IN FPAR DPONTOS ATRIB APAR ]
+-- On VIRG reduce production tipo -> BOOL 
+-- On NOVALINHA reduce production tipo -> BOOL 
+-- On IN reduce production tipo -> BOOL 
+-- On FPAR reduce production tipo -> BOOL 
+-- On DPONTOS reduce production tipo -> BOOL 
+-- On ATRIB reduce production tipo -> BOOL 
+-- On APAR reduce production tipo -> BOOL 
+
+State 86:
+parametro -> variavel DPONTOS tipo . [ VIRG NOVALINHA IN FPAR ATRIB ]
+-- On VIRG reduce production parametro -> variavel DPONTOS tipo 
+-- On NOVALINHA reduce production parametro -> variavel DPONTOS tipo 
+-- On IN reduce production parametro -> variavel DPONTOS tipo 
+-- On FPAR reduce production parametro -> variavel DPONTOS tipo 
+-- On ATRIB reduce production parametro -> variavel DPONTOS tipo 
+
+State 87:
+comando_atribuicao -> variavel ATRIB . expressao NOVALINHA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+comando_input_atr -> variavel ATRIB . tipo APAR INPUT APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR FPAR NOVALINHA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+-- On STRING shift to state 80
+-- On NONE shift to state 81
+-- On LITSTRING shift to state 2
+-- On LITINT shift to state 3
+-- On LITFLOAT shift to state 4
+-- On LITCHAR shift to state 5
+-- On LITBOOL shift to state 6
+-- On INTEIRO shift to state 82
+-- On ID shift to state 7
+-- On FLOAT shift to state 83
+-- On CHAR shift to state 84
+-- On BOOL shift to state 85
+-- On APAR shift to state 9
+-- On variavel shift to state 10
+-- On tipo shift to state 88
+-- On expressao shift to state 96
+-- On chamada shift to state 18
+
+State 88:
+comando_input_atr -> variavel ATRIB tipo . APAR INPUT APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR FPAR NOVALINHA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+-- On APAR shift to state 89
+
+State 89:
+comando_input_atr -> variavel ATRIB tipo APAR . INPUT APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR FPAR NOVALINHA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+-- On INPUT shift to state 90
+
+State 90:
+comando_input_atr -> variavel ATRIB tipo APAR INPUT . APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR FPAR NOVALINHA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+-- On APAR shift to state 91
+
+State 91:
+comando_input_atr -> variavel ATRIB tipo APAR INPUT APAR . loption(separated_nonempty_list(VIRG,expressao)) FPAR FPAR NOVALINHA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+-- On LITSTRING shift to state 2
+-- On LITINT shift to state 3
+-- On LITFLOAT shift to state 4
+-- On LITCHAR shift to state 5
+-- On LITBOOL shift to state 6
+-- On ID shift to state 7
+-- On APAR shift to state 9
+-- On variavel shift to state 10
+-- On separated_nonempty_list(VIRG,expressao) shift to state 41
+-- On loption(separated_nonempty_list(VIRG,expressao)) shift to state 92
+-- On expressao shift to state 44
+-- On chamada shift to state 18
+-- On FPAR reduce production loption(separated_nonempty_list(VIRG,expressao)) -> 
+
+State 92:
+comando_input_atr -> variavel ATRIB tipo APAR INPUT APAR loption(separated_nonempty_list(VIRG,expressao)) . FPAR FPAR NOVALINHA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+-- On FPAR shift to state 93
+
+State 93:
+comando_input_atr -> variavel ATRIB tipo APAR INPUT APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR . FPAR NOVALINHA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+-- On FPAR shift to state 94
+
+State 94:
+comando_input_atr -> variavel ATRIB tipo APAR INPUT APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR FPAR . NOVALINHA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+-- On NOVALINHA shift to state 95
+
+State 95:
+comando_input_atr -> variavel ATRIB tipo APAR INPUT APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR FPAR NOVALINHA . [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+-- On WHILE reduce production comando_input_atr -> variavel ATRIB tipo APAR INPUT APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR FPAR NOVALINHA 
+-- On RETURN reduce production comando_input_atr -> variavel ATRIB tipo APAR INPUT APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR FPAR NOVALINHA 
+-- On PRINT reduce production comando_input_atr -> variavel ATRIB tipo APAR INPUT APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR FPAR NOVALINHA 
+-- On LITSTRING reduce production comando_input_atr -> variavel ATRIB tipo APAR INPUT APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR FPAR NOVALINHA 
+-- On LITINT reduce production comando_input_atr -> variavel ATRIB tipo APAR INPUT APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR FPAR NOVALINHA 
+-- On LITFLOAT reduce production comando_input_atr -> variavel ATRIB tipo APAR INPUT APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR FPAR NOVALINHA 
+-- On LITCHAR reduce production comando_input_atr -> variavel ATRIB tipo APAR INPUT APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR FPAR NOVALINHA 
+-- On LITBOOL reduce production comando_input_atr -> variavel ATRIB tipo APAR INPUT APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR FPAR NOVALINHA 
+-- On IF reduce production comando_input_atr -> variavel ATRIB tipo APAR INPUT APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR FPAR NOVALINHA 
+-- On ID reduce production comando_input_atr -> variavel ATRIB tipo APAR INPUT APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR FPAR NOVALINHA 
+-- On FOR reduce production comando_input_atr -> variavel ATRIB tipo APAR INPUT APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR FPAR NOVALINHA 
+-- On EOF reduce production comando_input_atr -> variavel ATRIB tipo APAR INPUT APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR FPAR NOVALINHA 
+-- On DEF reduce production comando_input_atr -> variavel ATRIB tipo APAR INPUT APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR FPAR NOVALINHA 
+-- On DEDENTA reduce production comando_input_atr -> variavel ATRIB tipo APAR INPUT APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR FPAR NOVALINHA 
+-- On APAR reduce production comando_input_atr -> variavel ATRIB tipo APAR INPUT APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR FPAR NOVALINHA 
+
+State 96:
+comando_atribuicao -> variavel ATRIB expressao . NOVALINHA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+expressao -> expressao . ELOG expressao [ SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . OULOG expressao [ SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . SOMA expressao [ SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . SUB expressao [ SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . MULT expressao [ SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . DIV expressao [ SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . MOD expressao [ SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . EQUIVALENTE expressao [ SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . NAOEQUIVALENTE expressao [ SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . MENOR expressao [ SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . MAIOR expressao [ SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . MENORIGUAL expressao [ SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . MAIORIGUAL expressao [ SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . NOT [ SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DIV ]
+-- On SUB shift to state 12
+-- On SOMA shift to state 21
+-- On OULOG shift to state 23
+-- On NOVALINHA shift to state 97
+-- On NOT shift to state 37
+-- On NAOEQUIVALENTE shift to state 25
+-- On MULT shift to state 14
+-- On MOD shift to state 16
+-- On MENORIGUAL shift to state 27
+-- On MENOR shift to state 31
+-- On MAIORIGUAL shift to state 29
+-- On MAIOR shift to state 33
+-- On EQUIVALENTE shift to state 35
+-- On ELOG shift to state 39
+-- On DIV shift to state 19
+
+State 97:
+comando_atribuicao -> variavel ATRIB expressao NOVALINHA . [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+-- On WHILE reduce production comando_atribuicao -> variavel ATRIB expressao NOVALINHA 
+-- On RETURN reduce production comando_atribuicao -> variavel ATRIB expressao NOVALINHA 
+-- On PRINT reduce production comando_atribuicao -> variavel ATRIB expressao NOVALINHA 
+-- On LITSTRING reduce production comando_atribuicao -> variavel ATRIB expressao NOVALINHA 
+-- On LITINT reduce production comando_atribuicao -> variavel ATRIB expressao NOVALINHA 
+-- On LITFLOAT reduce production comando_atribuicao -> variavel ATRIB expressao NOVALINHA 
+-- On LITCHAR reduce production comando_atribuicao -> variavel ATRIB expressao NOVALINHA 
+-- On LITBOOL reduce production comando_atribuicao -> variavel ATRIB expressao NOVALINHA 
+-- On IF reduce production comando_atribuicao -> variavel ATRIB expressao NOVALINHA 
+-- On ID reduce production comando_atribuicao -> variavel ATRIB expressao NOVALINHA 
+-- On FOR reduce production comando_atribuicao -> variavel ATRIB expressao NOVALINHA 
+-- On EOF reduce production comando_atribuicao -> variavel ATRIB expressao NOVALINHA 
+-- On DEF reduce production comando_atribuicao -> variavel ATRIB expressao NOVALINHA 
+-- On DEDENTA reduce production comando_atribuicao -> variavel ATRIB expressao NOVALINHA 
+-- On APAR reduce production comando_atribuicao -> variavel ATRIB expressao NOVALINHA 
+
+State 98:
+comando_declara -> parametro . ATRIB expressao NOVALINHA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+comando_input_dec_atr -> parametro . ATRIB tipo APAR INPUT APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR FPAR NOVALINHA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+comando_instancia -> parametro . NOVALINHA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+-- On NOVALINHA shift to state 99
+-- On ATRIB shift to state 100
+
+State 99:
+comando_instancia -> parametro NOVALINHA . [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+-- On WHILE reduce production comando_instancia -> parametro NOVALINHA 
+-- On RETURN reduce production comando_instancia -> parametro NOVALINHA 
+-- On PRINT reduce production comando_instancia -> parametro NOVALINHA 
+-- On LITSTRING reduce production comando_instancia -> parametro NOVALINHA 
+-- On LITINT reduce production comando_instancia -> parametro NOVALINHA 
+-- On LITFLOAT reduce production comando_instancia -> parametro NOVALINHA 
+-- On LITCHAR reduce production comando_instancia -> parametro NOVALINHA 
+-- On LITBOOL reduce production comando_instancia -> parametro NOVALINHA 
+-- On IF reduce production comando_instancia -> parametro NOVALINHA 
+-- On ID reduce production comando_instancia -> parametro NOVALINHA 
+-- On FOR reduce production comando_instancia -> parametro NOVALINHA 
+-- On EOF reduce production comando_instancia -> parametro NOVALINHA 
+-- On DEF reduce production comando_instancia -> parametro NOVALINHA 
+-- On DEDENTA reduce production comando_instancia -> parametro NOVALINHA 
+-- On APAR reduce production comando_instancia -> parametro NOVALINHA 
+
+State 100:
+comando_declara -> parametro ATRIB . expressao NOVALINHA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+comando_input_dec_atr -> parametro ATRIB . tipo APAR INPUT APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR FPAR NOVALINHA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+-- On STRING shift to state 80
+-- On NONE shift to state 81
+-- On LITSTRING shift to state 2
+-- On LITINT shift to state 3
+-- On LITFLOAT shift to state 4
+-- On LITCHAR shift to state 5
+-- On LITBOOL shift to state 6
+-- On INTEIRO shift to state 82
+-- On ID shift to state 7
+-- On FLOAT shift to state 83
+-- On CHAR shift to state 84
+-- On BOOL shift to state 85
+-- On APAR shift to state 9
+-- On variavel shift to state 10
+-- On tipo shift to state 101
+-- On expressao shift to state 109
+-- On chamada shift to state 18
+
+State 101:
+comando_input_dec_atr -> parametro ATRIB tipo . APAR INPUT APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR FPAR NOVALINHA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+-- On APAR shift to state 102
+
+State 102:
+comando_input_dec_atr -> parametro ATRIB tipo APAR . INPUT APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR FPAR NOVALINHA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+-- On INPUT shift to state 103
+
+State 103:
+comando_input_dec_atr -> parametro ATRIB tipo APAR INPUT . APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR FPAR NOVALINHA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+-- On APAR shift to state 104
+
+State 104:
+comando_input_dec_atr -> parametro ATRIB tipo APAR INPUT APAR . loption(separated_nonempty_list(VIRG,expressao)) FPAR FPAR NOVALINHA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+-- On LITSTRING shift to state 2
+-- On LITINT shift to state 3
+-- On LITFLOAT shift to state 4
+-- On LITCHAR shift to state 5
+-- On LITBOOL shift to state 6
+-- On ID shift to state 7
+-- On APAR shift to state 9
+-- On variavel shift to state 10
+-- On separated_nonempty_list(VIRG,expressao) shift to state 41
+-- On loption(separated_nonempty_list(VIRG,expressao)) shift to state 105
+-- On expressao shift to state 44
+-- On chamada shift to state 18
+-- On FPAR reduce production loption(separated_nonempty_list(VIRG,expressao)) -> 
+
+State 105:
+comando_input_dec_atr -> parametro ATRIB tipo APAR INPUT APAR loption(separated_nonempty_list(VIRG,expressao)) . FPAR FPAR NOVALINHA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+-- On FPAR shift to state 106
+
+State 106:
+comando_input_dec_atr -> parametro ATRIB tipo APAR INPUT APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR . FPAR NOVALINHA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+-- On FPAR shift to state 107
+
+State 107:
+comando_input_dec_atr -> parametro ATRIB tipo APAR INPUT APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR FPAR . NOVALINHA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+-- On NOVALINHA shift to state 108
+
+State 108:
+comando_input_dec_atr -> parametro ATRIB tipo APAR INPUT APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR FPAR NOVALINHA . [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+-- On WHILE reduce production comando_input_dec_atr -> parametro ATRIB tipo APAR INPUT APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR FPAR NOVALINHA 
+-- On RETURN reduce production comando_input_dec_atr -> parametro ATRIB tipo APAR INPUT APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR FPAR NOVALINHA 
+-- On PRINT reduce production comando_input_dec_atr -> parametro ATRIB tipo APAR INPUT APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR FPAR NOVALINHA 
+-- On LITSTRING reduce production comando_input_dec_atr -> parametro ATRIB tipo APAR INPUT APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR FPAR NOVALINHA 
+-- On LITINT reduce production comando_input_dec_atr -> parametro ATRIB tipo APAR INPUT APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR FPAR NOVALINHA 
+-- On LITFLOAT reduce production comando_input_dec_atr -> parametro ATRIB tipo APAR INPUT APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR FPAR NOVALINHA 
+-- On LITCHAR reduce production comando_input_dec_atr -> parametro ATRIB tipo APAR INPUT APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR FPAR NOVALINHA 
+-- On LITBOOL reduce production comando_input_dec_atr -> parametro ATRIB tipo APAR INPUT APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR FPAR NOVALINHA 
+-- On IF reduce production comando_input_dec_atr -> parametro ATRIB tipo APAR INPUT APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR FPAR NOVALINHA 
+-- On ID reduce production comando_input_dec_atr -> parametro ATRIB tipo APAR INPUT APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR FPAR NOVALINHA 
+-- On FOR reduce production comando_input_dec_atr -> parametro ATRIB tipo APAR INPUT APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR FPAR NOVALINHA 
+-- On EOF reduce production comando_input_dec_atr -> parametro ATRIB tipo APAR INPUT APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR FPAR NOVALINHA 
+-- On DEF reduce production comando_input_dec_atr -> parametro ATRIB tipo APAR INPUT APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR FPAR NOVALINHA 
+-- On DEDENTA reduce production comando_input_dec_atr -> parametro ATRIB tipo APAR INPUT APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR FPAR NOVALINHA 
+-- On APAR reduce production comando_input_dec_atr -> parametro ATRIB tipo APAR INPUT APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR FPAR NOVALINHA 
+
+State 109:
+comando_declara -> parametro ATRIB expressao . NOVALINHA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+expressao -> expressao . ELOG expressao [ SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . OULOG expressao [ SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . SOMA expressao [ SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . SUB expressao [ SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . MULT expressao [ SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . DIV expressao [ SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . MOD expressao [ SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . EQUIVALENTE expressao [ SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . NAOEQUIVALENTE expressao [ SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . MENOR expressao [ SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . MAIOR expressao [ SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . MENORIGUAL expressao [ SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . MAIORIGUAL expressao [ SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . NOT [ SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DIV ]
+-- On SUB shift to state 12
+-- On SOMA shift to state 21
+-- On OULOG shift to state 23
+-- On NOVALINHA shift to state 110
+-- On NOT shift to state 37
+-- On NAOEQUIVALENTE shift to state 25
+-- On MULT shift to state 14
+-- On MOD shift to state 16
+-- On MENORIGUAL shift to state 27
+-- On MENOR shift to state 31
+-- On MAIORIGUAL shift to state 29
+-- On MAIOR shift to state 33
+-- On EQUIVALENTE shift to state 35
+-- On ELOG shift to state 39
+-- On DIV shift to state 19
+
+State 110:
+comando_declara -> parametro ATRIB expressao NOVALINHA . [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+-- On WHILE reduce production comando_declara -> parametro ATRIB expressao NOVALINHA 
+-- On RETURN reduce production comando_declara -> parametro ATRIB expressao NOVALINHA 
+-- On PRINT reduce production comando_declara -> parametro ATRIB expressao NOVALINHA 
+-- On LITSTRING reduce production comando_declara -> parametro ATRIB expressao NOVALINHA 
+-- On LITINT reduce production comando_declara -> parametro ATRIB expressao NOVALINHA 
+-- On LITFLOAT reduce production comando_declara -> parametro ATRIB expressao NOVALINHA 
+-- On LITCHAR reduce production comando_declara -> parametro ATRIB expressao NOVALINHA 
+-- On LITBOOL reduce production comando_declara -> parametro ATRIB expressao NOVALINHA 
+-- On IF reduce production comando_declara -> parametro ATRIB expressao NOVALINHA 
+-- On ID reduce production comando_declara -> parametro ATRIB expressao NOVALINHA 
+-- On FOR reduce production comando_declara -> parametro ATRIB expressao NOVALINHA 
+-- On EOF reduce production comando_declara -> parametro ATRIB expressao NOVALINHA 
+-- On DEF reduce production comando_declara -> parametro ATRIB expressao NOVALINHA 
+-- On DEDENTA reduce production comando_declara -> parametro ATRIB expressao NOVALINHA 
+-- On APAR reduce production comando_declara -> parametro ATRIB expressao NOVALINHA 
+
+State 111:
+comandos -> nonempty_list(comando) . [ DEDENTA ]
+-- On DEDENTA reduce production comandos -> nonempty_list(comando) 
+
+State 112:
+comando_chamada -> expressao . NOVALINHA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+expressao -> expressao . ELOG expressao [ SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . OULOG expressao [ SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . SOMA expressao [ SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . SUB expressao [ SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . MULT expressao [ SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . DIV expressao [ SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . MOD expressao [ SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . EQUIVALENTE expressao [ SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . NAOEQUIVALENTE expressao [ SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . MENOR expressao [ SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . MAIOR expressao [ SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . MENORIGUAL expressao [ SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . MAIORIGUAL expressao [ SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . NOT [ SUB SOMA OULOG NOVALINHA NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DIV ]
+-- On SUB shift to state 12
+-- On SOMA shift to state 21
+-- On OULOG shift to state 23
+-- On NOVALINHA shift to state 113
+-- On NOT shift to state 37
+-- On NAOEQUIVALENTE shift to state 25
+-- On MULT shift to state 14
+-- On MOD shift to state 16
+-- On MENORIGUAL shift to state 27
+-- On MENOR shift to state 31
+-- On MAIORIGUAL shift to state 29
+-- On MAIOR shift to state 33
+-- On EQUIVALENTE shift to state 35
+-- On ELOG shift to state 39
+-- On DIV shift to state 19
+
+State 113:
+comando_chamada -> expressao NOVALINHA . [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+-- On WHILE reduce production comando_chamada -> expressao NOVALINHA 
+-- On RETURN reduce production comando_chamada -> expressao NOVALINHA 
+-- On PRINT reduce production comando_chamada -> expressao NOVALINHA 
+-- On LITSTRING reduce production comando_chamada -> expressao NOVALINHA 
+-- On LITINT reduce production comando_chamada -> expressao NOVALINHA 
+-- On LITFLOAT reduce production comando_chamada -> expressao NOVALINHA 
+-- On LITCHAR reduce production comando_chamada -> expressao NOVALINHA 
+-- On LITBOOL reduce production comando_chamada -> expressao NOVALINHA 
+-- On IF reduce production comando_chamada -> expressao NOVALINHA 
+-- On ID reduce production comando_chamada -> expressao NOVALINHA 
+-- On FOR reduce production comando_chamada -> expressao NOVALINHA 
+-- On EOF reduce production comando_chamada -> expressao NOVALINHA 
+-- On DEF reduce production comando_chamada -> expressao NOVALINHA 
+-- On DEDENTA reduce production comando_chamada -> expressao NOVALINHA 
+-- On APAR reduce production comando_chamada -> expressao NOVALINHA 
+
+State 114:
+comando_for -> FOR variavel IN RANGE APAR expressao VIRG expressao FPAR DPONTOS NOVALINHA INDENTA comandos . DEDENTA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+-- On DEDENTA shift to state 115
+
+State 115:
+comando_for -> FOR variavel IN RANGE APAR expressao VIRG expressao FPAR DPONTOS NOVALINHA INDENTA comandos DEDENTA . [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+-- On WHILE reduce production comando_for -> FOR variavel IN RANGE APAR expressao VIRG expressao FPAR DPONTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On RETURN reduce production comando_for -> FOR variavel IN RANGE APAR expressao VIRG expressao FPAR DPONTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On PRINT reduce production comando_for -> FOR variavel IN RANGE APAR expressao VIRG expressao FPAR DPONTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On LITSTRING reduce production comando_for -> FOR variavel IN RANGE APAR expressao VIRG expressao FPAR DPONTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On LITINT reduce production comando_for -> FOR variavel IN RANGE APAR expressao VIRG expressao FPAR DPONTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On LITFLOAT reduce production comando_for -> FOR variavel IN RANGE APAR expressao VIRG expressao FPAR DPONTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On LITCHAR reduce production comando_for -> FOR variavel IN RANGE APAR expressao VIRG expressao FPAR DPONTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On LITBOOL reduce production comando_for -> FOR variavel IN RANGE APAR expressao VIRG expressao FPAR DPONTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On IF reduce production comando_for -> FOR variavel IN RANGE APAR expressao VIRG expressao FPAR DPONTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On ID reduce production comando_for -> FOR variavel IN RANGE APAR expressao VIRG expressao FPAR DPONTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On FOR reduce production comando_for -> FOR variavel IN RANGE APAR expressao VIRG expressao FPAR DPONTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On EOF reduce production comando_for -> FOR variavel IN RANGE APAR expressao VIRG expressao FPAR DPONTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On DEF reduce production comando_for -> FOR variavel IN RANGE APAR expressao VIRG expressao FPAR DPONTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On DEDENTA reduce production comando_for -> FOR variavel IN RANGE APAR expressao VIRG expressao FPAR DPONTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On APAR reduce production comando_for -> FOR variavel IN RANGE APAR expressao VIRG expressao FPAR DPONTOS NOVALINHA INDENTA comandos DEDENTA 
+
+State 116:
+comando -> comando_while . [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+-- On WHILE reduce production comando -> comando_while 
+-- On RETURN reduce production comando -> comando_while 
+-- On PRINT reduce production comando -> comando_while 
+-- On LITSTRING reduce production comando -> comando_while 
+-- On LITINT reduce production comando -> comando_while 
+-- On LITFLOAT reduce production comando -> comando_while 
+-- On LITCHAR reduce production comando -> comando_while 
+-- On LITBOOL reduce production comando -> comando_while 
+-- On IF reduce production comando -> comando_while 
+-- On ID reduce production comando -> comando_while 
+-- On FOR reduce production comando -> comando_while 
+-- On EOF reduce production comando -> comando_while 
+-- On DEF reduce production comando -> comando_while 
+-- On DEDENTA reduce production comando -> comando_while 
+-- On APAR reduce production comando -> comando_while 
+
+State 117:
+comando -> comando_se . [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+-- On WHILE reduce production comando -> comando_se 
+-- On RETURN reduce production comando -> comando_se 
+-- On PRINT reduce production comando -> comando_se 
+-- On LITSTRING reduce production comando -> comando_se 
+-- On LITINT reduce production comando -> comando_se 
+-- On LITFLOAT reduce production comando -> comando_se 
+-- On LITCHAR reduce production comando -> comando_se 
+-- On LITBOOL reduce production comando -> comando_se 
+-- On IF reduce production comando -> comando_se 
+-- On ID reduce production comando -> comando_se 
+-- On FOR reduce production comando -> comando_se 
+-- On EOF reduce production comando -> comando_se 
+-- On DEF reduce production comando -> comando_se 
+-- On DEDENTA reduce production comando -> comando_se 
+-- On APAR reduce production comando -> comando_se 
+
+State 118:
+comando -> comando_retorno . [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+-- On WHILE reduce production comando -> comando_retorno 
+-- On RETURN reduce production comando -> comando_retorno 
+-- On PRINT reduce production comando -> comando_retorno 
+-- On LITSTRING reduce production comando -> comando_retorno 
+-- On LITINT reduce production comando -> comando_retorno 
+-- On LITFLOAT reduce production comando -> comando_retorno 
+-- On LITCHAR reduce production comando -> comando_retorno 
+-- On LITBOOL reduce production comando -> comando_retorno 
+-- On IF reduce production comando -> comando_retorno 
+-- On ID reduce production comando -> comando_retorno 
+-- On FOR reduce production comando -> comando_retorno 
+-- On EOF reduce production comando -> comando_retorno 
+-- On DEF reduce production comando -> comando_retorno 
+-- On DEDENTA reduce production comando -> comando_retorno 
+-- On APAR reduce production comando -> comando_retorno 
+
+State 119:
+comando -> comando_print . [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+-- On WHILE reduce production comando -> comando_print 
+-- On RETURN reduce production comando -> comando_print 
+-- On PRINT reduce production comando -> comando_print 
+-- On LITSTRING reduce production comando -> comando_print 
+-- On LITINT reduce production comando -> comando_print 
+-- On LITFLOAT reduce production comando -> comando_print 
+-- On LITCHAR reduce production comando -> comando_print 
+-- On LITBOOL reduce production comando -> comando_print 
+-- On IF reduce production comando -> comando_print 
+-- On ID reduce production comando -> comando_print 
+-- On FOR reduce production comando -> comando_print 
+-- On EOF reduce production comando -> comando_print 
+-- On DEF reduce production comando -> comando_print 
+-- On DEDENTA reduce production comando -> comando_print 
+-- On APAR reduce production comando -> comando_print 
+
+State 120:
+comando -> comando_instancia . [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+-- On WHILE reduce production comando -> comando_instancia 
+-- On RETURN reduce production comando -> comando_instancia 
+-- On PRINT reduce production comando -> comando_instancia 
+-- On LITSTRING reduce production comando -> comando_instancia 
+-- On LITINT reduce production comando -> comando_instancia 
+-- On LITFLOAT reduce production comando -> comando_instancia 
+-- On LITCHAR reduce production comando -> comando_instancia 
+-- On LITBOOL reduce production comando -> comando_instancia 
+-- On IF reduce production comando -> comando_instancia 
+-- On ID reduce production comando -> comando_instancia 
+-- On FOR reduce production comando -> comando_instancia 
+-- On EOF reduce production comando -> comando_instancia 
+-- On DEF reduce production comando -> comando_instancia 
+-- On DEDENTA reduce production comando -> comando_instancia 
+-- On APAR reduce production comando -> comando_instancia 
+
+State 121:
+comando -> comando_input_dec_atr . [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+-- On WHILE reduce production comando -> comando_input_dec_atr 
+-- On RETURN reduce production comando -> comando_input_dec_atr 
+-- On PRINT reduce production comando -> comando_input_dec_atr 
+-- On LITSTRING reduce production comando -> comando_input_dec_atr 
+-- On LITINT reduce production comando -> comando_input_dec_atr 
+-- On LITFLOAT reduce production comando -> comando_input_dec_atr 
+-- On LITCHAR reduce production comando -> comando_input_dec_atr 
+-- On LITBOOL reduce production comando -> comando_input_dec_atr 
+-- On IF reduce production comando -> comando_input_dec_atr 
+-- On ID reduce production comando -> comando_input_dec_atr 
+-- On FOR reduce production comando -> comando_input_dec_atr 
+-- On EOF reduce production comando -> comando_input_dec_atr 
+-- On DEF reduce production comando -> comando_input_dec_atr 
+-- On DEDENTA reduce production comando -> comando_input_dec_atr 
+-- On APAR reduce production comando -> comando_input_dec_atr 
+
+State 122:
+comando -> comando_input_atr . [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+-- On WHILE reduce production comando -> comando_input_atr 
+-- On RETURN reduce production comando -> comando_input_atr 
+-- On PRINT reduce production comando -> comando_input_atr 
+-- On LITSTRING reduce production comando -> comando_input_atr 
+-- On LITINT reduce production comando -> comando_input_atr 
+-- On LITFLOAT reduce production comando -> comando_input_atr 
+-- On LITCHAR reduce production comando -> comando_input_atr 
+-- On LITBOOL reduce production comando -> comando_input_atr 
+-- On IF reduce production comando -> comando_input_atr 
+-- On ID reduce production comando -> comando_input_atr 
+-- On FOR reduce production comando -> comando_input_atr 
+-- On EOF reduce production comando -> comando_input_atr 
+-- On DEF reduce production comando -> comando_input_atr 
+-- On DEDENTA reduce production comando -> comando_input_atr 
+-- On APAR reduce production comando -> comando_input_atr 
+
+State 123:
+comando -> comando_for_dec . [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+-- On WHILE reduce production comando -> comando_for_dec 
+-- On RETURN reduce production comando -> comando_for_dec 
+-- On PRINT reduce production comando -> comando_for_dec 
+-- On LITSTRING reduce production comando -> comando_for_dec 
+-- On LITINT reduce production comando -> comando_for_dec 
+-- On LITFLOAT reduce production comando -> comando_for_dec 
+-- On LITCHAR reduce production comando -> comando_for_dec 
+-- On LITBOOL reduce production comando -> comando_for_dec 
+-- On IF reduce production comando -> comando_for_dec 
+-- On ID reduce production comando -> comando_for_dec 
+-- On FOR reduce production comando -> comando_for_dec 
+-- On EOF reduce production comando -> comando_for_dec 
+-- On DEF reduce production comando -> comando_for_dec 
+-- On DEDENTA reduce production comando -> comando_for_dec 
+-- On APAR reduce production comando -> comando_for_dec 
+
+State 124:
+comando -> comando_for . [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+-- On WHILE reduce production comando -> comando_for 
+-- On RETURN reduce production comando -> comando_for 
+-- On PRINT reduce production comando -> comando_for 
+-- On LITSTRING reduce production comando -> comando_for 
+-- On LITINT reduce production comando -> comando_for 
+-- On LITFLOAT reduce production comando -> comando_for 
+-- On LITCHAR reduce production comando -> comando_for 
+-- On LITBOOL reduce production comando -> comando_for 
+-- On IF reduce production comando -> comando_for 
+-- On ID reduce production comando -> comando_for 
+-- On FOR reduce production comando -> comando_for 
+-- On EOF reduce production comando -> comando_for 
+-- On DEF reduce production comando -> comando_for 
+-- On DEDENTA reduce production comando -> comando_for 
+-- On APAR reduce production comando -> comando_for 
+
+State 125:
+comando -> comando_declara . [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+-- On WHILE reduce production comando -> comando_declara 
+-- On RETURN reduce production comando -> comando_declara 
+-- On PRINT reduce production comando -> comando_declara 
+-- On LITSTRING reduce production comando -> comando_declara 
+-- On LITINT reduce production comando -> comando_declara 
+-- On LITFLOAT reduce production comando -> comando_declara 
+-- On LITCHAR reduce production comando -> comando_declara 
+-- On LITBOOL reduce production comando -> comando_declara 
+-- On IF reduce production comando -> comando_declara 
+-- On ID reduce production comando -> comando_declara 
+-- On FOR reduce production comando -> comando_declara 
+-- On EOF reduce production comando -> comando_declara 
+-- On DEF reduce production comando -> comando_declara 
+-- On DEDENTA reduce production comando -> comando_declara 
+-- On APAR reduce production comando -> comando_declara 
+
+State 126:
+comando -> comando_chamada . [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+-- On WHILE reduce production comando -> comando_chamada 
+-- On RETURN reduce production comando -> comando_chamada 
+-- On PRINT reduce production comando -> comando_chamada 
+-- On LITSTRING reduce production comando -> comando_chamada 
+-- On LITINT reduce production comando -> comando_chamada 
+-- On LITFLOAT reduce production comando -> comando_chamada 
+-- On LITCHAR reduce production comando -> comando_chamada 
+-- On LITBOOL reduce production comando -> comando_chamada 
+-- On IF reduce production comando -> comando_chamada 
+-- On ID reduce production comando -> comando_chamada 
+-- On FOR reduce production comando -> comando_chamada 
+-- On EOF reduce production comando -> comando_chamada 
+-- On DEF reduce production comando -> comando_chamada 
+-- On DEDENTA reduce production comando -> comando_chamada 
+-- On APAR reduce production comando -> comando_chamada 
+
+State 127:
+comando -> comando_atribuicao . [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+-- On WHILE reduce production comando -> comando_atribuicao 
+-- On RETURN reduce production comando -> comando_atribuicao 
+-- On PRINT reduce production comando -> comando_atribuicao 
+-- On LITSTRING reduce production comando -> comando_atribuicao 
+-- On LITINT reduce production comando -> comando_atribuicao 
+-- On LITFLOAT reduce production comando -> comando_atribuicao 
+-- On LITCHAR reduce production comando -> comando_atribuicao 
+-- On LITBOOL reduce production comando -> comando_atribuicao 
+-- On IF reduce production comando -> comando_atribuicao 
+-- On ID reduce production comando -> comando_atribuicao 
+-- On FOR reduce production comando -> comando_atribuicao 
+-- On EOF reduce production comando -> comando_atribuicao 
+-- On DEF reduce production comando -> comando_atribuicao 
+-- On DEDENTA reduce production comando -> comando_atribuicao 
+-- On APAR reduce production comando -> comando_atribuicao 
+
+State 128:
+nonempty_list(comando) -> comando . [ DEDENTA ]
+nonempty_list(comando) -> comando . nonempty_list(comando) [ DEDENTA ]
+-- On WHILE shift to state 1
+-- On RETURN shift to state 51
+-- On PRINT shift to state 55
+-- On LITSTRING shift to state 2
+-- On LITINT shift to state 3
+-- On LITFLOAT shift to state 4
+-- On LITCHAR shift to state 5
+-- On LITBOOL shift to state 6
+-- On IF shift to state 60
+-- On ID shift to state 7
+-- On FOR shift to state 65
+-- On APAR shift to state 9
+-- On variavel shift to state 78
+-- On parametro shift to state 98
+-- On nonempty_list(comando) shift to state 129
+-- On expressao shift to state 112
+-- On comando_while shift to state 116
+-- On comando_se shift to state 117
+-- On comando_retorno shift to state 118
+-- On comando_print shift to state 119
+-- On comando_instancia shift to state 120
+-- On comando_input_dec_atr shift to state 121
+-- On comando_input_atr shift to state 122
+-- On comando_for_dec shift to state 123
+-- On comando_for shift to state 124
+-- On comando_declara shift to state 125
+-- On comando_chamada shift to state 126
+-- On comando_atribuicao shift to state 127
+-- On comando shift to state 128
+-- On chamada shift to state 18
+-- On DEDENTA reduce production nonempty_list(comando) -> comando 
+
+State 129:
+nonempty_list(comando) -> comando nonempty_list(comando) . [ DEDENTA ]
+-- On DEDENTA reduce production nonempty_list(comando) -> comando nonempty_list(comando) 
+
+State 130:
+comando_for_dec -> FOR parametro . IN RANGE APAR expressao VIRG expressao FPAR DPONTOS NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+-- On IN shift to state 131
+
+State 131:
+comando_for_dec -> FOR parametro IN . RANGE APAR expressao VIRG expressao FPAR DPONTOS NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+-- On RANGE shift to state 132
+
+State 132:
+comando_for_dec -> FOR parametro IN RANGE . APAR expressao VIRG expressao FPAR DPONTOS NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+-- On APAR shift to state 133
+
+State 133:
+comando_for_dec -> FOR parametro IN RANGE APAR . expressao VIRG expressao FPAR DPONTOS NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+-- On LITSTRING shift to state 2
+-- On LITINT shift to state 3
+-- On LITFLOAT shift to state 4
+-- On LITCHAR shift to state 5
+-- On LITBOOL shift to state 6
+-- On ID shift to state 7
+-- On APAR shift to state 9
+-- On variavel shift to state 10
+-- On expressao shift to state 134
+-- On chamada shift to state 18
+
+State 134:
+comando_for_dec -> FOR parametro IN RANGE APAR expressao . VIRG expressao FPAR DPONTOS NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+expressao -> expressao . ELOG expressao [ VIRG SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . OULOG expressao [ VIRG SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . SOMA expressao [ VIRG SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . SUB expressao [ VIRG SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . MULT expressao [ VIRG SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . DIV expressao [ VIRG SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . MOD expressao [ VIRG SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . EQUIVALENTE expressao [ VIRG SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . NAOEQUIVALENTE expressao [ VIRG SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . MENOR expressao [ VIRG SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . MAIOR expressao [ VIRG SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . MENORIGUAL expressao [ VIRG SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . MAIORIGUAL expressao [ VIRG SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . NOT [ VIRG SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DIV ]
+-- On VIRG shift to state 135
+-- On SUB shift to state 12
+-- On SOMA shift to state 21
+-- On OULOG shift to state 23
+-- On NOT shift to state 37
+-- On NAOEQUIVALENTE shift to state 25
+-- On MULT shift to state 14
+-- On MOD shift to state 16
+-- On MENORIGUAL shift to state 27
+-- On MENOR shift to state 31
+-- On MAIORIGUAL shift to state 29
+-- On MAIOR shift to state 33
+-- On EQUIVALENTE shift to state 35
+-- On ELOG shift to state 39
+-- On DIV shift to state 19
+
+State 135:
+comando_for_dec -> FOR parametro IN RANGE APAR expressao VIRG . expressao FPAR DPONTOS NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+-- On LITSTRING shift to state 2
+-- On LITINT shift to state 3
+-- On LITFLOAT shift to state 4
+-- On LITCHAR shift to state 5
+-- On LITBOOL shift to state 6
+-- On ID shift to state 7
+-- On APAR shift to state 9
+-- On variavel shift to state 10
+-- On expressao shift to state 136
+-- On chamada shift to state 18
+
+State 136:
+comando_for_dec -> FOR parametro IN RANGE APAR expressao VIRG expressao . FPAR DPONTOS NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+expressao -> expressao . ELOG expressao [ SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . OULOG expressao [ SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . SOMA expressao [ SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . SUB expressao [ SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . MULT expressao [ SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . DIV expressao [ SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . MOD expressao [ SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . EQUIVALENTE expressao [ SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . NAOEQUIVALENTE expressao [ SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . MENOR expressao [ SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . MAIOR expressao [ SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . MENORIGUAL expressao [ SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . MAIORIGUAL expressao [ SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DIV ]
+expressao -> expressao . NOT [ SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR FPAR EQUIVALENTE ELOG DIV ]
+-- On SUB shift to state 12
+-- On SOMA shift to state 21
+-- On OULOG shift to state 23
+-- On NOT shift to state 37
+-- On NAOEQUIVALENTE shift to state 25
+-- On MULT shift to state 14
+-- On MOD shift to state 16
+-- On MENORIGUAL shift to state 27
+-- On MENOR shift to state 31
+-- On MAIORIGUAL shift to state 29
+-- On MAIOR shift to state 33
+-- On FPAR shift to state 137
+-- On EQUIVALENTE shift to state 35
+-- On ELOG shift to state 39
+-- On DIV shift to state 19
+
+State 137:
+comando_for_dec -> FOR parametro IN RANGE APAR expressao VIRG expressao FPAR . DPONTOS NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+-- On DPONTOS shift to state 138
+
+State 138:
+comando_for_dec -> FOR parametro IN RANGE APAR expressao VIRG expressao FPAR DPONTOS . NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+-- On NOVALINHA shift to state 139
+
+State 139:
+comando_for_dec -> FOR parametro IN RANGE APAR expressao VIRG expressao FPAR DPONTOS NOVALINHA . INDENTA comandos DEDENTA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+-- On INDENTA shift to state 140
+
+State 140:
+comando_for_dec -> FOR parametro IN RANGE APAR expressao VIRG expressao FPAR DPONTOS NOVALINHA INDENTA . comandos DEDENTA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+-- On WHILE shift to state 1
+-- On RETURN shift to state 51
+-- On PRINT shift to state 55
+-- On LITSTRING shift to state 2
+-- On LITINT shift to state 3
+-- On LITFLOAT shift to state 4
+-- On LITCHAR shift to state 5
+-- On LITBOOL shift to state 6
+-- On IF shift to state 60
+-- On ID shift to state 7
+-- On FOR shift to state 65
+-- On APAR shift to state 9
+-- On variavel shift to state 78
+-- On parametro shift to state 98
+-- On nonempty_list(comando) shift to state 111
+-- On expressao shift to state 112
+-- On comandos shift to state 141
+-- On comando_while shift to state 116
+-- On comando_se shift to state 117
+-- On comando_retorno shift to state 118
+-- On comando_print shift to state 119
+-- On comando_instancia shift to state 120
+-- On comando_input_dec_atr shift to state 121
+-- On comando_input_atr shift to state 122
+-- On comando_for_dec shift to state 123
+-- On comando_for shift to state 124
+-- On comando_declara shift to state 125
+-- On comando_chamada shift to state 126
+-- On comando_atribuicao shift to state 127
+-- On comando shift to state 128
+-- On chamada shift to state 18
+
+State 141:
+comando_for_dec -> FOR parametro IN RANGE APAR expressao VIRG expressao FPAR DPONTOS NOVALINHA INDENTA comandos . DEDENTA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+-- On DEDENTA shift to state 142
+
+State 142:
+comando_for_dec -> FOR parametro IN RANGE APAR expressao VIRG expressao FPAR DPONTOS NOVALINHA INDENTA comandos DEDENTA . [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+-- On WHILE reduce production comando_for_dec -> FOR parametro IN RANGE APAR expressao VIRG expressao FPAR DPONTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On RETURN reduce production comando_for_dec -> FOR parametro IN RANGE APAR expressao VIRG expressao FPAR DPONTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On PRINT reduce production comando_for_dec -> FOR parametro IN RANGE APAR expressao VIRG expressao FPAR DPONTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On LITSTRING reduce production comando_for_dec -> FOR parametro IN RANGE APAR expressao VIRG expressao FPAR DPONTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On LITINT reduce production comando_for_dec -> FOR parametro IN RANGE APAR expressao VIRG expressao FPAR DPONTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On LITFLOAT reduce production comando_for_dec -> FOR parametro IN RANGE APAR expressao VIRG expressao FPAR DPONTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On LITCHAR reduce production comando_for_dec -> FOR parametro IN RANGE APAR expressao VIRG expressao FPAR DPONTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On LITBOOL reduce production comando_for_dec -> FOR parametro IN RANGE APAR expressao VIRG expressao FPAR DPONTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On IF reduce production comando_for_dec -> FOR parametro IN RANGE APAR expressao VIRG expressao FPAR DPONTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On ID reduce production comando_for_dec -> FOR parametro IN RANGE APAR expressao VIRG expressao FPAR DPONTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On FOR reduce production comando_for_dec -> FOR parametro IN RANGE APAR expressao VIRG expressao FPAR DPONTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On EOF reduce production comando_for_dec -> FOR parametro IN RANGE APAR expressao VIRG expressao FPAR DPONTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On DEF reduce production comando_for_dec -> FOR parametro IN RANGE APAR expressao VIRG expressao FPAR DPONTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On DEDENTA reduce production comando_for_dec -> FOR parametro IN RANGE APAR expressao VIRG expressao FPAR DPONTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On APAR reduce production comando_for_dec -> FOR parametro IN RANGE APAR expressao VIRG expressao FPAR DPONTOS NOVALINHA INDENTA comandos DEDENTA 
+
+State 143:
+comando_se -> IF expressao DPONTOS NOVALINHA INDENTA comandos . DEDENTA option(comando_se2) [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+-- On DEDENTA shift to state 144
+
+State 144:
+comando_se -> IF expressao DPONTOS NOVALINHA INDENTA comandos DEDENTA . option(comando_se2) [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+-- On ELSE shift to state 145
+-- On ELIF shift to state 151
+-- On option(comando_se2) shift to state 160
+-- On comando_se2 shift to state 159
+-- On WHILE reduce production option(comando_se2) -> 
+-- On RETURN reduce production option(comando_se2) -> 
+-- On PRINT reduce production option(comando_se2) -> 
+-- On LITSTRING reduce production option(comando_se2) -> 
+-- On LITINT reduce production option(comando_se2) -> 
+-- On LITFLOAT reduce production option(comando_se2) -> 
+-- On LITCHAR reduce production option(comando_se2) -> 
+-- On LITBOOL reduce production option(comando_se2) -> 
+-- On IF reduce production option(comando_se2) -> 
+-- On ID reduce production option(comando_se2) -> 
+-- On FOR reduce production option(comando_se2) -> 
+-- On EOF reduce production option(comando_se2) -> 
+-- On DEF reduce production option(comando_se2) -> 
+-- On DEDENTA reduce production option(comando_se2) -> 
+-- On APAR reduce production option(comando_se2) -> 
+
+State 145:
+comando_se2 -> ELSE . DPONTOS NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+-- On DPONTOS shift to state 146
+
+State 146:
+comando_se2 -> ELSE DPONTOS . NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+-- On NOVALINHA shift to state 147
+
+State 147:
+comando_se2 -> ELSE DPONTOS NOVALINHA . INDENTA comandos DEDENTA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+-- On INDENTA shift to state 148
+
+State 148:
+comando_se2 -> ELSE DPONTOS NOVALINHA INDENTA . comandos DEDENTA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+-- On WHILE shift to state 1
+-- On RETURN shift to state 51
+-- On PRINT shift to state 55
+-- On LITSTRING shift to state 2
+-- On LITINT shift to state 3
+-- On LITFLOAT shift to state 4
+-- On LITCHAR shift to state 5
+-- On LITBOOL shift to state 6
+-- On IF shift to state 60
+-- On ID shift to state 7
+-- On FOR shift to state 65
+-- On APAR shift to state 9
+-- On variavel shift to state 78
+-- On parametro shift to state 98
+-- On nonempty_list(comando) shift to state 111
+-- On expressao shift to state 112
+-- On comandos shift to state 149
+-- On comando_while shift to state 116
+-- On comando_se shift to state 117
+-- On comando_retorno shift to state 118
+-- On comando_print shift to state 119
+-- On comando_instancia shift to state 120
+-- On comando_input_dec_atr shift to state 121
+-- On comando_input_atr shift to state 122
+-- On comando_for_dec shift to state 123
+-- On comando_for shift to state 124
+-- On comando_declara shift to state 125
+-- On comando_chamada shift to state 126
+-- On comando_atribuicao shift to state 127
+-- On comando shift to state 128
+-- On chamada shift to state 18
+
+State 149:
+comando_se2 -> ELSE DPONTOS NOVALINHA INDENTA comandos . DEDENTA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+-- On DEDENTA shift to state 150
+
+State 150:
+comando_se2 -> ELSE DPONTOS NOVALINHA INDENTA comandos DEDENTA . [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+-- On WHILE reduce production comando_se2 -> ELSE DPONTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On RETURN reduce production comando_se2 -> ELSE DPONTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On PRINT reduce production comando_se2 -> ELSE DPONTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On LITSTRING reduce production comando_se2 -> ELSE DPONTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On LITINT reduce production comando_se2 -> ELSE DPONTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On LITFLOAT reduce production comando_se2 -> ELSE DPONTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On LITCHAR reduce production comando_se2 -> ELSE DPONTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On LITBOOL reduce production comando_se2 -> ELSE DPONTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On IF reduce production comando_se2 -> ELSE DPONTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On ID reduce production comando_se2 -> ELSE DPONTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On FOR reduce production comando_se2 -> ELSE DPONTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On EOF reduce production comando_se2 -> ELSE DPONTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On DEF reduce production comando_se2 -> ELSE DPONTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On DEDENTA reduce production comando_se2 -> ELSE DPONTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On APAR reduce production comando_se2 -> ELSE DPONTOS NOVALINHA INDENTA comandos DEDENTA 
+
+State 151:
+comando_se2 -> ELIF . expressao DPONTOS NOVALINHA INDENTA comandos DEDENTA option(comando_se2) [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+-- On LITSTRING shift to state 2
+-- On LITINT shift to state 3
+-- On LITFLOAT shift to state 4
+-- On LITCHAR shift to state 5
+-- On LITBOOL shift to state 6
+-- On ID shift to state 7
+-- On APAR shift to state 9
+-- On variavel shift to state 10
+-- On expressao shift to state 152
+-- On chamada shift to state 18
+
+State 152:
+comando_se2 -> ELIF expressao . DPONTOS NOVALINHA INDENTA comandos DEDENTA option(comando_se2) [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+expressao -> expressao . ELOG expressao [ SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . OULOG expressao [ SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . SOMA expressao [ SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . SUB expressao [ SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MULT expressao [ SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . DIV expressao [ SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MOD expressao [ SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . EQUIVALENTE expressao [ SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . NAOEQUIVALENTE expressao [ SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MENOR expressao [ SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MAIOR expressao [ SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MENORIGUAL expressao [ SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . MAIORIGUAL expressao [ SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DPONTOS DIV ]
+expressao -> expressao . NOT [ SUB SOMA OULOG NOT NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE ELOG DPONTOS DIV ]
+-- On SUB shift to state 12
+-- On SOMA shift to state 21
+-- On OULOG shift to state 23
+-- On NOT shift to state 37
+-- On NAOEQUIVALENTE shift to state 25
+-- On MULT shift to state 14
+-- On MOD shift to state 16
+-- On MENORIGUAL shift to state 27
+-- On MENOR shift to state 31
+-- On MAIORIGUAL shift to state 29
+-- On MAIOR shift to state 33
+-- On EQUIVALENTE shift to state 35
+-- On ELOG shift to state 39
+-- On DPONTOS shift to state 153
+-- On DIV shift to state 19
+
+State 153:
+comando_se2 -> ELIF expressao DPONTOS . NOVALINHA INDENTA comandos DEDENTA option(comando_se2) [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+-- On NOVALINHA shift to state 154
+
+State 154:
+comando_se2 -> ELIF expressao DPONTOS NOVALINHA . INDENTA comandos DEDENTA option(comando_se2) [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+-- On INDENTA shift to state 155
+
+State 155:
+comando_se2 -> ELIF expressao DPONTOS NOVALINHA INDENTA . comandos DEDENTA option(comando_se2) [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+-- On WHILE shift to state 1
+-- On RETURN shift to state 51
+-- On PRINT shift to state 55
+-- On LITSTRING shift to state 2
+-- On LITINT shift to state 3
+-- On LITFLOAT shift to state 4
+-- On LITCHAR shift to state 5
+-- On LITBOOL shift to state 6
+-- On IF shift to state 60
+-- On ID shift to state 7
+-- On FOR shift to state 65
+-- On APAR shift to state 9
+-- On variavel shift to state 78
+-- On parametro shift to state 98
+-- On nonempty_list(comando) shift to state 111
+-- On expressao shift to state 112
+-- On comandos shift to state 156
+-- On comando_while shift to state 116
+-- On comando_se shift to state 117
+-- On comando_retorno shift to state 118
+-- On comando_print shift to state 119
+-- On comando_instancia shift to state 120
+-- On comando_input_dec_atr shift to state 121
+-- On comando_input_atr shift to state 122
+-- On comando_for_dec shift to state 123
+-- On comando_for shift to state 124
+-- On comando_declara shift to state 125
+-- On comando_chamada shift to state 126
+-- On comando_atribuicao shift to state 127
+-- On comando shift to state 128
+-- On chamada shift to state 18
+
+State 156:
+comando_se2 -> ELIF expressao DPONTOS NOVALINHA INDENTA comandos . DEDENTA option(comando_se2) [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+-- On DEDENTA shift to state 157
+
+State 157:
+comando_se2 -> ELIF expressao DPONTOS NOVALINHA INDENTA comandos DEDENTA . option(comando_se2) [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+-- On ELSE shift to state 145
+-- On ELIF shift to state 151
+-- On option(comando_se2) shift to state 158
+-- On comando_se2 shift to state 159
+-- On WHILE reduce production option(comando_se2) -> 
+-- On RETURN reduce production option(comando_se2) -> 
+-- On PRINT reduce production option(comando_se2) -> 
+-- On LITSTRING reduce production option(comando_se2) -> 
+-- On LITINT reduce production option(comando_se2) -> 
+-- On LITFLOAT reduce production option(comando_se2) -> 
+-- On LITCHAR reduce production option(comando_se2) -> 
+-- On LITBOOL reduce production option(comando_se2) -> 
+-- On IF reduce production option(comando_se2) -> 
+-- On ID reduce production option(comando_se2) -> 
+-- On FOR reduce production option(comando_se2) -> 
+-- On EOF reduce production option(comando_se2) -> 
+-- On DEF reduce production option(comando_se2) -> 
+-- On DEDENTA reduce production option(comando_se2) -> 
+-- On APAR reduce production option(comando_se2) -> 
+
+State 158:
+comando_se2 -> ELIF expressao DPONTOS NOVALINHA INDENTA comandos DEDENTA option(comando_se2) . [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+-- On WHILE reduce production comando_se2 -> ELIF expressao DPONTOS NOVALINHA INDENTA comandos DEDENTA option(comando_se2) 
+-- On RETURN reduce production comando_se2 -> ELIF expressao DPONTOS NOVALINHA INDENTA comandos DEDENTA option(comando_se2) 
+-- On PRINT reduce production comando_se2 -> ELIF expressao DPONTOS NOVALINHA INDENTA comandos DEDENTA option(comando_se2) 
+-- On LITSTRING reduce production comando_se2 -> ELIF expressao DPONTOS NOVALINHA INDENTA comandos DEDENTA option(comando_se2) 
+-- On LITINT reduce production comando_se2 -> ELIF expressao DPONTOS NOVALINHA INDENTA comandos DEDENTA option(comando_se2) 
+-- On LITFLOAT reduce production comando_se2 -> ELIF expressao DPONTOS NOVALINHA INDENTA comandos DEDENTA option(comando_se2) 
+-- On LITCHAR reduce production comando_se2 -> ELIF expressao DPONTOS NOVALINHA INDENTA comandos DEDENTA option(comando_se2) 
+-- On LITBOOL reduce production comando_se2 -> ELIF expressao DPONTOS NOVALINHA INDENTA comandos DEDENTA option(comando_se2) 
+-- On IF reduce production comando_se2 -> ELIF expressao DPONTOS NOVALINHA INDENTA comandos DEDENTA option(comando_se2) 
+-- On ID reduce production comando_se2 -> ELIF expressao DPONTOS NOVALINHA INDENTA comandos DEDENTA option(comando_se2) 
+-- On FOR reduce production comando_se2 -> ELIF expressao DPONTOS NOVALINHA INDENTA comandos DEDENTA option(comando_se2) 
+-- On EOF reduce production comando_se2 -> ELIF expressao DPONTOS NOVALINHA INDENTA comandos DEDENTA option(comando_se2) 
+-- On DEF reduce production comando_se2 -> ELIF expressao DPONTOS NOVALINHA INDENTA comandos DEDENTA option(comando_se2) 
+-- On DEDENTA reduce production comando_se2 -> ELIF expressao DPONTOS NOVALINHA INDENTA comandos DEDENTA option(comando_se2) 
+-- On APAR reduce production comando_se2 -> ELIF expressao DPONTOS NOVALINHA INDENTA comandos DEDENTA option(comando_se2) 
+
+State 159:
+option(comando_se2) -> comando_se2 . [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+-- On WHILE reduce production option(comando_se2) -> comando_se2 
+-- On RETURN reduce production option(comando_se2) -> comando_se2 
+-- On PRINT reduce production option(comando_se2) -> comando_se2 
+-- On LITSTRING reduce production option(comando_se2) -> comando_se2 
+-- On LITINT reduce production option(comando_se2) -> comando_se2 
+-- On LITFLOAT reduce production option(comando_se2) -> comando_se2 
+-- On LITCHAR reduce production option(comando_se2) -> comando_se2 
+-- On LITBOOL reduce production option(comando_se2) -> comando_se2 
+-- On IF reduce production option(comando_se2) -> comando_se2 
+-- On ID reduce production option(comando_se2) -> comando_se2 
+-- On FOR reduce production option(comando_se2) -> comando_se2 
+-- On EOF reduce production option(comando_se2) -> comando_se2 
+-- On DEF reduce production option(comando_se2) -> comando_se2 
+-- On DEDENTA reduce production option(comando_se2) -> comando_se2 
+-- On APAR reduce production option(comando_se2) -> comando_se2 
+
+State 160:
+comando_se -> IF expressao DPONTOS NOVALINHA INDENTA comandos DEDENTA option(comando_se2) . [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+-- On WHILE reduce production comando_se -> IF expressao DPONTOS NOVALINHA INDENTA comandos DEDENTA option(comando_se2) 
+-- On RETURN reduce production comando_se -> IF expressao DPONTOS NOVALINHA INDENTA comandos DEDENTA option(comando_se2) 
+-- On PRINT reduce production comando_se -> IF expressao DPONTOS NOVALINHA INDENTA comandos DEDENTA option(comando_se2) 
+-- On LITSTRING reduce production comando_se -> IF expressao DPONTOS NOVALINHA INDENTA comandos DEDENTA option(comando_se2) 
+-- On LITINT reduce production comando_se -> IF expressao DPONTOS NOVALINHA INDENTA comandos DEDENTA option(comando_se2) 
+-- On LITFLOAT reduce production comando_se -> IF expressao DPONTOS NOVALINHA INDENTA comandos DEDENTA option(comando_se2) 
+-- On LITCHAR reduce production comando_se -> IF expressao DPONTOS NOVALINHA INDENTA comandos DEDENTA option(comando_se2) 
+-- On LITBOOL reduce production comando_se -> IF expressao DPONTOS NOVALINHA INDENTA comandos DEDENTA option(comando_se2) 
+-- On IF reduce production comando_se -> IF expressao DPONTOS NOVALINHA INDENTA comandos DEDENTA option(comando_se2) 
+-- On ID reduce production comando_se -> IF expressao DPONTOS NOVALINHA INDENTA comandos DEDENTA option(comando_se2) 
+-- On FOR reduce production comando_se -> IF expressao DPONTOS NOVALINHA INDENTA comandos DEDENTA option(comando_se2) 
+-- On EOF reduce production comando_se -> IF expressao DPONTOS NOVALINHA INDENTA comandos DEDENTA option(comando_se2) 
+-- On DEF reduce production comando_se -> IF expressao DPONTOS NOVALINHA INDENTA comandos DEDENTA option(comando_se2) 
+-- On DEDENTA reduce production comando_se -> IF expressao DPONTOS NOVALINHA INDENTA comandos DEDENTA option(comando_se2) 
+-- On APAR reduce production comando_se -> IF expressao DPONTOS NOVALINHA INDENTA comandos DEDENTA option(comando_se2) 
+
+State 161:
+comando_while -> WHILE expressao DPONTOS NOVALINHA INDENTA comandos . DEDENTA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+-- On DEDENTA shift to state 162
+
+State 162:
+comando_while -> WHILE expressao DPONTOS NOVALINHA INDENTA comandos DEDENTA . [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+-- On WHILE reduce production comando_while -> WHILE expressao DPONTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On RETURN reduce production comando_while -> WHILE expressao DPONTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On PRINT reduce production comando_while -> WHILE expressao DPONTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On LITSTRING reduce production comando_while -> WHILE expressao DPONTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On LITINT reduce production comando_while -> WHILE expressao DPONTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On LITFLOAT reduce production comando_while -> WHILE expressao DPONTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On LITCHAR reduce production comando_while -> WHILE expressao DPONTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On LITBOOL reduce production comando_while -> WHILE expressao DPONTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On IF reduce production comando_while -> WHILE expressao DPONTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On ID reduce production comando_while -> WHILE expressao DPONTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On FOR reduce production comando_while -> WHILE expressao DPONTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On EOF reduce production comando_while -> WHILE expressao DPONTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On DEF reduce production comando_while -> WHILE expressao DPONTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On DEDENTA reduce production comando_while -> WHILE expressao DPONTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On APAR reduce production comando_while -> WHILE expressao DPONTOS NOVALINHA INDENTA comandos DEDENTA 
+
+State 163:
+funcao -> DEF . variavel APAR loption(separated_nonempty_list(VIRG,parametro)) FPAR SETA tipo DPONTOS NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF APAR ]
+-- On ID shift to state 66
+-- On variavel shift to state 164
+
+State 164:
+funcao -> DEF variavel . APAR loption(separated_nonempty_list(VIRG,parametro)) FPAR SETA tipo DPONTOS NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF APAR ]
+-- On APAR shift to state 165
+
+State 165:
+funcao -> DEF variavel APAR . loption(separated_nonempty_list(VIRG,parametro)) FPAR SETA tipo DPONTOS NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF APAR ]
+-- On ID shift to state 66
+-- On variavel shift to state 166
+-- On separated_nonempty_list(VIRG,parametro) shift to state 167
+-- On parametro shift to state 168
+-- On loption(separated_nonempty_list(VIRG,parametro)) shift to state 171
+-- On FPAR reduce production loption(separated_nonempty_list(VIRG,parametro)) -> 
+
+State 166:
+parametro -> variavel . DPONTOS tipo [ VIRG FPAR ]
+-- On DPONTOS shift to state 79
+
+State 167:
+loption(separated_nonempty_list(VIRG,parametro)) -> separated_nonempty_list(VIRG,parametro) . [ FPAR ]
+-- On FPAR reduce production loption(separated_nonempty_list(VIRG,parametro)) -> separated_nonempty_list(VIRG,parametro) 
+
+State 168:
+separated_nonempty_list(VIRG,parametro) -> parametro . [ FPAR ]
+separated_nonempty_list(VIRG,parametro) -> parametro . VIRG separated_nonempty_list(VIRG,parametro) [ FPAR ]
+-- On VIRG shift to state 169
+-- On FPAR reduce production separated_nonempty_list(VIRG,parametro) -> parametro 
+
+State 169:
+separated_nonempty_list(VIRG,parametro) -> parametro VIRG . separated_nonempty_list(VIRG,parametro) [ FPAR ]
+-- On ID shift to state 66
+-- On variavel shift to state 166
+-- On separated_nonempty_list(VIRG,parametro) shift to state 170
+-- On parametro shift to state 168
+
+State 170:
+separated_nonempty_list(VIRG,parametro) -> parametro VIRG separated_nonempty_list(VIRG,parametro) . [ FPAR ]
+-- On FPAR reduce production separated_nonempty_list(VIRG,parametro) -> parametro VIRG separated_nonempty_list(VIRG,parametro) 
+
+State 171:
+funcao -> DEF variavel APAR loption(separated_nonempty_list(VIRG,parametro)) . FPAR SETA tipo DPONTOS NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF APAR ]
+-- On FPAR shift to state 172
+
+State 172:
+funcao -> DEF variavel APAR loption(separated_nonempty_list(VIRG,parametro)) FPAR . SETA tipo DPONTOS NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF APAR ]
+-- On SETA shift to state 173
+
+State 173:
+funcao -> DEF variavel APAR loption(separated_nonempty_list(VIRG,parametro)) FPAR SETA . tipo DPONTOS NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF APAR ]
+-- On STRING shift to state 80
+-- On NONE shift to state 81
+-- On INTEIRO shift to state 82
+-- On FLOAT shift to state 83
+-- On CHAR shift to state 84
+-- On BOOL shift to state 85
+-- On tipo shift to state 174
+
+State 174:
+funcao -> DEF variavel APAR loption(separated_nonempty_list(VIRG,parametro)) FPAR SETA tipo . DPONTOS NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF APAR ]
+-- On DPONTOS shift to state 175
+
+State 175:
+funcao -> DEF variavel APAR loption(separated_nonempty_list(VIRG,parametro)) FPAR SETA tipo DPONTOS . NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF APAR ]
+-- On NOVALINHA shift to state 176
+
+State 176:
+funcao -> DEF variavel APAR loption(separated_nonempty_list(VIRG,parametro)) FPAR SETA tipo DPONTOS NOVALINHA . INDENTA comandos DEDENTA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF APAR ]
+-- On INDENTA shift to state 177
+
+State 177:
+funcao -> DEF variavel APAR loption(separated_nonempty_list(VIRG,parametro)) FPAR SETA tipo DPONTOS NOVALINHA INDENTA . comandos DEDENTA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF APAR ]
+-- On WHILE shift to state 1
+-- On RETURN shift to state 51
+-- On PRINT shift to state 55
+-- On LITSTRING shift to state 2
+-- On LITINT shift to state 3
+-- On LITFLOAT shift to state 4
+-- On LITCHAR shift to state 5
+-- On LITBOOL shift to state 6
+-- On IF shift to state 60
+-- On ID shift to state 7
+-- On FOR shift to state 65
+-- On APAR shift to state 9
+-- On variavel shift to state 78
+-- On parametro shift to state 98
+-- On nonempty_list(comando) shift to state 111
+-- On expressao shift to state 112
+-- On comandos shift to state 178
+-- On comando_while shift to state 116
+-- On comando_se shift to state 117
+-- On comando_retorno shift to state 118
+-- On comando_print shift to state 119
+-- On comando_instancia shift to state 120
+-- On comando_input_dec_atr shift to state 121
+-- On comando_input_atr shift to state 122
+-- On comando_for_dec shift to state 123
+-- On comando_for shift to state 124
+-- On comando_declara shift to state 125
+-- On comando_chamada shift to state 126
+-- On comando_atribuicao shift to state 127
+-- On comando shift to state 128
+-- On chamada shift to state 18
+
+State 178:
+funcao -> DEF variavel APAR loption(separated_nonempty_list(VIRG,parametro)) FPAR SETA tipo DPONTOS NOVALINHA INDENTA comandos . DEDENTA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF APAR ]
+-- On DEDENTA shift to state 179
+
+State 179:
+funcao -> DEF variavel APAR loption(separated_nonempty_list(VIRG,parametro)) FPAR SETA tipo DPONTOS NOVALINHA INDENTA comandos DEDENTA . [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF APAR ]
+-- On WHILE reduce production funcao -> DEF variavel APAR loption(separated_nonempty_list(VIRG,parametro)) FPAR SETA tipo DPONTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On RETURN reduce production funcao -> DEF variavel APAR loption(separated_nonempty_list(VIRG,parametro)) FPAR SETA tipo DPONTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On PRINT reduce production funcao -> DEF variavel APAR loption(separated_nonempty_list(VIRG,parametro)) FPAR SETA tipo DPONTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On LITSTRING reduce production funcao -> DEF variavel APAR loption(separated_nonempty_list(VIRG,parametro)) FPAR SETA tipo DPONTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On LITINT reduce production funcao -> DEF variavel APAR loption(separated_nonempty_list(VIRG,parametro)) FPAR SETA tipo DPONTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On LITFLOAT reduce production funcao -> DEF variavel APAR loption(separated_nonempty_list(VIRG,parametro)) FPAR SETA tipo DPONTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On LITCHAR reduce production funcao -> DEF variavel APAR loption(separated_nonempty_list(VIRG,parametro)) FPAR SETA tipo DPONTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On LITBOOL reduce production funcao -> DEF variavel APAR loption(separated_nonempty_list(VIRG,parametro)) FPAR SETA tipo DPONTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On IF reduce production funcao -> DEF variavel APAR loption(separated_nonempty_list(VIRG,parametro)) FPAR SETA tipo DPONTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On ID reduce production funcao -> DEF variavel APAR loption(separated_nonempty_list(VIRG,parametro)) FPAR SETA tipo DPONTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On FOR reduce production funcao -> DEF variavel APAR loption(separated_nonempty_list(VIRG,parametro)) FPAR SETA tipo DPONTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On EOF reduce production funcao -> DEF variavel APAR loption(separated_nonempty_list(VIRG,parametro)) FPAR SETA tipo DPONTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On DEF reduce production funcao -> DEF variavel APAR loption(separated_nonempty_list(VIRG,parametro)) FPAR SETA tipo DPONTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On APAR reduce production funcao -> DEF variavel APAR loption(separated_nonempty_list(VIRG,parametro)) FPAR SETA tipo DPONTOS NOVALINHA INDENTA comandos DEDENTA 
+
+State 180:
+programa' -> programa . [ # ]
+-- On # accept programa
+
+State 181:
+programa -> list(instrucao) . EOF [ # ]
+-- On EOF shift to state 182
+
+State 182:
+programa -> list(instrucao) EOF . [ # ]
+-- On # reduce production programa -> list(instrucao) EOF 
+
+State 183:
+list(instrucao) -> instrucao . list(instrucao) [ EOF ]
+-- On WHILE shift to state 1
+-- On RETURN shift to state 51
+-- On PRINT shift to state 55
+-- On LITSTRING shift to state 2
+-- On LITINT shift to state 3
+-- On LITFLOAT shift to state 4
+-- On LITCHAR shift to state 5
+-- On LITBOOL shift to state 6
+-- On IF shift to state 60
+-- On ID shift to state 7
+-- On FOR shift to state 65
+-- On DEF shift to state 163
+-- On APAR shift to state 9
+-- On variavel shift to state 78
+-- On parametro shift to state 98
+-- On list(instrucao) shift to state 184
+-- On instrucao shift to state 183
+-- On funcao shift to state 185
+-- On expressao shift to state 112
+-- On comando_while shift to state 116
+-- On comando_se shift to state 117
+-- On comando_retorno shift to state 118
+-- On comando_print shift to state 119
+-- On comando_instancia shift to state 120
+-- On comando_input_dec_atr shift to state 121
+-- On comando_input_atr shift to state 122
+-- On comando_for_dec shift to state 123
+-- On comando_for shift to state 124
+-- On comando_declara shift to state 125
+-- On comando_chamada shift to state 126
+-- On comando_atribuicao shift to state 127
+-- On comando shift to state 186
+-- On chamada shift to state 18
+-- On EOF reduce production list(instrucao) -> 
+
+State 184:
+list(instrucao) -> instrucao list(instrucao) . [ EOF ]
+-- On EOF reduce production list(instrucao) -> instrucao list(instrucao) 
+
+State 185:
+instrucao -> funcao . [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF APAR ]
+-- On WHILE reduce production instrucao -> funcao 
+-- On RETURN reduce production instrucao -> funcao 
+-- On PRINT reduce production instrucao -> funcao 
+-- On LITSTRING reduce production instrucao -> funcao 
+-- On LITINT reduce production instrucao -> funcao 
+-- On LITFLOAT reduce production instrucao -> funcao 
+-- On LITCHAR reduce production instrucao -> funcao 
+-- On LITBOOL reduce production instrucao -> funcao 
+-- On IF reduce production instrucao -> funcao 
+-- On ID reduce production instrucao -> funcao 
+-- On FOR reduce production instrucao -> funcao 
+-- On EOF reduce production instrucao -> funcao 
+-- On DEF reduce production instrucao -> funcao 
+-- On APAR reduce production instrucao -> funcao 
+
+State 186:
+instrucao -> comando . [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF APAR ]
+-- On WHILE reduce production instrucao -> comando 
+-- On RETURN reduce production instrucao -> comando 
+-- On PRINT reduce production instrucao -> comando 
+-- On LITSTRING reduce production instrucao -> comando 
+-- On LITINT reduce production instrucao -> comando 
+-- On LITFLOAT reduce production instrucao -> comando 
+-- On LITCHAR reduce production instrucao -> comando 
+-- On LITBOOL reduce production instrucao -> comando 
+-- On IF reduce production instrucao -> comando 
+-- On ID reduce production instrucao -> comando 
+-- On FOR reduce production instrucao -> comando 
+-- On EOF reduce production instrucao -> comando 
+-- On DEF reduce production instrucao -> comando 
+-- On APAR reduce production instrucao -> comando 
+

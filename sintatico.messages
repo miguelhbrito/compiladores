@@ -1,0 +1,1749 @@
+programa: APAR LITSTRING WHILE 
+##
+## Ends in an error in state: 11.
+##
+## expressao -> expressao . ELOG expressao [ SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+## expressao -> expressao . OULOG expressao [ SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+## expressao -> expressao . MAIS expressao [ SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+## expressao -> expressao . SUB expressao [ SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+## expressao -> expressao . MULT expressao [ SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+## expressao -> expressao . DIV expressao [ SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+## expressao -> expressao . MOD expressao [ SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+## expressao -> expressao . IGUAL expressao [ SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+## expressao -> expressao . DIFERENTE expressao [ SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+## expressao -> expressao . MENOR expressao [ SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+## expressao -> expressao . MAIOR expressao [ SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+## expressao -> expressao . MENORIGUAL expressao [ SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+## expressao -> expressao . MAIORIGUAL expressao [ SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+## expressao -> expressao . NOT [ SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+## expressao -> APAR expressao . FPAR [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+##
+## The known suffix of the stack is as follows:
+## APAR expressao 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: APAR WHILE 
+##
+## Ends in an error in state: 9.
+##
+## expressao -> APAR . expressao FPAR [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+##
+## The known suffix of the stack is as follows:
+## APAR 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: DEF ID APAR FPAR SETA STRING DPTOS NOVALINHA INDENTA VIRG 
+##
+## Ends in an error in state: 177.
+##
+## funcao -> DEF variavel APAR loption(separated_nonempty_list(VIRG,parametro)) FPAR SETA tipo DPTOS NOVALINHA INDENTA . comandos DEDENTA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF APAR ]
+##
+## The known suffix of the stack is as follows:
+## DEF variavel APAR loption(separated_nonempty_list(VIRG,parametro)) FPAR SETA tipo DPTOS NOVALINHA INDENTA 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: DEF ID APAR FPAR SETA STRING DPTOS NOVALINHA WHILE 
+##
+## Ends in an error in state: 176.
+##
+## funcao -> DEF variavel APAR loption(separated_nonempty_list(VIRG,parametro)) FPAR SETA tipo DPTOS NOVALINHA . INDENTA comandos DEDENTA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF APAR ]
+##
+## The known suffix of the stack is as follows:
+## DEF variavel APAR loption(separated_nonempty_list(VIRG,parametro)) FPAR SETA tipo DPTOS NOVALINHA 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: DEF ID APAR FPAR SETA STRING DPTOS WHILE 
+##
+## Ends in an error in state: 175.
+##
+## funcao -> DEF variavel APAR loption(separated_nonempty_list(VIRG,parametro)) FPAR SETA tipo DPTOS . NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF APAR ]
+##
+## The known suffix of the stack is as follows:
+## DEF variavel APAR loption(separated_nonempty_list(VIRG,parametro)) FPAR SETA tipo DPTOS 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: DEF ID APAR FPAR SETA STRING WHILE 
+##
+## Ends in an error in state: 174.
+##
+## funcao -> DEF variavel APAR loption(separated_nonempty_list(VIRG,parametro)) FPAR SETA tipo . DPTOS NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF APAR ]
+##
+## The known suffix of the stack is as follows:
+## DEF variavel APAR loption(separated_nonempty_list(VIRG,parametro)) FPAR SETA tipo 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: DEF ID APAR FPAR SETA WHILE 
+##
+## Ends in an error in state: 173.
+##
+## funcao -> DEF variavel APAR loption(separated_nonempty_list(VIRG,parametro)) FPAR SETA . tipo DPTOS NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF APAR ]
+##
+## The known suffix of the stack is as follows:
+## DEF variavel APAR loption(separated_nonempty_list(VIRG,parametro)) FPAR SETA 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: DEF ID APAR FPAR WHILE 
+##
+## Ends in an error in state: 172.
+##
+## funcao -> DEF variavel APAR loption(separated_nonempty_list(VIRG,parametro)) FPAR . SETA tipo DPTOS NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF APAR ]
+##
+## The known suffix of the stack is as follows:
+## DEF variavel APAR loption(separated_nonempty_list(VIRG,parametro)) FPAR 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: DEF ID APAR ID DPTOS BOOL VIRG WHILE 
+##
+## Ends in an error in state: 169.
+##
+## separated_nonempty_list(VIRG,parametro) -> parametro VIRG . separated_nonempty_list(VIRG,parametro) [ FPAR ]
+##
+## The known suffix of the stack is as follows:
+## parametro VIRG 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: DEF ID APAR ID DPTOS BOOL WHILE 
+##
+## Ends in an error in state: 168.
+##
+## separated_nonempty_list(VIRG,parametro) -> parametro . [ FPAR ]
+## separated_nonempty_list(VIRG,parametro) -> parametro . VIRG separated_nonempty_list(VIRG,parametro) [ FPAR ]
+##
+## The known suffix of the stack is as follows:
+## parametro 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: DEF ID APAR ID WHILE 
+##
+## Ends in an error in state: 166.
+##
+## parametro -> variavel . DPTOS tipo [ VIRG FPAR ]
+##
+## The known suffix of the stack is as follows:
+## variavel 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: DEF ID APAR WHILE 
+##
+## Ends in an error in state: 165.
+##
+## funcao -> DEF variavel APAR . loption(separated_nonempty_list(VIRG,parametro)) FPAR SETA tipo DPTOS NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF APAR ]
+##
+## The known suffix of the stack is as follows:
+## DEF variavel APAR 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: DEF ID WHILE 
+##
+## Ends in an error in state: 164.
+##
+## funcao -> DEF variavel . APAR loption(separated_nonempty_list(VIRG,parametro)) FPAR SETA tipo DPTOS NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF APAR ]
+##
+## The known suffix of the stack is as follows:
+## DEF variavel 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: DEF WHILE 
+##
+## Ends in an error in state: 163.
+##
+## funcao -> DEF . variavel APAR loption(separated_nonempty_list(VIRG,parametro)) FPAR SETA tipo DPTOS NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF APAR ]
+##
+## The known suffix of the stack is as follows:
+## DEF 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: FOR ID DPTOS BOOL IN RANGE APAR LITSTRING VIRG LITSTRING FPAR DPTOS NOVALINHA INDENTA VIRG 
+##
+## Ends in an error in state: 140.
+##
+## comando_for_dec -> FOR parametro IN RANGE APAR expressao VIRG expressao FPAR DPTOS NOVALINHA INDENTA . comandos DEDENTA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+##
+## The known suffix of the stack is as follows:
+## FOR parametro IN RANGE APAR expressao VIRG expressao FPAR DPTOS NOVALINHA INDENTA 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: FOR ID DPTOS BOOL IN RANGE APAR LITSTRING VIRG LITSTRING FPAR DPTOS NOVALINHA WHILE 
+##
+## Ends in an error in state: 139.
+##
+## comando_for_dec -> FOR parametro IN RANGE APAR expressao VIRG expressao FPAR DPTOS NOVALINHA . INDENTA comandos DEDENTA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+##
+## The known suffix of the stack is as follows:
+## FOR parametro IN RANGE APAR expressao VIRG expressao FPAR DPTOS NOVALINHA 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: FOR ID DPTOS BOOL IN RANGE APAR LITSTRING VIRG LITSTRING FPAR DPTOS WHILE 
+##
+## Ends in an error in state: 138.
+##
+## comando_for_dec -> FOR parametro IN RANGE APAR expressao VIRG expressao FPAR DPTOS . NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+##
+## The known suffix of the stack is as follows:
+## FOR parametro IN RANGE APAR expressao VIRG expressao FPAR DPTOS 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: FOR ID DPTOS BOOL IN RANGE APAR LITSTRING VIRG LITSTRING FPAR WHILE 
+##
+## Ends in an error in state: 137.
+##
+## comando_for_dec -> FOR parametro IN RANGE APAR expressao VIRG expressao FPAR . DPTOS NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+##
+## The known suffix of the stack is as follows:
+## FOR parametro IN RANGE APAR expressao VIRG expressao FPAR 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: FOR ID DPTOS BOOL IN RANGE APAR LITSTRING VIRG LITSTRING WHILE 
+##
+## Ends in an error in state: 136.
+##
+## comando_for_dec -> FOR parametro IN RANGE APAR expressao VIRG expressao . FPAR DPTOS NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+## expressao -> expressao . ELOG expressao [ SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+## expressao -> expressao . OULOG expressao [ SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+## expressao -> expressao . MAIS expressao [ SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+## expressao -> expressao . SUB expressao [ SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+## expressao -> expressao . MULT expressao [ SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+## expressao -> expressao . DIV expressao [ SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+## expressao -> expressao . MOD expressao [ SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+## expressao -> expressao . IGUAL expressao [ SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+## expressao -> expressao . DIFERENTE expressao [ SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+## expressao -> expressao . MENOR expressao [ SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+## expressao -> expressao . MAIOR expressao [ SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+## expressao -> expressao . MENORIGUAL expressao [ SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+## expressao -> expressao . MAIORIGUAL expressao [ SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+## expressao -> expressao . NOT [ SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+##
+## The known suffix of the stack is as follows:
+## FOR parametro IN RANGE APAR expressao VIRG expressao 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: FOR ID DPTOS BOOL IN RANGE APAR LITSTRING VIRG WHILE 
+##
+## Ends in an error in state: 135.
+##
+## comando_for_dec -> FOR parametro IN RANGE APAR expressao VIRG . expressao FPAR DPTOS NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+##
+## The known suffix of the stack is as follows:
+## FOR parametro IN RANGE APAR expressao VIRG 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: FOR ID DPTOS BOOL IN RANGE APAR LITSTRING WHILE 
+##
+## Ends in an error in state: 134.
+##
+## comando_for_dec -> FOR parametro IN RANGE APAR expressao . VIRG expressao FPAR DPTOS NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+## expressao -> expressao . ELOG expressao [ VIRG SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+## expressao -> expressao . OULOG expressao [ VIRG SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+## expressao -> expressao . MAIS expressao [ VIRG SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+## expressao -> expressao . SUB expressao [ VIRG SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+## expressao -> expressao . MULT expressao [ VIRG SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+## expressao -> expressao . DIV expressao [ VIRG SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+## expressao -> expressao . MOD expressao [ VIRG SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+## expressao -> expressao . IGUAL expressao [ VIRG SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+## expressao -> expressao . DIFERENTE expressao [ VIRG SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+## expressao -> expressao . MENOR expressao [ VIRG SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+## expressao -> expressao . MAIOR expressao [ VIRG SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+## expressao -> expressao . MENORIGUAL expressao [ VIRG SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+## expressao -> expressao . MAIORIGUAL expressao [ VIRG SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+## expressao -> expressao . NOT [ VIRG SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+##
+## The known suffix of the stack is as follows:
+## FOR parametro IN RANGE APAR expressao 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: FOR ID DPTOS BOOL IN RANGE APAR WHILE 
+##
+## Ends in an error in state: 133.
+##
+## comando_for_dec -> FOR parametro IN RANGE APAR . expressao VIRG expressao FPAR DPTOS NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+##
+## The known suffix of the stack is as follows:
+## FOR parametro IN RANGE APAR 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: FOR ID DPTOS BOOL IN RANGE WHILE 
+##
+## Ends in an error in state: 132.
+##
+## comando_for_dec -> FOR parametro IN RANGE . APAR expressao VIRG expressao FPAR DPTOS NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+##
+## The known suffix of the stack is as follows:
+## FOR parametro IN RANGE 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: FOR ID DPTOS BOOL IN WHILE 
+##
+## Ends in an error in state: 131.
+##
+## comando_for_dec -> FOR parametro IN . RANGE APAR expressao VIRG expressao FPAR DPTOS NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+##
+## The known suffix of the stack is as follows:
+## FOR parametro IN 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: FOR ID DPTOS BOOL WHILE 
+##
+## Ends in an error in state: 130.
+##
+## comando_for_dec -> FOR parametro . IN RANGE APAR expressao VIRG expressao FPAR DPTOS NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+##
+## The known suffix of the stack is as follows:
+## FOR parametro 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: FOR ID IN RANGE APAR LITSTRING VIRG LITSTRING FPAR DPTOS NOVALINHA INDENTA VIRG 
+##
+## Ends in an error in state: 77.
+##
+## comando_for -> FOR variavel IN RANGE APAR expressao VIRG expressao FPAR DPTOS NOVALINHA INDENTA . comandos DEDENTA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+##
+## The known suffix of the stack is as follows:
+## FOR variavel IN RANGE APAR expressao VIRG expressao FPAR DPTOS NOVALINHA INDENTA 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: FOR ID IN RANGE APAR LITSTRING VIRG LITSTRING FPAR DPTOS NOVALINHA WHILE 
+##
+## Ends in an error in state: 76.
+##
+## comando_for -> FOR variavel IN RANGE APAR expressao VIRG expressao FPAR DPTOS NOVALINHA . INDENTA comandos DEDENTA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+##
+## The known suffix of the stack is as follows:
+## FOR variavel IN RANGE APAR expressao VIRG expressao FPAR DPTOS NOVALINHA 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: FOR ID IN RANGE APAR LITSTRING VIRG LITSTRING FPAR DPTOS WHILE 
+##
+## Ends in an error in state: 75.
+##
+## comando_for -> FOR variavel IN RANGE APAR expressao VIRG expressao FPAR DPTOS . NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+##
+## The known suffix of the stack is as follows:
+## FOR variavel IN RANGE APAR expressao VIRG expressao FPAR DPTOS 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: FOR ID IN RANGE APAR LITSTRING VIRG LITSTRING FPAR WHILE 
+##
+## Ends in an error in state: 74.
+##
+## comando_for -> FOR variavel IN RANGE APAR expressao VIRG expressao FPAR . DPTOS NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+##
+## The known suffix of the stack is as follows:
+## FOR variavel IN RANGE APAR expressao VIRG expressao FPAR 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: FOR ID IN RANGE APAR LITSTRING VIRG LITSTRING WHILE 
+##
+## Ends in an error in state: 73.
+##
+## comando_for -> FOR variavel IN RANGE APAR expressao VIRG expressao . FPAR DPTOS NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+## expressao -> expressao . ELOG expressao [ SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+## expressao -> expressao . OULOG expressao [ SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+## expressao -> expressao . MAIS expressao [ SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+## expressao -> expressao . SUB expressao [ SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+## expressao -> expressao . MULT expressao [ SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+## expressao -> expressao . DIV expressao [ SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+## expressao -> expressao . MOD expressao [ SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+## expressao -> expressao . IGUAL expressao [ SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+## expressao -> expressao . DIFERENTE expressao [ SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+## expressao -> expressao . MENOR expressao [ SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+## expressao -> expressao . MAIOR expressao [ SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+## expressao -> expressao . MENORIGUAL expressao [ SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+## expressao -> expressao . MAIORIGUAL expressao [ SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+## expressao -> expressao . NOT [ SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+##
+## The known suffix of the stack is as follows:
+## FOR variavel IN RANGE APAR expressao VIRG expressao 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: FOR ID IN RANGE APAR LITSTRING VIRG WHILE 
+##
+## Ends in an error in state: 72.
+##
+## comando_for -> FOR variavel IN RANGE APAR expressao VIRG . expressao FPAR DPTOS NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+##
+## The known suffix of the stack is as follows:
+## FOR variavel IN RANGE APAR expressao VIRG 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: FOR ID IN RANGE APAR LITSTRING WHILE 
+##
+## Ends in an error in state: 71.
+##
+## comando_for -> FOR variavel IN RANGE APAR expressao . VIRG expressao FPAR DPTOS NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+## expressao -> expressao . ELOG expressao [ VIRG SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+## expressao -> expressao . OULOG expressao [ VIRG SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+## expressao -> expressao . MAIS expressao [ VIRG SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+## expressao -> expressao . SUB expressao [ VIRG SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+## expressao -> expressao . MULT expressao [ VIRG SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+## expressao -> expressao . DIV expressao [ VIRG SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+## expressao -> expressao . MOD expressao [ VIRG SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+## expressao -> expressao . IGUAL expressao [ VIRG SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+## expressao -> expressao . DIFERENTE expressao [ VIRG SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+## expressao -> expressao . MENOR expressao [ VIRG SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+## expressao -> expressao . MAIOR expressao [ VIRG SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+## expressao -> expressao . MENORIGUAL expressao [ VIRG SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+## expressao -> expressao . MAIORIGUAL expressao [ VIRG SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+## expressao -> expressao . NOT [ VIRG SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+##
+## The known suffix of the stack is as follows:
+## FOR variavel IN RANGE APAR expressao 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: FOR ID IN RANGE APAR WHILE 
+##
+## Ends in an error in state: 70.
+##
+## comando_for -> FOR variavel IN RANGE APAR . expressao VIRG expressao FPAR DPTOS NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+##
+## The known suffix of the stack is as follows:
+## FOR variavel IN RANGE APAR 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: FOR ID IN RANGE WHILE 
+##
+## Ends in an error in state: 69.
+##
+## comando_for -> FOR variavel IN RANGE . APAR expressao VIRG expressao FPAR DPTOS NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+##
+## The known suffix of the stack is as follows:
+## FOR variavel IN RANGE 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: FOR ID IN WHILE 
+##
+## Ends in an error in state: 68.
+##
+## comando_for -> FOR variavel IN . RANGE APAR expressao VIRG expressao FPAR DPTOS NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+##
+## The known suffix of the stack is as follows:
+## FOR variavel IN 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: FOR ID WHILE 
+##
+## Ends in an error in state: 67.
+##
+## comando_for -> FOR variavel . IN RANGE APAR expressao VIRG expressao FPAR DPTOS NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+## parametro -> variavel . DPTOS tipo [ IN ]
+##
+## The known suffix of the stack is as follows:
+## FOR variavel 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: FOR WHILE 
+##
+## Ends in an error in state: 65.
+##
+## comando_for -> FOR . variavel IN RANGE APAR expressao VIRG expressao FPAR DPTOS NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+## comando_for_dec -> FOR . parametro IN RANGE APAR expressao VIRG expressao FPAR DPTOS NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+##
+## The known suffix of the stack is as follows:
+## FOR 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: ID APAR WHILE 
+##
+## Ends in an error in state: 8.
+##
+## chamada -> ID APAR . loption(separated_nonempty_list(VIRG,expressao)) FPAR [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+##
+## The known suffix of the stack is as follows:
+## ID APAR 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: ID ATRIB LITSTRING WHILE 
+##
+## Ends in an error in state: 96.
+##
+## comando_atribuicao -> variavel ATRIB expressao . NOVALINHA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+## expressao -> expressao . ELOG expressao [ SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+## expressao -> expressao . OULOG expressao [ SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+## expressao -> expressao . MAIS expressao [ SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+## expressao -> expressao . SUB expressao [ SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+## expressao -> expressao . MULT expressao [ SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+## expressao -> expressao . DIV expressao [ SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+## expressao -> expressao . MOD expressao [ SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+## expressao -> expressao . IGUAL expressao [ SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+## expressao -> expressao . DIFERENTE expressao [ SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+## expressao -> expressao . MENOR expressao [ SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+## expressao -> expressao . MAIOR expressao [ SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+## expressao -> expressao . MENORIGUAL expressao [ SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+## expressao -> expressao . MAIORIGUAL expressao [ SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+## expressao -> expressao . NOT [ SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+##
+## The known suffix of the stack is as follows:
+## variavel ATRIB expressao 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: ID ATRIB STRING APAR INPUT APAR FPAR FPAR WHILE 
+##
+## Ends in an error in state: 94.
+##
+## comando_input_atr -> variavel ATRIB tipo APAR INPUT APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR FPAR . NOVALINHA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+##
+## The known suffix of the stack is as follows:
+## variavel ATRIB tipo APAR INPUT APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR FPAR 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: ID ATRIB STRING APAR INPUT APAR FPAR WHILE 
+##
+## Ends in an error in state: 93.
+##
+## comando_input_atr -> variavel ATRIB tipo APAR INPUT APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR . FPAR NOVALINHA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+##
+## The known suffix of the stack is as follows:
+## variavel ATRIB tipo APAR INPUT APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: ID ATRIB STRING APAR INPUT APAR WHILE 
+##
+## Ends in an error in state: 91.
+##
+## comando_input_atr -> variavel ATRIB tipo APAR INPUT APAR . loption(separated_nonempty_list(VIRG,expressao)) FPAR FPAR NOVALINHA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+##
+## The known suffix of the stack is as follows:
+## variavel ATRIB tipo APAR INPUT APAR 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: ID ATRIB STRING APAR INPUT WHILE 
+##
+## Ends in an error in state: 90.
+##
+## comando_input_atr -> variavel ATRIB tipo APAR INPUT . APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR FPAR NOVALINHA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+##
+## The known suffix of the stack is as follows:
+## variavel ATRIB tipo APAR INPUT 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: ID ATRIB STRING APAR WHILE 
+##
+## Ends in an error in state: 89.
+##
+## comando_input_atr -> variavel ATRIB tipo APAR . INPUT APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR FPAR NOVALINHA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+##
+## The known suffix of the stack is as follows:
+## variavel ATRIB tipo APAR 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: ID ATRIB STRING WHILE 
+##
+## Ends in an error in state: 88.
+##
+## comando_input_atr -> variavel ATRIB tipo . APAR INPUT APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR FPAR NOVALINHA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+##
+## The known suffix of the stack is as follows:
+## variavel ATRIB tipo 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: ID ATRIB WHILE 
+##
+## Ends in an error in state: 87.
+##
+## comando_atribuicao -> variavel ATRIB . expressao NOVALINHA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+## comando_input_atr -> variavel ATRIB . tipo APAR INPUT APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR FPAR NOVALINHA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+##
+## The known suffix of the stack is as follows:
+## variavel ATRIB 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: ID DPTOS BOOL ATRIB LITSTRING WHILE 
+##
+## Ends in an error in state: 109.
+##
+## comando_declara -> parametro ATRIB expressao . NOVALINHA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+## expressao -> expressao . ELOG expressao [ SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+## expressao -> expressao . OULOG expressao [ SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+## expressao -> expressao . MAIS expressao [ SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+## expressao -> expressao . SUB expressao [ SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+## expressao -> expressao . MULT expressao [ SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+## expressao -> expressao . DIV expressao [ SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+## expressao -> expressao . MOD expressao [ SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+## expressao -> expressao . IGUAL expressao [ SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+## expressao -> expressao . DIFERENTE expressao [ SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+## expressao -> expressao . MENOR expressao [ SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+## expressao -> expressao . MAIOR expressao [ SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+## expressao -> expressao . MENORIGUAL expressao [ SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+## expressao -> expressao . MAIORIGUAL expressao [ SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+## expressao -> expressao . NOT [ SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+##
+## The known suffix of the stack is as follows:
+## parametro ATRIB expressao 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: ID DPTOS BOOL ATRIB STRING APAR INPUT APAR FPAR FPAR WHILE 
+##
+## Ends in an error in state: 107.
+##
+## comando_input_dec_atr -> parametro ATRIB tipo APAR INPUT APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR FPAR . NOVALINHA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+##
+## The known suffix of the stack is as follows:
+## parametro ATRIB tipo APAR INPUT APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR FPAR 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: ID DPTOS BOOL ATRIB STRING APAR INPUT APAR FPAR WHILE 
+##
+## Ends in an error in state: 106.
+##
+## comando_input_dec_atr -> parametro ATRIB tipo APAR INPUT APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR . FPAR NOVALINHA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+##
+## The known suffix of the stack is as follows:
+## parametro ATRIB tipo APAR INPUT APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: ID DPTOS BOOL ATRIB STRING APAR INPUT APAR WHILE 
+##
+## Ends in an error in state: 104.
+##
+## comando_input_dec_atr -> parametro ATRIB tipo APAR INPUT APAR . loption(separated_nonempty_list(VIRG,expressao)) FPAR FPAR NOVALINHA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+##
+## The known suffix of the stack is as follows:
+## parametro ATRIB tipo APAR INPUT APAR 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: ID DPTOS BOOL ATRIB STRING APAR INPUT WHILE 
+##
+## Ends in an error in state: 103.
+##
+## comando_input_dec_atr -> parametro ATRIB tipo APAR INPUT . APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR FPAR NOVALINHA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+##
+## The known suffix of the stack is as follows:
+## parametro ATRIB tipo APAR INPUT 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: ID DPTOS BOOL ATRIB STRING APAR WHILE 
+##
+## Ends in an error in state: 102.
+##
+## comando_input_dec_atr -> parametro ATRIB tipo APAR . INPUT APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR FPAR NOVALINHA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+##
+## The known suffix of the stack is as follows:
+## parametro ATRIB tipo APAR 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: ID DPTOS BOOL ATRIB STRING WHILE 
+##
+## Ends in an error in state: 101.
+##
+## comando_input_dec_atr -> parametro ATRIB tipo . APAR INPUT APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR FPAR NOVALINHA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+##
+## The known suffix of the stack is as follows:
+## parametro ATRIB tipo 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: ID DPTOS BOOL ATRIB WHILE 
+##
+## Ends in an error in state: 100.
+##
+## comando_declara -> parametro ATRIB . expressao NOVALINHA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+## comando_input_dec_atr -> parametro ATRIB . tipo APAR INPUT APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR FPAR NOVALINHA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+##
+## The known suffix of the stack is as follows:
+## parametro ATRIB 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: ID DPTOS BOOL WHILE 
+##
+## Ends in an error in state: 98.
+##
+## comando_declara -> parametro . ATRIB expressao NOVALINHA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+## comando_input_dec_atr -> parametro . ATRIB tipo APAR INPUT APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR FPAR NOVALINHA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+## comando_instancia -> parametro . NOVALINHA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+##
+## The known suffix of the stack is as follows:
+## parametro 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: ID DPTOS WHILE 
+##
+## Ends in an error in state: 79.
+##
+## parametro -> variavel DPTOS . tipo [ VIRG NOVALINHA IN FPAR ATRIB ]
+##
+## The known suffix of the stack is as follows:
+## variavel DPTOS 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: ID VIRG 
+##
+## Ends in an error in state: 78.
+##
+## comando_atribuicao -> variavel . ATRIB expressao NOVALINHA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+## comando_input_atr -> variavel . ATRIB tipo APAR INPUT APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR FPAR NOVALINHA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+## expressao -> variavel . [ SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+## parametro -> variavel . DPTOS tipo [ NOVALINHA ATRIB ]
+##
+## The known suffix of the stack is as follows:
+## variavel 
+##
+## WARNING: This example involves spurious reductions.
+## This implies that, although the LR(1) items shown above provide an
+## accurate view of the past (what has been recognized so far), they
+## may provide an INCOMPLETE view of the future (what was expected next).
+## In state 7, spurious reduction of production variavel -> ID 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: ID WHILE 
+##
+## Ends in an error in state: 7.
+##
+## chamada -> ID . APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## variavel -> ID . [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ATRIB ]
+##
+## The known suffix of the stack is as follows:
+## ID 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: IF LITSTRING DPTOS NOVALINHA INDENTA RETURN NOVALINHA DEDENTA ELIF LITSTRING DPTOS NOVALINHA INDENTA RETURN NOVALINHA DEDENTA VIRG 
+##
+## Ends in an error in state: 157.
+##
+## comando_se2 -> ELIF expressao DPTOS NOVALINHA INDENTA comandos DEDENTA . option(comando_se2) [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+##
+## The known suffix of the stack is as follows:
+## ELIF expressao DPTOS NOVALINHA INDENTA comandos DEDENTA 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: IF LITSTRING DPTOS NOVALINHA INDENTA RETURN NOVALINHA DEDENTA ELIF LITSTRING DPTOS NOVALINHA INDENTA VIRG 
+##
+## Ends in an error in state: 155.
+##
+## comando_se2 -> ELIF expressao DPTOS NOVALINHA INDENTA . comandos DEDENTA option(comando_se2) [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+##
+## The known suffix of the stack is as follows:
+## ELIF expressao DPTOS NOVALINHA INDENTA 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: IF LITSTRING DPTOS NOVALINHA INDENTA RETURN NOVALINHA DEDENTA ELIF LITSTRING DPTOS NOVALINHA WHILE 
+##
+## Ends in an error in state: 154.
+##
+## comando_se2 -> ELIF expressao DPTOS NOVALINHA . INDENTA comandos DEDENTA option(comando_se2) [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+##
+## The known suffix of the stack is as follows:
+## ELIF expressao DPTOS NOVALINHA 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: IF LITSTRING DPTOS NOVALINHA INDENTA RETURN NOVALINHA DEDENTA ELIF LITSTRING DPTOS WHILE 
+##
+## Ends in an error in state: 153.
+##
+## comando_se2 -> ELIF expressao DPTOS . NOVALINHA INDENTA comandos DEDENTA option(comando_se2) [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+##
+## The known suffix of the stack is as follows:
+## ELIF expressao DPTOS 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: IF LITSTRING DPTOS NOVALINHA INDENTA RETURN NOVALINHA DEDENTA ELIF LITSTRING WHILE 
+##
+## Ends in an error in state: 152.
+##
+## comando_se2 -> ELIF expressao . DPTOS NOVALINHA INDENTA comandos DEDENTA option(comando_se2) [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+## expressao -> expressao . ELOG expressao [ SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . OULOG expressao [ SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MAIS expressao [ SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . SUB expressao [ SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MULT expressao [ SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . DIV expressao [ SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MOD expressao [ SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . IGUAL expressao [ SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . DIFERENTE expressao [ SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MENOR expressao [ SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MAIOR expressao [ SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MENORIGUAL expressao [ SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MAIORIGUAL expressao [ SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . NOT [ SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DPTOS DIV DIFERENTE ]
+##
+## The known suffix of the stack is as follows:
+## ELIF expressao 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: IF LITSTRING DPTOS NOVALINHA INDENTA RETURN NOVALINHA DEDENTA ELIF WHILE 
+##
+## Ends in an error in state: 151.
+##
+## comando_se2 -> ELIF . expressao DPTOS NOVALINHA INDENTA comandos DEDENTA option(comando_se2) [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+##
+## The known suffix of the stack is as follows:
+## ELIF 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: IF LITSTRING DPTOS NOVALINHA INDENTA RETURN NOVALINHA DEDENTA ELSE DPTOS NOVALINHA INDENTA VIRG 
+##
+## Ends in an error in state: 148.
+##
+## comando_se2 -> ELSE DPTOS NOVALINHA INDENTA . comandos DEDENTA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+##
+## The known suffix of the stack is as follows:
+## ELSE DPTOS NOVALINHA INDENTA 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: IF LITSTRING DPTOS NOVALINHA INDENTA RETURN NOVALINHA DEDENTA ELSE DPTOS NOVALINHA WHILE 
+##
+## Ends in an error in state: 147.
+##
+## comando_se2 -> ELSE DPTOS NOVALINHA . INDENTA comandos DEDENTA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+##
+## The known suffix of the stack is as follows:
+## ELSE DPTOS NOVALINHA 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: IF LITSTRING DPTOS NOVALINHA INDENTA RETURN NOVALINHA DEDENTA ELSE DPTOS WHILE 
+##
+## Ends in an error in state: 146.
+##
+## comando_se2 -> ELSE DPTOS . NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+##
+## The known suffix of the stack is as follows:
+## ELSE DPTOS 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: IF LITSTRING DPTOS NOVALINHA INDENTA RETURN NOVALINHA DEDENTA ELSE WHILE 
+##
+## Ends in an error in state: 145.
+##
+## comando_se2 -> ELSE . DPTOS NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+##
+## The known suffix of the stack is as follows:
+## ELSE 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: IF LITSTRING DPTOS NOVALINHA INDENTA RETURN NOVALINHA DEDENTA VIRG 
+##
+## Ends in an error in state: 144.
+##
+## comando_se -> IF expressao DPTOS NOVALINHA INDENTA comandos DEDENTA . option(comando_se2) [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+##
+## The known suffix of the stack is as follows:
+## IF expressao DPTOS NOVALINHA INDENTA comandos DEDENTA 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: IF LITSTRING DPTOS NOVALINHA INDENTA VIRG 
+##
+## Ends in an error in state: 64.
+##
+## comando_se -> IF expressao DPTOS NOVALINHA INDENTA . comandos DEDENTA option(comando_se2) [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+##
+## The known suffix of the stack is as follows:
+## IF expressao DPTOS NOVALINHA INDENTA 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: IF LITSTRING DPTOS NOVALINHA WHILE 
+##
+## Ends in an error in state: 63.
+##
+## comando_se -> IF expressao DPTOS NOVALINHA . INDENTA comandos DEDENTA option(comando_se2) [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+##
+## The known suffix of the stack is as follows:
+## IF expressao DPTOS NOVALINHA 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: IF LITSTRING DPTOS WHILE 
+##
+## Ends in an error in state: 62.
+##
+## comando_se -> IF expressao DPTOS . NOVALINHA INDENTA comandos DEDENTA option(comando_se2) [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+##
+## The known suffix of the stack is as follows:
+## IF expressao DPTOS 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: IF LITSTRING WHILE 
+##
+## Ends in an error in state: 61.
+##
+## comando_se -> IF expressao . DPTOS NOVALINHA INDENTA comandos DEDENTA option(comando_se2) [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+## expressao -> expressao . ELOG expressao [ SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . OULOG expressao [ SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MAIS expressao [ SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . SUB expressao [ SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MULT expressao [ SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . DIV expressao [ SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MOD expressao [ SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . IGUAL expressao [ SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . DIFERENTE expressao [ SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MENOR expressao [ SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MAIOR expressao [ SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MENORIGUAL expressao [ SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MAIORIGUAL expressao [ SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . NOT [ SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DPTOS DIV DIFERENTE ]
+##
+## The known suffix of the stack is as follows:
+## IF expressao 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: IF WHILE 
+##
+## Ends in an error in state: 60.
+##
+## comando_se -> IF . expressao DPTOS NOVALINHA INDENTA comandos DEDENTA option(comando_se2) [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+##
+## The known suffix of the stack is as follows:
+## IF 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: LITSTRING DIFERENTE LITSTRING WHILE 
+##
+## Ends in an error in state: 36.
+##
+## expressao -> expressao . ELOG expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . OULOG expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MAIS expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . SUB expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MULT expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . DIV expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MOD expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . IGUAL expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . DIFERENTE expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao DIFERENTE expressao . [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MENOR expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MAIOR expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MENORIGUAL expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MAIORIGUAL expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . NOT [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+##
+## The known suffix of the stack is as follows:
+## expressao DIFERENTE expressao 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: LITSTRING DIFERENTE WHILE 
+##
+## Ends in an error in state: 35.
+##
+## expressao -> expressao DIFERENTE . expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+##
+## The known suffix of the stack is as follows:
+## expressao DIFERENTE 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: LITSTRING DIV LITSTRING WHILE 
+##
+## Ends in an error in state: 20.
+##
+## expressao -> expressao . ELOG expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . OULOG expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MAIS expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . SUB expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MULT expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . DIV expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao DIV expressao . [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MOD expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . IGUAL expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . DIFERENTE expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MENOR expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MAIOR expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MENORIGUAL expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MAIORIGUAL expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . NOT [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+##
+## The known suffix of the stack is as follows:
+## expressao DIV expressao 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: LITSTRING DIV WHILE 
+##
+## Ends in an error in state: 19.
+##
+## expressao -> expressao DIV . expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+##
+## The known suffix of the stack is as follows:
+## expressao DIV 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: LITSTRING ELOG LITSTRING WHILE 
+##
+## Ends in an error in state: 40.
+##
+## expressao -> expressao . ELOG expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao ELOG expressao . [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . OULOG expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MAIS expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . SUB expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MULT expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . DIV expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MOD expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . IGUAL expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . DIFERENTE expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MENOR expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MAIOR expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MENORIGUAL expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MAIORIGUAL expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . NOT [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+##
+## The known suffix of the stack is as follows:
+## expressao ELOG expressao 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: LITSTRING ELOG WHILE 
+##
+## Ends in an error in state: 39.
+##
+## expressao -> expressao ELOG . expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+##
+## The known suffix of the stack is as follows:
+## expressao ELOG 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: LITSTRING IGUAL LITSTRING WHILE 
+##
+## Ends in an error in state: 34.
+##
+## expressao -> expressao . ELOG expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . OULOG expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MAIS expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . SUB expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MULT expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . DIV expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MOD expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . IGUAL expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao IGUAL expressao . [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . DIFERENTE expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MENOR expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MAIOR expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MENORIGUAL expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MAIORIGUAL expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . NOT [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+##
+## The known suffix of the stack is as follows:
+## expressao IGUAL expressao 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: LITSTRING IGUAL WHILE 
+##
+## Ends in an error in state: 33.
+##
+## expressao -> expressao IGUAL . expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+##
+## The known suffix of the stack is as follows:
+## expressao IGUAL 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: LITSTRING MAIOR LITSTRING WHILE 
+##
+## Ends in an error in state: 32.
+##
+## expressao -> expressao . ELOG expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . OULOG expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MAIS expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . SUB expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MULT expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . DIV expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MOD expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . IGUAL expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . DIFERENTE expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MENOR expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MAIOR expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao MAIOR expressao . [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MENORIGUAL expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MAIORIGUAL expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . NOT [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+##
+## The known suffix of the stack is as follows:
+## expressao MAIOR expressao 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: LITSTRING MAIOR WHILE 
+##
+## Ends in an error in state: 31.
+##
+## expressao -> expressao MAIOR . expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+##
+## The known suffix of the stack is as follows:
+## expressao MAIOR 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: LITSTRING MAIORIGUAL LITSTRING WHILE 
+##
+## Ends in an error in state: 28.
+##
+## expressao -> expressao . ELOG expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . OULOG expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MAIS expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . SUB expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MULT expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . DIV expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MOD expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . IGUAL expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . DIFERENTE expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MENOR expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MAIOR expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MENORIGUAL expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MAIORIGUAL expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao MAIORIGUAL expressao . [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . NOT [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+##
+## The known suffix of the stack is as follows:
+## expressao MAIORIGUAL expressao 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: LITSTRING MAIORIGUAL WHILE 
+##
+## Ends in an error in state: 27.
+##
+## expressao -> expressao MAIORIGUAL . expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+##
+## The known suffix of the stack is as follows:
+## expressao MAIORIGUAL 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: LITSTRING MAIS LITSTRING WHILE 
+##
+## Ends in an error in state: 26.
+##
+## expressao -> expressao . ELOG expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . OULOG expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MAIS expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao MAIS expressao . [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . SUB expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MULT expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . DIV expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MOD expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . IGUAL expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . DIFERENTE expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MENOR expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MAIOR expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MENORIGUAL expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MAIORIGUAL expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . NOT [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+##
+## The known suffix of the stack is as follows:
+## expressao MAIS expressao 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: LITSTRING MAIS WHILE 
+##
+## Ends in an error in state: 25.
+##
+## expressao -> expressao MAIS . expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+##
+## The known suffix of the stack is as follows:
+## expressao MAIS 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: LITSTRING MENOR LITSTRING WHILE 
+##
+## Ends in an error in state: 30.
+##
+## expressao -> expressao . ELOG expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . OULOG expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MAIS expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . SUB expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MULT expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . DIV expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MOD expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . IGUAL expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . DIFERENTE expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MENOR expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao MENOR expressao . [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MAIOR expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MENORIGUAL expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MAIORIGUAL expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . NOT [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+##
+## The known suffix of the stack is as follows:
+## expressao MENOR expressao 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: LITSTRING MENOR WHILE 
+##
+## Ends in an error in state: 29.
+##
+## expressao -> expressao MENOR . expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+##
+## The known suffix of the stack is as follows:
+## expressao MENOR 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: LITSTRING MENORIGUAL LITSTRING WHILE 
+##
+## Ends in an error in state: 24.
+##
+## expressao -> expressao . ELOG expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . OULOG expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MAIS expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . SUB expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MULT expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . DIV expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MOD expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . IGUAL expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . DIFERENTE expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MENOR expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MAIOR expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MENORIGUAL expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao MENORIGUAL expressao . [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MAIORIGUAL expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . NOT [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+##
+## The known suffix of the stack is as follows:
+## expressao MENORIGUAL expressao 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: LITSTRING MENORIGUAL WHILE 
+##
+## Ends in an error in state: 23.
+##
+## expressao -> expressao MENORIGUAL . expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+##
+## The known suffix of the stack is as follows:
+## expressao MENORIGUAL 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: LITSTRING MOD WHILE 
+##
+## Ends in an error in state: 16.
+##
+## expressao -> expressao MOD . expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+##
+## The known suffix of the stack is as follows:
+## expressao MOD 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: LITSTRING MULT LITSTRING WHILE 
+##
+## Ends in an error in state: 15.
+##
+## expressao -> expressao . ELOG expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . OULOG expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MAIS expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . SUB expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MULT expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao MULT expressao . [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . DIV expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MOD expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . IGUAL expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . DIFERENTE expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MENOR expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MAIOR expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MENORIGUAL expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MAIORIGUAL expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . NOT [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+##
+## The known suffix of the stack is as follows:
+## expressao MULT expressao 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: LITSTRING MULT WHILE 
+##
+## Ends in an error in state: 14.
+##
+## expressao -> expressao MULT . expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+##
+## The known suffix of the stack is as follows:
+## expressao MULT 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: LITSTRING OULOG LITSTRING WHILE 
+##
+## Ends in an error in state: 22.
+##
+## expressao -> expressao . ELOG expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . OULOG expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao OULOG expressao . [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MAIS expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . SUB expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MULT expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . DIV expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MOD expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . IGUAL expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . DIFERENTE expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MENOR expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MAIOR expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MENORIGUAL expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MAIORIGUAL expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . NOT [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+##
+## The known suffix of the stack is as follows:
+## expressao OULOG expressao 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: LITSTRING OULOG WHILE 
+##
+## Ends in an error in state: 21.
+##
+## expressao -> expressao OULOG . expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+##
+## The known suffix of the stack is as follows:
+## expressao OULOG 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: LITSTRING SUB LITSTRING WHILE 
+##
+## Ends in an error in state: 13.
+##
+## expressao -> expressao . ELOG expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . OULOG expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MAIS expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . SUB expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao SUB expressao . [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MULT expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . DIV expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MOD expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . IGUAL expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . DIFERENTE expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MENOR expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MAIOR expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MENORIGUAL expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MAIORIGUAL expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . NOT [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+##
+## The known suffix of the stack is as follows:
+## expressao SUB expressao 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: LITSTRING SUB WHILE 
+##
+## Ends in an error in state: 12.
+##
+## expressao -> expressao SUB . expressao [ VIRG SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+##
+## The known suffix of the stack is as follows:
+## expressao SUB 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: LITSTRING WHILE 
+##
+## Ends in an error in state: 112.
+##
+## comando_chamada -> expressao . NOVALINHA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+## expressao -> expressao . ELOG expressao [ SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+## expressao -> expressao . OULOG expressao [ SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+## expressao -> expressao . MAIS expressao [ SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+## expressao -> expressao . SUB expressao [ SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+## expressao -> expressao . MULT expressao [ SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+## expressao -> expressao . DIV expressao [ SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+## expressao -> expressao . MOD expressao [ SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+## expressao -> expressao . IGUAL expressao [ SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+## expressao -> expressao . DIFERENTE expressao [ SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+## expressao -> expressao . MENOR expressao [ SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+## expressao -> expressao . MAIOR expressao [ SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+## expressao -> expressao . MENORIGUAL expressao [ SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+## expressao -> expressao . MAIORIGUAL expressao [ SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+## expressao -> expressao . NOT [ SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+##
+## The known suffix of the stack is as follows:
+## expressao 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: PRINT APAR FPAR WHILE 
+##
+## Ends in an error in state: 58.
+##
+## comando_print -> PRINT APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR . NOVALINHA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+##
+## The known suffix of the stack is as follows:
+## PRINT APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: PRINT APAR LITSTRING VIRG WHILE 
+##
+## Ends in an error in state: 45.
+##
+## separated_nonempty_list(VIRG,expressao) -> expressao VIRG . separated_nonempty_list(VIRG,expressao) [ FPAR ]
+##
+## The known suffix of the stack is as follows:
+## expressao VIRG 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: PRINT APAR LITSTRING WHILE 
+##
+## Ends in an error in state: 44.
+##
+## expressao -> expressao . ELOG expressao [ VIRG SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+## expressao -> expressao . OULOG expressao [ VIRG SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+## expressao -> expressao . MAIS expressao [ VIRG SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+## expressao -> expressao . SUB expressao [ VIRG SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+## expressao -> expressao . MULT expressao [ VIRG SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+## expressao -> expressao . DIV expressao [ VIRG SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+## expressao -> expressao . MOD expressao [ VIRG SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+## expressao -> expressao . IGUAL expressao [ VIRG SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+## expressao -> expressao . DIFERENTE expressao [ VIRG SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+## expressao -> expressao . MENOR expressao [ VIRG SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+## expressao -> expressao . MAIOR expressao [ VIRG SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+## expressao -> expressao . MENORIGUAL expressao [ VIRG SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+## expressao -> expressao . MAIORIGUAL expressao [ VIRG SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+## expressao -> expressao . NOT [ VIRG SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+## separated_nonempty_list(VIRG,expressao) -> expressao . [ FPAR ]
+## separated_nonempty_list(VIRG,expressao) -> expressao . VIRG separated_nonempty_list(VIRG,expressao) [ FPAR ]
+##
+## The known suffix of the stack is as follows:
+## expressao 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: PRINT APAR WHILE 
+##
+## Ends in an error in state: 56.
+##
+## comando_print -> PRINT APAR . loption(separated_nonempty_list(VIRG,expressao)) FPAR NOVALINHA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+##
+## The known suffix of the stack is as follows:
+## PRINT APAR 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: PRINT WHILE 
+##
+## Ends in an error in state: 55.
+##
+## comando_print -> PRINT . APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR NOVALINHA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+##
+## The known suffix of the stack is as follows:
+## PRINT 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: RETURN LITSTRING WHILE 
+##
+## Ends in an error in state: 54.
+##
+## expressao -> expressao . ELOG expressao [ SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+## expressao -> expressao . OULOG expressao [ SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+## expressao -> expressao . MAIS expressao [ SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+## expressao -> expressao . SUB expressao [ SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+## expressao -> expressao . MULT expressao [ SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+## expressao -> expressao . DIV expressao [ SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+## expressao -> expressao . MOD expressao [ SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+## expressao -> expressao . IGUAL expressao [ SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+## expressao -> expressao . DIFERENTE expressao [ SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+## expressao -> expressao . MENOR expressao [ SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+## expressao -> expressao . MAIOR expressao [ SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+## expressao -> expressao . MENORIGUAL expressao [ SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+## expressao -> expressao . MAIORIGUAL expressao [ SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+## expressao -> expressao . NOT [ SUB OULOG NOVALINHA NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+## option(expressao) -> expressao . [ NOVALINHA ]
+##
+## The known suffix of the stack is as follows:
+## expressao 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: RETURN NOVALINHA VIRG 
+##
+## Ends in an error in state: 183.
+##
+## list(instrucao) -> instrucao . list(instrucao) [ EOF ]
+##
+## The known suffix of the stack is as follows:
+## instrucao 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: RETURN WHILE 
+##
+## Ends in an error in state: 51.
+##
+## comando_retorno -> RETURN . option(expressao) NOVALINHA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+##
+## The known suffix of the stack is as follows:
+## RETURN 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: VIRG 
+##
+## Ends in an error in state: 0.
+##
+## programa' -> . programa [ # ]
+##
+## The known suffix of the stack is as follows:
+## 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: WHILE LITSTRING DPTOS NOVALINHA INDENTA RETURN NOVALINHA VIRG 
+##
+## Ends in an error in state: 128.
+##
+## nonempty_list(comando) -> comando . [ DEDENTA ]
+## nonempty_list(comando) -> comando . nonempty_list(comando) [ DEDENTA ]
+##
+## The known suffix of the stack is as follows:
+## comando 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: WHILE LITSTRING DPTOS NOVALINHA INDENTA VIRG 
+##
+## Ends in an error in state: 50.
+##
+## comando_while -> WHILE expressao DPTOS NOVALINHA INDENTA . comandos DEDENTA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+##
+## The known suffix of the stack is as follows:
+## WHILE expressao DPTOS NOVALINHA INDENTA 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: WHILE LITSTRING DPTOS NOVALINHA WHILE 
+##
+## Ends in an error in state: 49.
+##
+## comando_while -> WHILE expressao DPTOS NOVALINHA . INDENTA comandos DEDENTA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+##
+## The known suffix of the stack is as follows:
+## WHILE expressao DPTOS NOVALINHA 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: WHILE LITSTRING DPTOS WHILE 
+##
+## Ends in an error in state: 48.
+##
+## comando_while -> WHILE expressao DPTOS . NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+##
+## The known suffix of the stack is as follows:
+## WHILE expressao DPTOS 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: WHILE LITSTRING WHILE 
+##
+## Ends in an error in state: 47.
+##
+## comando_while -> WHILE expressao . DPTOS NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+## expressao -> expressao . ELOG expressao [ SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . OULOG expressao [ SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MAIS expressao [ SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . SUB expressao [ SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MULT expressao [ SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . DIV expressao [ SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MOD expressao [ SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . IGUAL expressao [ SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . DIFERENTE expressao [ SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MENOR expressao [ SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MAIOR expressao [ SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MENORIGUAL expressao [ SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MAIORIGUAL expressao [ SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DPTOS DIV DIFERENTE ]
+## expressao -> expressao . NOT [ SUB OULOG NOT MULT MOD MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DPTOS DIV DIFERENTE ]
+##
+## The known suffix of the stack is as follows:
+## WHILE expressao 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+programa: WHILE WHILE 
+##
+## Ends in an error in state: 1.
+##
+## comando_while -> WHILE . expressao DPTOS NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT LITSTRING LITINT LITFLOAT LITCHAR LITBOOL IF ID FOR EOF DEF DEDENTA APAR ]
+##
+## The known suffix of the stack is as follows:
+## WHILE 
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
