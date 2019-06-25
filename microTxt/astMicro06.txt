@@ -1,0 +1,31 @@
+Ast.programa option =
+Some
+ (Programa
+   [Funcao
+     {fn_nome = VarSimples "main"; fn_tiporet = TipoNone; fn_formais = [];
+      fn_corpo =
+       [CmdInputDeclaracao ((VarSimples "numero", TipoInt),
+         (Some (ExpStr "Digite um numero de 1 a 5: "), TipoInt));
+        CmdIf (ExpComp (Equivalente, ExpVar (VarSimples "numero"), ExpInt 1),
+         [CmdPrint [ExpStr "Um"]],
+         Some
+          (CmdIf
+            (ExpComp (Equivalente, ExpVar (VarSimples "numero"), ExpInt 2),
+            [CmdPrint [ExpStr "Dois"]],
+            Some
+             (CmdIf
+               (ExpComp (Equivalente, ExpVar (VarSimples "numero"), ExpInt 3),
+               [CmdPrint [ExpStr "Tres"]],
+               Some
+                (CmdIf
+                  (ExpComp
+                    (Equivalente, ExpVar (VarSimples "numero"), ExpInt 4),
+                  [CmdPrint [ExpStr "Quatro"]],
+                  Some
+                   (CmdIf
+                     (ExpComp
+                       (Equivalente, ExpVar (VarSimples "numero"), ExpInt 5),
+                     [CmdPrint [ExpStr "Cinco"]],
+                     Some (CmdElse [CmdPrint [ExpStr "Numero Invalido!!!"]]))))))))));
+        CmdReturn None]};
+    Cmd (CmdChmd (ExpChmd (VarSimples "main", [])))])

@@ -1,0 +1,27 @@
+Ast.programa option =
+Some
+ (Programa
+   [Funcao
+     {fn_nome = VarSimples "main"; fn_tiporet = TipoNone; fn_formais = [];
+      fn_corpo =
+       [CmdInputDeclaracao ((VarSimples "numero", TipoInt),
+         (Some (ExpStr "Digite um numero: "), TipoInt));
+        CmdDeclaracao ((VarSimples "fat", TipoInt),
+         Some
+          (ExpChmd (VarSimples "fatorial", [ExpVar (VarSimples "numero")])));
+        CmdPrint [ExpStr "O fatorial eh"; ExpVar (VarSimples "fat")];
+        CmdReturn None]};
+    Funcao
+     {fn_nome = VarSimples "fatorial"; fn_tiporet = TipoInt;
+      fn_formais = [(VarSimples "n", TipoInt)];
+      fn_corpo =
+       [CmdIf (ExpComp (MenorIgual, ExpVar (VarSimples "n"), ExpInt 0),
+         [CmdReturn (Some (ExpInt 1))],
+         Some
+          (CmdElse
+            [CmdReturn
+              (Some
+                (ExpOperB (Mult, ExpVar (VarSimples "n"),
+                  ExpChmd (VarSimples "fatorial",
+                   [ExpOperB (Sub, ExpVar (VarSimples "n"), ExpInt 1)]))))]))]};
+    Cmd (CmdChmd (ExpChmd (VarSimples "main", [])))])

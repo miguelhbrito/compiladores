@@ -1,0 +1,22 @@
+Ast.programa option =
+Some
+ (Programa
+   [Funcao
+     {fn_nome = VarSimples "main"; fn_tiporet = TipoNone; fn_formais = [];
+      fn_corpo =
+       [CmdDeclaracao ((VarSimples "cel", TipoFloat), Some (ExpFloat 0.));
+        CmdDeclaracao ((VarSimples "far", TipoFloat), Some (ExpFloat 0.));
+        CmdPrint [ExpStr "Tabela de conversao: Celsius -> Fahrenheit\n"];
+        CmdPrint [ExpStr "Digite a temperatura em Celsius: "];
+        CmdInput (VarSimples "cel", (None, TipoFloat));
+        CmdAtrib (VarSimples "far",
+         ExpOperB (Div,
+          ExpOperB (Soma,
+           ExpOperB (Mult, ExpFloat 9., ExpVar (VarSimples "cel")),
+           ExpFloat 160.),
+          ExpFloat 5.));
+        CmdPrint
+         [ExpStr "A nova temperatura e: "; ExpVar (VarSimples "far");
+          ExpStr " F"]]};
+    Cmd (CmdChmd (ExpChmd (VarSimples "main", [])))])
+

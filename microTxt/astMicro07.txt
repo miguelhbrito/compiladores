@@ -1,0 +1,32 @@
+Ast.programa option =
+Some
+ (Programa
+   [Funcao
+     {fn_nome = VarSimples "main"; fn_tiporet = TipoNone; fn_formais = [];
+      fn_corpo =
+       [CmdDeclaracao ((VarSimples "numero", TipoInt), Some (ExpInt 0));
+        CmdDeclaracao ((VarSimples "programa", TipoInt), Some (ExpInt 1));
+        CmdDeclaracao ((VarSimples "opc", TipoStr), Some (ExpStr ""));
+        CmdWhile
+         (ExpComp (Equivalente, ExpVar (VarSimples "programa"), ExpInt 1),
+         [CmdInput (VarSimples "numero",
+           (Some (ExpStr "Digite um numero: "), TipoInt));
+          CmdIf (ExpComp (Maior, ExpVar (VarSimples "numero"), ExpInt 0),
+           [CmdPrint [ExpStr "Positivo"]],
+           Some
+            (CmdElse
+              [CmdIf
+                (ExpComp
+                  (Equivalente, ExpVar (VarSimples "numero"), ExpInt 0),
+                [CmdPrint [ExpStr "O numero e igual a 0"]],
+                Some
+                 (CmdIf
+                   (ExpComp (Menor, ExpVar (VarSimples "numero"), ExpInt 0),
+                   [CmdPrint [ExpStr "Negativo"]], None)))]));
+          CmdInput (VarSimples "opc",
+           (Some (ExpStr "Deseja Finalizar? (S/N) :"), TipoStr));
+          CmdIf
+           (ExpComp (Equivalente, ExpVar (VarSimples "opc"), ExpStr "S"),
+           [CmdAtrib (VarSimples "programa", ExpInt 0)], None)]);
+        CmdReturn None]};
+    Cmd (CmdChmd (ExpChmd (VarSimples "main", [])))])

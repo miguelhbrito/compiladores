@@ -1,0 +1,46 @@
+Ast.programa option =
+Some
+ (Programa
+   [Funcao
+     {fn_nome = VarSimples "main"; fn_tiporet = TipoNone; fn_formais = [];
+      fn_corpo =
+       [CmdDeclaracao ((VarSimples "novopreco", TipoFloat), None);
+        CmdInputDeclaracao ((VarSimples "preco", TipoFloat),
+         (Some (ExpStr "Digite o preco: "), TipoFloat));
+        CmdInput (VarSimples "venda",
+         (Some (ExpStr "Digite a venda: "), TipoFloat));
+        CmdIf
+         (ExpOperB (Orlog,
+           ExpComp (Menor, ExpVar (VarSimples "venda"), ExpInt 500),
+           ExpComp (Menor, ExpVar (VarSimples "preco"), ExpInt 30)),
+         [CmdAtrib (VarSimples "novopreco",
+           ExpOperB (Soma, ExpVar (VarSimples "preco"),
+            ExpOperB (Mult, ExpOperB (Div, ExpInt 10, ExpInt 100),
+             ExpVar (VarSimples "preco"))))],
+         Some
+          (CmdIf
+            (ExpOperB (Orlog,
+              ExpOperB (ANDlog,
+               ExpComp (MaiorIgual, ExpVar (VarSimples "venda"), ExpInt 500),
+               ExpComp (Menor, ExpVar (VarSimples "venda"), ExpInt 1200)),
+              ExpOperB (ANDlog,
+               ExpComp (MaiorIgual, ExpVar (VarSimples "preco"), ExpInt 30),
+               ExpComp (Menor, ExpVar (VarSimples "preco"), ExpInt 80))),
+            [CmdAtrib (VarSimples "novopreco",
+              ExpOperB (Soma, ExpVar (VarSimples "preco"),
+               ExpOperB (Mult, ExpOperB (Div, ExpInt 15, ExpInt 100),
+                ExpVar (VarSimples "preco"))))],
+            Some
+             (CmdIf
+               (ExpOperB (Orlog,
+                 ExpComp
+                  (MaiorIgual, ExpVar (VarSimples "venda"), ExpInt 1200),
+                 ExpComp (MaiorIgual, ExpVar (VarSimples "preco"), ExpInt 80)),
+               [CmdAtrib (VarSimples "novopreco",
+                 ExpOperB (Sub, ExpVar (VarSimples "preco"),
+                  ExpOperB (Mult, ExpOperB (Div, ExpInt 20, ExpInt 100),
+                   ExpVar (VarSimples "preco"))))],
+               None)))));
+        CmdPrint [ExpStr "O novo preco e:"; ExpVar (VarSimples "novopreco")];
+        CmdReturn None]};
+    Cmd (CmdChmd (ExpChmd (VarSimples "main", [])))])

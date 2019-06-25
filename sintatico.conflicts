@@ -1,0 +1,490 @@
+
+** Conflict (shift/reduce) in state 168.
+** Tokens involved: ELSE ELIF
+** The following explanations concentrate on token ELSE.
+** This state is reached from programa after reading:
+
+IF expressao DPONTOS NOVALINHA INDENTA comandos DEDENTA 
+
+** The derivations that appear below have the following common factor:
+** (The question mark symbol (?) represents the spot where the derivations begin to differ.)
+
+programa 
+list(instrucao) EOF 
+(?)
+
+** In state 168, looking ahead at ELSE, shifting is permitted
+** because of the following sub-derivation:
+
+instrucao list(instrucao) 
+comando 
+comando_if 
+IF expressao DPONTOS NOVALINHA INDENTA comandos DEDENTA option(comando_if2) 
+                                                        comando_if2 
+                                                        . ELSE DPONTOS NOVALINHA INDENTA comandos DEDENTA 
+
+** In state 168, looking ahead at ELSE, reducing production
+** option(comando_if2) -> 
+** is permitted because of the following sub-derivation:
+
+instrucao list(instrucao) // lookahead token appears because list(instrucao) can begin with ELSE
+comando // lookahead token is inherited
+comando_if // lookahead token is inherited
+IF expressao DPONTOS NOVALINHA INDENTA comandos DEDENTA option(comando_if2) // lookahead token is inherited
+                                                        . 
+
+** Conflict (shift/reduce) in state 129.
+** Tokens involved: ELSE ELIF
+** The following explanations concentrate on token ELSE.
+** This state is reached from programa after reading:
+
+ELIF expressao DPONTOS NOVALINHA INDENTA comandos DEDENTA 
+
+** The derivations that appear below have the following common factor:
+** (The question mark symbol (?) represents the spot where the derivations begin to differ.)
+
+programa 
+list(instrucao) EOF 
+(?)
+
+** In state 129, looking ahead at ELSE, shifting is permitted
+** because of the following sub-derivation:
+
+instrucao list(instrucao) 
+comando 
+comando_if2 
+ELIF expressao DPONTOS NOVALINHA INDENTA comandos DEDENTA option(comando_if2) 
+                                                          comando_if2 
+                                                          . ELSE DPONTOS NOVALINHA INDENTA comandos DEDENTA 
+
+** In state 129, looking ahead at ELSE, reducing production
+** option(comando_if2) -> 
+** is permitted because of the following sub-derivation:
+
+instrucao list(instrucao) // lookahead token appears because list(instrucao) can begin with ELSE
+comando // lookahead token is inherited
+comando_if2 // lookahead token is inherited
+ELIF expressao DPONTOS NOVALINHA INDENTA comandos DEDENTA option(comando_if2) // lookahead token is inherited
+                                                          . 
+
+** Conflict (shift/reduce) in state 40.
+** Token involved: SUB
+** This state is reached from programa after reading:
+
+WHILE expressao ANDLOG expressao 
+
+** The derivations that appear below have the following common factor:
+** (The question mark symbol (?) represents the spot where the derivations begin to differ.)
+
+programa 
+list(instrucao) EOF 
+instrucao list(instrucao) 
+comando 
+comando_while 
+WHILE expressao DPONTOS NOVALINHA INDENTA comandos DEDENTA 
+      (?)
+
+** In state 40, looking ahead at SUB, reducing production
+** expressao -> expressao ANDLOG expressao 
+** is permitted because of the following sub-derivation:
+
+expressao SUB expressao // lookahead token appears
+expressao ANDLOG expressao . 
+
+** In state 40, looking ahead at SUB, shifting is permitted
+** because of the following sub-derivation:
+
+expressao ANDLOG expressao 
+                 expressao . SUB expressao 
+
+** Conflict (shift/reduce) in state 38.
+** Token involved: SUB
+** This state is reached from programa after reading:
+
+WHILE expressao EQUIVALENTE expressao 
+
+** The derivations that appear below have the following common factor:
+** (The question mark symbol (?) represents the spot where the derivations begin to differ.)
+
+programa 
+list(instrucao) EOF 
+instrucao list(instrucao) 
+comando 
+comando_while 
+WHILE expressao DPONTOS NOVALINHA INDENTA comandos DEDENTA 
+      (?)
+
+** In state 38, looking ahead at SUB, shifting is permitted
+** because of the following sub-derivation:
+
+expressao EQUIVALENTE expressao 
+                      expressao . SUB expressao 
+
+** In state 38, looking ahead at SUB, reducing production
+** expressao -> expressao EQUIVALENTE expressao 
+** is permitted because of the following sub-derivation:
+
+expressao SUB expressao // lookahead token appears
+expressao EQUIVALENTE expressao . 
+
+** Conflict (shift/reduce) in state 36.
+** Token involved: SUB
+** This state is reached from programa after reading:
+
+WHILE expressao MAIOR expressao 
+
+** The derivations that appear below have the following common factor:
+** (The question mark symbol (?) represents the spot where the derivations begin to differ.)
+
+programa 
+list(instrucao) EOF 
+instrucao list(instrucao) 
+comando 
+comando_while 
+WHILE expressao DPONTOS NOVALINHA INDENTA comandos DEDENTA 
+      (?)
+
+** In state 36, looking ahead at SUB, shifting is permitted
+** because of the following sub-derivation:
+
+expressao MAIOR expressao 
+                expressao . SUB expressao 
+
+** In state 36, looking ahead at SUB, reducing production
+** expressao -> expressao MAIOR expressao 
+** is permitted because of the following sub-derivation:
+
+expressao SUB expressao // lookahead token appears
+expressao MAIOR expressao . 
+
+** Conflict (shift/reduce) in state 34.
+** Token involved: SUB
+** This state is reached from programa after reading:
+
+WHILE expressao MAIORIGUAL expressao 
+
+** The derivations that appear below have the following common factor:
+** (The question mark symbol (?) represents the spot where the derivations begin to differ.)
+
+programa 
+list(instrucao) EOF 
+instrucao list(instrucao) 
+comando 
+comando_while 
+WHILE expressao DPONTOS NOVALINHA INDENTA comandos DEDENTA 
+      (?)
+
+** In state 34, looking ahead at SUB, shifting is permitted
+** because of the following sub-derivation:
+
+expressao MAIORIGUAL expressao 
+                     expressao . SUB expressao 
+
+** In state 34, looking ahead at SUB, reducing production
+** expressao -> expressao MAIORIGUAL expressao 
+** is permitted because of the following sub-derivation:
+
+expressao SUB expressao // lookahead token appears
+expressao MAIORIGUAL expressao . 
+
+** Conflict (shift/reduce) in state 32.
+** Token involved: SUB
+** This state is reached from programa after reading:
+
+WHILE expressao MENOR expressao 
+
+** The derivations that appear below have the following common factor:
+** (The question mark symbol (?) represents the spot where the derivations begin to differ.)
+
+programa 
+list(instrucao) EOF 
+instrucao list(instrucao) 
+comando 
+comando_while 
+WHILE expressao DPONTOS NOVALINHA INDENTA comandos DEDENTA 
+      (?)
+
+** In state 32, looking ahead at SUB, shifting is permitted
+** because of the following sub-derivation:
+
+expressao MENOR expressao 
+                expressao . SUB expressao 
+
+** In state 32, looking ahead at SUB, reducing production
+** expressao -> expressao MENOR expressao 
+** is permitted because of the following sub-derivation:
+
+expressao SUB expressao // lookahead token appears
+expressao MENOR expressao . 
+
+** Conflict (shift/reduce) in state 30.
+** Token involved: SUB
+** This state is reached from programa after reading:
+
+WHILE expressao MENORIGUAL expressao 
+
+** The derivations that appear below have the following common factor:
+** (The question mark symbol (?) represents the spot where the derivations begin to differ.)
+
+programa 
+list(instrucao) EOF 
+instrucao list(instrucao) 
+comando 
+comando_while 
+WHILE expressao DPONTOS NOVALINHA INDENTA comandos DEDENTA 
+      (?)
+
+** In state 30, looking ahead at SUB, shifting is permitted
+** because of the following sub-derivation:
+
+expressao MENORIGUAL expressao 
+                     expressao . SUB expressao 
+
+** In state 30, looking ahead at SUB, reducing production
+** expressao -> expressao MENORIGUAL expressao 
+** is permitted because of the following sub-derivation:
+
+expressao SUB expressao // lookahead token appears
+expressao MENORIGUAL expressao . 
+
+** Conflict (shift/reduce) in state 28.
+** Token involved: SUB
+** This state is reached from programa after reading:
+
+WHILE expressao NAOEQUIVALENTE expressao 
+
+** The derivations that appear below have the following common factor:
+** (The question mark symbol (?) represents the spot where the derivations begin to differ.)
+
+programa 
+list(instrucao) EOF 
+instrucao list(instrucao) 
+comando 
+comando_while 
+WHILE expressao DPONTOS NOVALINHA INDENTA comandos DEDENTA 
+      (?)
+
+** In state 28, looking ahead at SUB, shifting is permitted
+** because of the following sub-derivation:
+
+expressao NAOEQUIVALENTE expressao 
+                         expressao . SUB expressao 
+
+** In state 28, looking ahead at SUB, reducing production
+** expressao -> expressao NAOEQUIVALENTE expressao 
+** is permitted because of the following sub-derivation:
+
+expressao SUB expressao // lookahead token appears
+expressao NAOEQUIVALENTE expressao . 
+
+** Conflict (shift/reduce) in state 26.
+** Token involved: SUB
+** This state is reached from programa after reading:
+
+WHILE expressao ORLOG expressao 
+
+** The derivations that appear below have the following common factor:
+** (The question mark symbol (?) represents the spot where the derivations begin to differ.)
+
+programa 
+list(instrucao) EOF 
+instrucao list(instrucao) 
+comando 
+comando_while 
+WHILE expressao DPONTOS NOVALINHA INDENTA comandos DEDENTA 
+      (?)
+
+** In state 26, looking ahead at SUB, reducing production
+** expressao -> expressao ORLOG expressao 
+** is permitted because of the following sub-derivation:
+
+expressao SUB expressao // lookahead token appears
+expressao ORLOG expressao . 
+
+** In state 26, looking ahead at SUB, shifting is permitted
+** because of the following sub-derivation:
+
+expressao ORLOG expressao 
+                expressao . SUB expressao 
+
+** Conflict (shift/reduce) in state 24.
+** Token involved: SUB
+** This state is reached from programa after reading:
+
+WHILE expressao DIV expressao 
+
+** The derivations that appear below have the following common factor:
+** (The question mark symbol (?) represents the spot where the derivations begin to differ.)
+
+programa 
+list(instrucao) EOF 
+instrucao list(instrucao) 
+comando 
+comando_while 
+WHILE expressao DPONTOS NOVALINHA INDENTA comandos DEDENTA 
+      (?)
+
+** In state 24, looking ahead at SUB, shifting is permitted
+** because of the following sub-derivation:
+
+expressao DIV expressao 
+              expressao . SUB expressao 
+
+** In state 24, looking ahead at SUB, reducing production
+** expressao -> expressao DIV expressao 
+** is permitted because of the following sub-derivation:
+
+expressao SUB expressao // lookahead token appears
+expressao DIV expressao . 
+
+** Conflict (shift/reduce) in state 21.
+** Token involved: SUB
+** This state is reached from programa after reading:
+
+WHILE expressao MOD expressao 
+
+** The derivations that appear below have the following common factor:
+** (The question mark symbol (?) represents the spot where the derivations begin to differ.)
+
+programa 
+list(instrucao) EOF 
+instrucao list(instrucao) 
+comando 
+comando_while 
+WHILE expressao DPONTOS NOVALINHA INDENTA comandos DEDENTA 
+      (?)
+
+** In state 21, looking ahead at SUB, shifting is permitted
+** because of the following sub-derivation:
+
+expressao MOD expressao 
+              expressao . SUB expressao 
+
+** In state 21, looking ahead at SUB, reducing production
+** expressao -> expressao MOD expressao 
+** is permitted because of the following sub-derivation:
+
+expressao SUB expressao // lookahead token appears
+expressao MOD expressao . 
+
+** Conflict (shift/reduce) in state 19.
+** Token involved: SUB
+** This state is reached from programa after reading:
+
+WHILE expressao MULT expressao 
+
+** The derivations that appear below have the following common factor:
+** (The question mark symbol (?) represents the spot where the derivations begin to differ.)
+
+programa 
+list(instrucao) EOF 
+instrucao list(instrucao) 
+comando 
+comando_while 
+WHILE expressao DPONTOS NOVALINHA INDENTA comandos DEDENTA 
+      (?)
+
+** In state 19, looking ahead at SUB, shifting is permitted
+** because of the following sub-derivation:
+
+expressao MULT expressao 
+               expressao . SUB expressao 
+
+** In state 19, looking ahead at SUB, reducing production
+** expressao -> expressao MULT expressao 
+** is permitted because of the following sub-derivation:
+
+expressao SUB expressao // lookahead token appears
+expressao MULT expressao . 
+
+** Conflict (shift/reduce) in state 17.
+** Token involved: SUB
+** This state is reached from programa after reading:
+
+WHILE expressao SOMA expressao 
+
+** The derivations that appear below have the following common factor:
+** (The question mark symbol (?) represents the spot where the derivations begin to differ.)
+
+programa 
+list(instrucao) EOF 
+instrucao list(instrucao) 
+comando 
+comando_while 
+WHILE expressao DPONTOS NOVALINHA INDENTA comandos DEDENTA 
+      (?)
+
+** In state 17, looking ahead at SUB, reducing production
+** expressao -> expressao SOMA expressao 
+** is permitted because of the following sub-derivation:
+
+expressao SUB expressao // lookahead token appears
+expressao SOMA expressao . 
+
+** In state 17, looking ahead at SUB, shifting is permitted
+** because of the following sub-derivation:
+
+expressao SOMA expressao 
+               expressao . SUB expressao 
+
+** Conflict (shift/reduce) in state 15.
+** Tokens involved: SUB SOMA ORLOG NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE DIV ANDLOG
+** The following explanations concentrate on token SUB.
+** This state is reached from programa after reading:
+
+WHILE expressao SUB expressao 
+
+** The derivations that appear below have the following common factor:
+** (The question mark symbol (?) represents the spot where the derivations begin to differ.)
+
+programa 
+list(instrucao) EOF 
+instrucao list(instrucao) 
+comando 
+comando_while 
+WHILE expressao DPONTOS NOVALINHA INDENTA comandos DEDENTA 
+      (?)
+
+** In state 15, looking ahead at SUB, shifting is permitted
+** because of the following sub-derivation:
+
+expressao SUB expressao 
+              expressao . SUB expressao 
+
+** In state 15, looking ahead at SUB, reducing production
+** expressao -> expressao SUB expressao 
+** is permitted because of the following sub-derivation:
+
+expressao SUB expressao // lookahead token appears
+expressao SUB expressao . 
+
+** Conflict (shift/reduce) in state 13.
+** Tokens involved: SUB SOMA ORLOG NAOEQUIVALENTE MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR EQUIVALENTE DIV ANDLOG
+** The following explanations concentrate on token SUB.
+** This state is reached from programa after reading:
+
+WHILE operN expressao 
+
+** The derivations that appear below have the following common factor:
+** (The question mark symbol (?) represents the spot where the derivations begin to differ.)
+
+programa 
+list(instrucao) EOF 
+instrucao list(instrucao) 
+comando 
+comando_while 
+WHILE expressao DPONTOS NOVALINHA INDENTA comandos DEDENTA 
+      (?)
+
+** In state 13, looking ahead at SUB, shifting is permitted
+** because of the following sub-derivation:
+
+operN expressao 
+      expressao . SUB expressao 
+
+** In state 13, looking ahead at SUB, reducing production
+** expressao -> operN expressao 
+** is permitted because of the following sub-derivation:
+
+expressao SUB expressao // lookahead token appears
+operN expressao . 

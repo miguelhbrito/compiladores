@@ -1,0 +1,34 @@
+Ast.programa option =
+Some
+ (Programa
+   [Funcao
+     {fn_nome = VarSimples "main"; fn_tiporet = TipoNone; fn_formais = [];
+      fn_corpo =
+       [CmdDeclaracao ((VarSimples "x", TipoInt), None);
+        CmdDeclaracao ((VarSimples "m", TipoInt), Some (ExpInt 0));
+        CmdDeclaracao ((VarSimples "h", TipoInt), Some (ExpInt 0));
+        CmdDeclaracao ((VarSimples "nome", TipoStr), Some (ExpStr ""));
+        CmdDeclaracao ((VarSimples "sexo", TipoStr), Some (ExpStr ""));
+        CmdFor (VarSimples "x", (ExpInt 0, ExpInt 1),
+         [CmdInput (VarSimples "nome",
+           (Some (ExpStr "Digite o nome: "), TipoStr));
+          CmdInput (VarSimples "sexo",
+           (Some (ExpStr "H - Homem ou M - Mulher: "), TipoStr));
+          CmdIf
+           (ExpComp (Equivalente, ExpVar (VarSimples "sexo"), ExpChar 'H'),
+           [CmdAtrib (VarSimples "h",
+             ExpOperB (Soma, ExpVar (VarSimples "h"), ExpInt 1))],
+           Some
+            (CmdIf
+              (ExpComp (Equivalente, ExpVar (VarSimples "sexo"), ExpChar 'M'),
+              [CmdAtrib (VarSimples "m",
+                ExpOperB (Soma, ExpVar (VarSimples "m"), ExpInt 1))],
+              Some (CmdElse [CmdPrint [ExpStr "Sexo so pode ser H ou M!\n"]]))))]);
+        CmdPrint
+         [ExpStr "\nForam inseridos "; ExpVar (VarSimples "h");
+          ExpStr " homens"];
+        CmdPrint
+         [ExpStr "\nForam inseridas "; ExpVar (VarSimples "m");
+          ExpStr " mulheres"];
+        CmdReturn None]};
+    Cmd (CmdChmd (ExpChmd (VarSimples "main", [])))])

@@ -1,0 +1,18 @@
+Ast.programa option =
+Some
+ (Programa
+   [Funcao
+     {fn_nome = VarSimples "main"; fn_tiporet = TipoNone; fn_formais = [];
+      fn_corpo =
+       [CmdDeclaracao ((VarSimples "numero", TipoInt), Some (ExpInt 1));
+        CmdWhile
+         (ExpOperB (Orlog,
+           ExpComp (Menor, ExpVar (VarSimples "numero"), ExpInt 0),
+           ExpComp (Maior, ExpVar (VarSimples "numero"), ExpInt 0)),
+         [CmdInput (VarSimples "numero",
+           (Some (ExpStr "Digite um numero: "), TipoInt));
+          CmdIf (ExpComp (Maior, ExpVar (VarSimples "numero"), ExpInt 10),
+           [CmdPrint [ExpStr "Numero maior que 10"]],
+           Some (CmdElse [CmdPrint [ExpStr "Numero menor que 10"]]))]);
+        CmdReturn None]};
+    Cmd (CmdChmd (ExpChmd (VarSimples "main", [])))])

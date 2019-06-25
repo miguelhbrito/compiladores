@@ -1,0 +1,31 @@
+Ast.programa option =
+Some
+ (Programa
+   [Funcao
+     {fn_nome = VarSimples "main"; fn_tiporet = TipoNone; fn_formais = [];
+      fn_corpo =
+       [CmdInputDeclaracao ((VarSimples "numero", TipoInt),
+         (Some (ExpStr "Digite um numero: "), TipoInt));
+        CmdDeclaracao ((VarSimples "x", TipoInt),
+         Some
+          (ExpChmd (VarSimples "verifica", [ExpVar (VarSimples "numero")])));
+        CmdIf (ExpComp (Equivalente, ExpVar (VarSimples "x"), ExpInt 1),
+         [CmdPrint [ExpStr "Positivo"]],
+         Some
+          (CmdIf (ExpComp (Equivalente, ExpVar (VarSimples "x"), ExpInt 0),
+            [CmdPrint [ExpStr "zero"]],
+            Some (CmdElse [CmdPrint [ExpStr "Negativo"]]))));
+        CmdReturn None]};
+    Funcao
+     {fn_nome = VarSimples "verifica"; fn_tiporet = TipoInt;
+      fn_formais = [(VarSimples "n", TipoInt)];
+      fn_corpo =
+       [CmdDeclaracao ((VarSimples "res", TipoInt), None);
+        CmdIf (ExpComp (Maior, ExpVar (VarSimples "n"), ExpInt 0),
+         [CmdAtrib (VarSimples "res", ExpInt 1)],
+         Some
+          (CmdIf (ExpComp (Menor, ExpVar (VarSimples "n"), ExpInt 0),
+            [CmdAtrib (VarSimples "res", ExpInt (-1))],
+            Some (CmdElse [CmdAtrib (VarSimples "res", ExpInt 0)]))));
+        CmdReturn (Some (ExpVar (VarSimples "res")))]};
+    Cmd (CmdChmd (ExpChmd (VarSimples "main", [])))])

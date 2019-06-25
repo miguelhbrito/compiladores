@@ -1,0 +1,23 @@
+Ast.programa option =
+Some
+ (Programa
+   [Funcao
+     {fn_nome = VarSimples "main"; fn_tiporet = TipoNone; fn_formais = [];
+      fn_corpo =
+       [CmdPrint [ExpStr "Digite o primeiro numero: "];
+        CmdInputDeclaracao ((VarSimples "num1", TipoInt), (None, TipoInt));
+        CmdPrint [ExpStr "Digite o segundo numero: "];
+        CmdInputDeclaracao ((VarSimples "num2", TipoInt), (None, TipoInt));
+        CmdIf
+         (ExpComp
+           (Maior, ExpVar (VarSimples "num1"), ExpVar (VarSimples "num2")),
+         [CmdPrint
+           [ExpStr "\nO primeiro numero"; ExpVar (VarSimples "num1");
+            ExpStr "e maior que o segundo"; ExpVar (VarSimples "num2")]],
+         Some
+          (CmdElse
+            [CmdPrint
+              [ExpStr "O segundo numero"; ExpVar (VarSimples "num2");
+               ExpStr "e maior que o primeiro"; ExpVar (VarSimples "num1")]]))]};
+    Cmd (CmdChmd (ExpChmd (VarSimples "main", [])))])
+
